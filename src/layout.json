@@ -1,0 +1,7593 @@
+{
+  "key_items": [
+    {
+      "name": "lordvessel"
+    },
+    {
+      "name": "key_to_the_seal"
+    },
+    {
+      "name": "blighttown_key"
+    },
+    {
+      "name": "key_to_depths"
+    },
+    {
+      "name": "covenant_of_artorias"
+    },
+    {
+      "name": "orange_charred_ring"
+    },
+    {
+      "name": "basement_key"
+    },
+    {
+      "name": "undead_asylum_f2_west_key"
+    },
+    {
+      "name": "annex_key"
+    },
+    {
+      "name": "watchtower_basement_key"
+    },
+    {
+      "name": "darkmoon_seance_ring"
+    },
+    {
+      "name": "key_to_new_londo_ruins"
+    },
+    {
+      "name": "cage_key"
+    },
+    {
+      "name": "archive_prison_extra_key"
+    },
+    {
+      "name": "archive_tower_giant_cell_key"
+    },
+    {
+      "name": "archive_tower_giant_door_key"
+    },
+    {
+      "name": "peculiar_doll"
+    },
+    {
+      "name": "broken_pendant"
+    },
+    {
+      "name": "crest_key"
+    },
+    {
+      "name": "crest_of_artorias"
+    },
+    {
+      "name": "residence_key"
+    },
+    {
+      "name": "cast_light"
+    },
+    {
+      "name": "lord_soul_shard_seath"
+    },
+    {
+      "name": "lord_soul_shard_four_kings"
+    },
+    {
+      "name": "lord_soul_bed_of_chaos"
+    },
+    {
+      "name": "lord_soul_nito"
+    },
+    {
+      "name": "purple_cowards_crystal"
+    }
+  ],
+  "regions": [
+    {
+      "name": "depths",
+      "text": "Depths"
+    },
+    {
+      "name": "burg",
+      "text": "Undead Burg"
+    },
+    {
+      "name": "parish",
+      "text": "Undead Parish"
+    },
+    {
+      "name": "firelink",
+      "text": "Firelink Shrine"
+    },
+    {
+      "name": "paintedworld",
+      "text": "Painted World of Ariamis"
+    },
+    {
+      "name": "darkroot",
+      "text": "Darkroot Garden"
+    },
+    {
+      "name": "dlc",
+      "text": "Oolacile (DLC)"
+    },
+    {
+      "name": "catacombs",
+      "text": "Catacombs"
+    },
+    {
+      "name": "totg",
+      "text": "Tomb of the Giants"
+    },
+    {
+      "name": "greathollow",
+      "text": "The Great Hollow"
+    },
+    {
+      "name": "blighttown",
+      "text": "Blighttown"
+    },
+    {
+      "name": "demonruins",
+      "text": "Demon Ruins"
+    },
+    {
+      "name": "izalith",
+      "text": "Lost Izalith"
+    },
+    {
+      "name": "sens",
+      "text": "Sen's Fortress"
+    },
+    {
+      "name": "anorlondo",
+      "text": "Anor Londo"
+    },
+    {
+      "name": "newlondo",
+      "text": "New Londo Ruins"
+    },
+    {
+      "name": "dukes",
+      "text": "The Duke's Archives"
+    },
+    {
+      "name": "kiln",
+      "text": "Kiln of the First Flame"
+    },
+    {
+      "name": "asylum",
+      "text": "Undead Asylum"
+    }
+  ],
+  "areas": [
+    {
+      "name": "depths",
+      "text": "Main",
+      "region": "depths"
+    },
+    {
+      "name": "depths_gaping",
+      "text": "Gaping Dragon boss room",
+      "region": "depths"
+    },
+    {
+      "name": "burg_start",
+      "text": "Start",
+      "region": "burg"
+    },
+    {
+      "name": "burg_upper",
+      "text": "Upper",
+      "region": "burg"
+    },
+    {
+      "name": "burg_upperresidence",
+      "text": "Upper residence (pine resin chest)",
+      "region": "burg"
+    },
+    {
+      "name": "burg_bonfire",
+      "text": "Bonfire room",
+      "region": "burg"
+    },
+    {
+      "name": "burg_above_bonfire",
+      "text": "Above bonfire",
+      "region": "burg"
+    },
+    {
+      "name": "burg_ladder",
+      "text": "Basement ladder",
+      "region": "burg"
+    },
+    {
+      "name": "burg_lower",
+      "text": "Lower",
+      "region": "burg"
+    },
+    {
+      "name": "burg_lowerresidence",
+      "text": "Lower residence (Griggs)",
+      "region": "burg"
+    },
+    {
+      "name": "burg_taurus",
+      "text": "Taurus Demon boss room",
+      "region": "burg"
+    },
+    {
+      "name": "burg_posttaurus",
+      "text": "Post-Taurus building",
+      "region": "burg"
+    },
+    {
+      "name": "burg_capra",
+      "text": "Capra Demon boss room",
+      "region": "burg"
+    },
+    {
+      "name": "parish_hellkite",
+      "text": "Hellkite bridge",
+      "region": "parish"
+    },
+    {
+      "name": "parish_church",
+      "text": "Church",
+      "region": "parish"
+    },
+    {
+      "name": "parish_andre",
+      "text": "Andre",
+      "region": "parish"
+    },
+    {
+      "name": "parish_gargoyles",
+      "text": "Gargoyles boss room",
+      "region": "parish"
+    },
+    {
+      "name": "parish_bell",
+      "text": "Bell tower",
+      "region": "parish"
+    },
+    {
+      "name": "firelink",
+      "text": "Firelink Shrine",
+      "region": "firelink"
+    },
+    {
+      "name": "firelink_crow",
+      "text": "Crow's nest",
+      "region": "firelink"
+    },
+    {
+      "name": "firelink_elevator",
+      "text": "Elevator to parish",
+      "region": "firelink"
+    },
+    {
+      "name": "firelink_gate",
+      "text": "Sewer tunnel with merchant",
+      "region": "firelink"
+    },
+    {
+      "name": "paintedworld",
+      "text": "Central",
+      "region": "paintedworld"
+    },
+    {
+      "name": "paintedworld_annex",
+      "text": "Annex",
+      "region": "paintedworld"
+    },
+    {
+      "name": "paintedworld_priscilla",
+      "text": "Priscilla boss room",
+      "region": "paintedworld"
+    },
+    {
+      "name": "darkroot",
+      "text": "Garden / basin",
+      "region": "darkroot"
+    },
+    {
+      "name": "darkroot_stone",
+      "text": "Stone giant grove",
+      "region": "darkroot"
+    },
+    {
+      "name": "darkroot_butterfly",
+      "text": "Moonlight Butterfly boss room",
+      "region": "darkroot"
+    },
+    {
+      "name": "darkroot_postbutterfly",
+      "text": "Post-Butterfly tower with stone blacksmith",
+      "region": "darkroot"
+    },
+    {
+      "name": "darkroot_forest",
+      "text": "Forest",
+      "region": "darkroot"
+    },
+    {
+      "name": "darkroot_sif",
+      "text": "Sif boss room",
+      "region": "darkroot"
+    },
+    {
+      "name": "dlc_start",
+      "text": "Starting area",
+      "region": "dlc"
+    },
+    {
+      "name": "dlc_guardian",
+      "text": "Sanctuary Guardian boss room",
+      "region": "dlc"
+    },
+    {
+      "name": "dlc_sanctuary",
+      "text": "Sanctuary",
+      "region": "dlc"
+    },
+    {
+      "name": "dlc_forest",
+      "text": "Royal Wood",
+      "region": "dlc"
+    },
+    {
+      "name": "dlc_artorias",
+      "text": "Artorias boss room",
+      "region": "dlc"
+    },
+    {
+      "name": "dlc_hallway",
+      "text": "Stairway to Gough",
+      "region": "dlc"
+    },
+    {
+      "name": "dlc_gough",
+      "text": "Gough's tower",
+      "region": "dlc"
+    },
+    {
+      "name": "dlc_kalameet",
+      "text": "Ledge before Kalameet",
+      "region": "dlc"
+    },
+    {
+      "name": "dlc_kalameetdeath",
+      "text": "Kalameet boss room",
+      "region": "dlc"
+    },
+    {
+      "name": "dlc_township",
+      "text": "Township",
+      "region": "dlc"
+    },
+    {
+      "name": "dlc_townshiphidden",
+      "text": "Hidden room (cast light)",
+      "region": "dlc"
+    },
+    {
+      "name": "dlc_manus",
+      "text": "Manus boss room",
+      "region": "dlc"
+    },
+    {
+      "name": "dlc_top",
+      "text": "Top of dungeon shortcut",
+      "region": "dlc"
+    },
+    {
+      "name": "dlc_bottom",
+      "text": "Bottom of dungeon shortcut",
+      "region": "dlc"
+    },
+    {
+      "name": "dlc_postartorias",
+      "text": "Post-Artorias hallway",
+      "region": "dlc"
+    },
+    {
+      "name": "catacombs_start",
+      "text": "Entrance",
+      "region": "catacombs"
+    },
+    {
+      "name": "catacombs",
+      "text": "Main",
+      "region": "catacombs"
+    },
+    {
+      "name": "catacombs_prepinwheel",
+      "text": "Ledge before Pinwheel",
+      "region": "catacombs"
+    },
+    {
+      "name": "catacombs_pinwheel",
+      "text": "Pinwheel boss room",
+      "region": "catacombs"
+    },
+    {
+      "name": "totg",
+      "text": "Upper",
+      "region": "totg"
+    },
+    {
+      "name": "totg_lower",
+      "text": "Lower",
+      "region": "totg"
+    },
+    {
+      "name": "totg_lordvessel",
+      "text": "After gold fog",
+      "region": "totg"
+    },
+    {
+      "name": "totg_coffin",
+      "text": "Nito's room with coffin",
+      "region": "totg"
+    },
+    {
+      "name": "totg_nito",
+      "text": "Nito boss room",
+      "region": "totg"
+    },
+    {
+      "name": "greathollow",
+      "text": "Central",
+      "region": "greathollow"
+    },
+    {
+      "name": "greathollow_ashlake",
+      "text": "Ash Lake",
+      "region": "greathollow"
+    },
+    {
+      "name": "greathollow_start",
+      "text": "Start",
+      "region": "greathollow"
+    },
+    {
+      "name": "blighttown",
+      "text": "Lower",
+      "region": "blighttown"
+    },
+    {
+      "name": "blighttown_upper",
+      "text": "Upper",
+      "region": "blighttown"
+    },
+    {
+      "name": "blighttown_quelaag",
+      "text": "Quelaag's Domain",
+      "region": "blighttown"
+    },
+    {
+      "name": "blighttown_bell",
+      "text": "Bell room",
+      "region": "blighttown"
+    },
+    {
+      "name": "demonruins",
+      "text": "Start",
+      "region": "demonruins"
+    },
+    {
+      "name": "demonruins_ceaseless",
+      "text": "Ceaseless Discharge boss room",
+      "region": "demonruins"
+    },
+    {
+      "name": "demonruins_lava",
+      "text": "Permanent lava field (charred ring required)",
+      "region": "demonruins"
+    },
+    {
+      "name": "demonruins_ceaselesslava",
+      "text": "Drainable lava field (after killing Ceaseless)",
+      "region": "demonruins"
+    },
+    {
+      "name": "demonruins_lower",
+      "text": "Lower",
+      "region": "demonruins"
+    },
+    {
+      "name": "demonruins_lordvessel",
+      "text": "Between gold fog and Firesage",
+      "region": "demonruins"
+    },
+    {
+      "name": "demonruins_firesage",
+      "text": "Firesage boss room",
+      "region": "demonruins"
+    },
+    {
+      "name": "demonruins_stairs",
+      "text": "Stairway nexus",
+      "region": "demonruins"
+    },
+    {
+      "name": "demonruins_elevator",
+      "text": "Elevator to Daughter of Chaos",
+      "region": "demonruins"
+    },
+    {
+      "name": "demonruins_centipede",
+      "text": "Centipede Demon boss room",
+      "region": "demonruins"
+    },
+    {
+      "name": "izalith_start",
+      "text": "Start",
+      "region": "izalith"
+    },
+    {
+      "name": "izalith_lava",
+      "text": "Lava field",
+      "region": "izalith"
+    },
+    {
+      "name": "izalith_main",
+      "text": "Main buildings",
+      "region": "izalith"
+    },
+    {
+      "name": "izalith_bedofchaos",
+      "text": "Bed of Chaos boss room",
+      "region": "izalith"
+    },
+    {
+      "name": "sens",
+      "text": "Lower",
+      "region": "sens"
+    },
+    {
+      "name": "sens_mid",
+      "text": "Middle",
+      "region": "sens"
+    },
+    {
+      "name": "sens_cage",
+      "text": "Shortcut cage",
+      "region": "sens"
+    },
+    {
+      "name": "sens_upper",
+      "text": "Upper",
+      "region": "sens"
+    },
+    {
+      "name": "sens_irongolem",
+      "text": "Iron Golem boss room",
+      "region": "sens"
+    },
+    {
+      "name": "anorlondo_start",
+      "text": "Start",
+      "region": "anorlondo"
+    },
+    {
+      "name": "anorlondo_os",
+      "text": "Ornstein and Smough boss room",
+      "region": "anorlondo"
+    },
+    {
+      "name": "anorlondo_prerafters",
+      "text": "Pre-rafters area",
+      "region": "anorlondo"
+    },
+    {
+      "name": "anorlondo_rafters",
+      "text": "Rafters",
+      "region": "anorlondo"
+    },
+    {
+      "name": "anorlondo_main",
+      "text": "Grand staircase",
+      "region": "anorlondo"
+    },
+    {
+      "name": "anorlondo_darkmoon",
+      "text": "Darkmoon tomb",
+      "region": "anorlondo"
+    },
+    {
+      "name": "anorlondo_postrafters",
+      "text": "Post-rafters area",
+      "region": "anorlondo"
+    },
+    {
+      "name": "anorlondo_painting",
+      "text": "Painting",
+      "region": "anorlondo"
+    },
+    {
+      "name": "anorlondo_chandelier",
+      "text": "Chandelier",
+      "region": "anorlondo"
+    },
+    {
+      "name": "anorlondo_building",
+      "text": "Building with Silver Knights",
+      "region": "anorlondo"
+    },
+    {
+      "name": "anorlondo_cathedral",
+      "text": "Cathedral",
+      "region": "anorlondo"
+    },
+    {
+      "name": "anorlondo_front",
+      "text": "Broken window ledge",
+      "region": "anorlondo"
+    },
+    {
+      "name": "anorlondo_blacksmith",
+      "text": "Giant Blacksmith",
+      "region": "anorlondo"
+    },
+    {
+      "name": "anorlondo_elevator1",
+      "text": "Small boss elevator",
+      "region": "anorlondo"
+    },
+    {
+      "name": "anorlondo_elevator2",
+      "text": "Large boss elector",
+      "region": "anorlondo"
+    },
+    {
+      "name": "anorlondo_gwynevere",
+      "text": "Gwynevere",
+      "region": "anorlondo"
+    },
+    {
+      "name": "anorlondo_gwyndolin",
+      "text": "Gwyndolin boss room",
+      "region": "anorlondo"
+    },
+    {
+      "name": "newlondo",
+      "text": "Entrance",
+      "region": "newlondo"
+    },
+    {
+      "name": "newlondo_building",
+      "text": "Building",
+      "region": "newlondo"
+    },
+    {
+      "name": "newlondo_lower",
+      "text": "Lower",
+      "region": "newlondo"
+    },
+    {
+      "name": "newlondo_lowerskip",
+      "text": "Lower (with seal skip, advanced)",
+      "region": "newlondo"
+    },
+    {
+      "name": "newlondo_stairs",
+      "text": "Stairs after first building",
+      "region": "newlondo"
+    },
+    {
+      "name": "newlondo_fourkings",
+      "text": "Four Kings boss room",
+      "region": "newlondo"
+    },
+    {
+      "name": "newlondo_drakes",
+      "text": "Valley of the Drakes",
+      "region": "newlondo"
+    },
+    {
+      "name": "newlondo_drakesbeatrice",
+      "text": "Beatrice corpse",
+      "region": "newlondo"
+    },
+    {
+      "name": "dukes_start",
+      "text": "Start",
+      "region": "dukes"
+    },
+    {
+      "name": "dukes_library",
+      "text": "Library (pre-prison)",
+      "region": "dukes"
+    },
+    {
+      "name": "dukes_crystalgolem",
+      "text": "Crystal golem",
+      "region": "dukes"
+    },
+    {
+      "name": "dukes_hallway",
+      "text": "Hallway to first Seath encounter",
+      "region": "dukes"
+    },
+    {
+      "name": "dukes_prison",
+      "text": "Prison",
+      "region": "dukes"
+    },
+    {
+      "name": "dukes_extra",
+      "text": "Extra key area",
+      "region": "dukes"
+    },
+    {
+      "name": "dukes_giantcell",
+      "text": "Giant cell key area",
+      "region": "dukes"
+    },
+    {
+      "name": "dukes_library2",
+      "text": "Library (post-prison)",
+      "region": "dukes"
+    },
+    {
+      "name": "dukes_machines",
+      "text": "Room before outdoor area",
+      "region": "dukes"
+    },
+    {
+      "name": "dukes_caves",
+      "text": "Crystal Caves",
+      "region": "dukes"
+    },
+    {
+      "name": "dukes_seath1",
+      "text": "Seath initial encounter room",
+      "region": "dukes"
+    },
+    {
+      "name": "dukes_seath2",
+      "text": "Seath boss room",
+      "region": "dukes"
+    },
+    {
+      "name": "kiln",
+      "text": "Approach to Gwyn",
+      "region": "kiln"
+    },
+    {
+      "name": "kiln_start",
+      "text": "Firelink Altar",
+      "region": "kiln"
+    },
+    {
+      "name": "kiln_stairs",
+      "text": "Stairs",
+      "region": "kiln"
+    },
+    {
+      "name": "kiln_gwyn",
+      "text": "Gwyn boss room",
+      "region": "kiln"
+    },
+    {
+      "name": "asylum",
+      "text": "Weapon hallway",
+      "region": "asylum"
+    },
+    {
+      "name": "asylum_outside",
+      "text": "Outside",
+      "region": "asylum"
+    },
+    {
+      "name": "asylum_oscar",
+      "text": "Oscar's cell",
+      "region": "asylum"
+    },
+    {
+      "name": "asylum_prebalcony",
+      "text": "Before balcony",
+      "region": "asylum"
+    },
+    {
+      "name": "asylum_f2west",
+      "text": "F2 West",
+      "region": "asylum"
+    },
+    {
+      "name": "asylum_balcony",
+      "text": "Boss balcony",
+      "region": "asylum"
+    },
+    {
+      "name": "asylum_doll",
+      "text": "Cell with doll",
+      "region": "asylum"
+    },
+    {
+      "name": "asylum_stray",
+      "text": "Stray Demon boss room",
+      "region": "asylum"
+    },
+    {
+      "name": "asylum_loop",
+      "text": "Ladder from Stray Demon back to start",
+      "region": "asylum"
+    }
+  ],
+  "ports": [
+    {
+      "id": "65198e0b751f4423ba371e953740cc5e",
+      "area": "firelink_crow",
+      "text": "Crow transport from Firelink to Asylum",
+      "tags": []
+    },
+    {
+      "id": "44129f64ce5846f3b02cc5e88fc4d853",
+      "area": "asylum_outside",
+      "text": "Crow transport from Firelink to Asylum (destination)",
+      "tags": [
+        "dest"
+      ]
+    },
+    {
+      "id": "11139fbf87d84f8a85ee98d4a1d380a9",
+      "area": "paintedworld_priscilla",
+      "text": "Leaving Painted World back to Anor Londo",
+      "tags": [
+        "unique"
+      ]
+    },
+    {
+      "id": "e1f1f2c09e454c4baebf3e15d0225d56",
+      "area": "anorlondo_painting",
+      "text": "Leaving Painted World back to Anor Londo (destination)",
+      "tags": [
+        "dest"
+      ]
+    },
+    {
+      "id": "dea217f8c1144b94bbd5bcf89fab0631",
+      "area": "darkroot",
+      "text": "Warp to DLC",
+      "tags": [
+        "unique"
+      ]
+    },
+    {
+      "id": "89cb0b3be07e425e85f9910e5d879fa8",
+      "area": "dlc_start",
+      "text": "Warp to DLC (destination)",
+      "tags": [
+        "dest"
+      ]
+    },
+    {
+      "id": "5c31d128b7f541fe93c4d972bd70b066",
+      "area": "catacombs",
+      "text": "Getting into coffin to Nito",
+      "tags": []
+    },
+    {
+      "id": "6d8d0cadf01c43ab8a0faeb0ceefc673",
+      "area": "totg_coffin",
+      "text": "Getting into coffin to Nito (destination)",
+      "tags": [
+        "dest"
+      ]
+    },
+    {
+      "id": "73605c608262472bb69b4cdea2f30ea1",
+      "area": "totg_coffin",
+      "text": "Getting back in coffin at Nito",
+      "tags": []
+    },
+    {
+      "id": "4c2cc33fc74a4629800520a1081d0a42",
+      "area": "catacombs",
+      "text": "Getting back in coffin at Nito (destination)",
+      "tags": [
+        "dest"
+      ]
+    },
+    {
+      "id": "e62b67a1fddc4b50a97c6c12553c288f",
+      "area": "sens_irongolem",
+      "text": "From Sen's to Anor Londo",
+      "tags": []
+    },
+    {
+      "id": "dd7e3c6aa95a4c28ba02fb22250aa3f1",
+      "area": "anorlondo_start",
+      "text": "From Sen's to Anor Londo (destination)",
+      "tags": [
+        "dest"
+      ]
+    },
+    {
+      "id": "78149ca3499e49c4a9c4cd890f655012",
+      "area": "anorlondo_painting",
+      "text": "Using Peculiar Doll to access Painted World",
+      "tags": [
+        "unique"
+      ]
+    },
+    {
+      "id": "d57e73662caa496fb39491fd2965fbcc",
+      "area": "paintedworld",
+      "text": "Using Peculiar Doll to access Painted World (destination)",
+      "tags": [
+        "dest"
+      ]
+    },
+    {
+      "id": "c9740fcb27424b529f96243f3b3fcb5d",
+      "area": "anorlondo_start",
+      "text": "From Anor Londo back to Sen's",
+      "tags": []
+    },
+    {
+      "id": "04f26f0bd17f4da799411cf3c37ccf3e",
+      "area": "sens_irongolem",
+      "text": "From Anor Londo back to Sen's (destination)",
+      "tags": [
+        "dest"
+      ]
+    },
+    {
+      "id": "c5525a4dee964b1c8ee6c2725e732dd0",
+      "area": "asylum_outside",
+      "text": "Warp to Firelink crow's nest",
+      "tags": []
+    },
+    {
+      "id": "dddd155ee6554a738ea4885f424bef11",
+      "area": "firelink_crow",
+      "text": "Warp to Firelink crow's nest (destination)",
+      "tags": [
+        "dest"
+      ]
+    },
+    {
+      "id": "ae456ffb731f480aab06408191c1f8a8",
+      "area": "dukes_seath1",
+      "text": "To Duke's Archives prison",
+      "tags": [
+        "unique"
+      ]
+    },
+    {
+      "id": "77c1d708e24540f9a5548c7c37c1839d",
+      "area": "dukes_prison",
+      "text": "To Duke's Archives prison (destination)",
+      "tags": [
+        "dest"
+      ]
+    },
+    {
+      "id": "b7db2b51f1c14c11805facec6ac792bc",
+      "area": "firelink",
+      "text": "Frampt transport or falling from firelink to kiln",
+      "tags": [
+        "norandom"
+      ]
+    },
+    {
+      "id": "9d3014f494b94d17af98ed4fd2c3f635",
+      "area": "kiln_start",
+      "text": "Frampt transport or falling from firelink to kiln (destination)",
+      "tags": [
+        "dest"
+      ]
+    },
+    {
+      "id": "86e3b4c3aa4c4140952bba108a1fafc2",
+      "area": "newlondo_fourkings",
+      "text": "Kaathe transport from abyss to kiln",
+      "tags": [
+        "norandom"
+      ]
+    },
+    {
+      "id": "2daff2262d9741038c17238cefbb7e48",
+      "area": "kiln_start",
+      "text": "Kaathe transport from abyss to kiln (destination)",
+      "tags": [
+        "dest"
+      ]
+    },
+    {
+      "id": "9a3b6184d55a40b3b050e807ff7433f2",
+      "area": "kiln_start",
+      "text": "Frampt transport from kiln to firelink",
+      "tags": [
+        "norandom"
+      ]
+    },
+    {
+      "id": "dc4457b1dc764fc08f5e83d53e9abb9c",
+      "area": "firelink",
+      "text": "Frampt transport from kiln to firelink (destination)",
+      "tags": [
+        "dest"
+      ]
+    },
+    {
+      "id": "4b0f2b464a53457daa53776e7c18bf6c",
+      "area": "kiln_start",
+      "text": "Kaathe transport from kiln to abyss",
+      "tags": [
+        "norandom"
+      ]
+    },
+    {
+      "id": "cde3819077fc42a7a511a8c593271060",
+      "area": "newlondo_fourkings",
+      "text": "Kaathe transport from kiln to abyss (destination)",
+      "tags": [
+        "dest"
+      ]
+    },
+    {
+      "id": "50887b9e2243433ba25b52fd4493b2f8",
+      "area": "asylum_outside",
+      "text": "First warp to Firelink Shrine",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "id": "4e3f3c2c366f40ed88ff6060cbe47afb",
+      "area": "firelink",
+      "text": "First warp to Firelink Shrine (destination)",
+      "tags": [
+        "dest"
+      ]
+    },
+    {
+      "id": "50dfa23cd7a843a18b9b25fb7a45e81a",
+      "area": "depths",
+      "text": "To Gaping Dragon",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "d9bba7d6f8484423a773bba95fbcaeb8",
+      "area": "depths_gaping",
+      "text": "To Gaping Dragon",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "d8dfaf53b6a24321b3ba9010cfa65be7",
+      "area": "burg_lower",
+      "text": "Entrance to Depths",
+      "tags": [
+        "pvp",
+        "door"
+      ]
+    },
+    {
+      "id": "9333696861744d25aafa3515f80d865d",
+      "area": "depths",
+      "text": "Entrance to Depths",
+      "tags": [
+        "pvp",
+        "door"
+      ]
+    },
+    {
+      "id": "720179e765e14bc2880d43f051b01419",
+      "area": "blighttown_upper",
+      "text": "Depths exit to Blighttown",
+      "tags": [
+        "pvp",
+        "door"
+      ]
+    },
+    {
+      "id": "b8a507f8bbea455388d0cd9ede609031",
+      "area": "depths",
+      "text": "Depths exit to Blighttown",
+      "tags": [
+        "pvp",
+        "door"
+      ]
+    },
+    {
+      "id": "21046142f832482ab6d8fccf14ec353c",
+      "area": "depths",
+      "text": "Near the area with the Channeler in the Depths",
+      "tags": [
+        "world"
+      ]
+    },
+    {
+      "id": "d02e276e2c8a4656989f88b656e1a9e9",
+      "area": "depths",
+      "text": "Near the area with the Channeler in the Depths",
+      "tags": [
+        "world"
+      ]
+    },
+    {
+      "id": "24f509b98e9e4dca927227e42a29d06b",
+      "area": "parish_gargoyles",
+      "text": "To Gargoyles",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "d467dc0cb5a043c09df3394abf66e8e4",
+      "area": "parish_church",
+      "text": "To Gargoyles",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "fdfff5517faf4528a2de52f40947feaa",
+      "area": "parish_bell",
+      "text": "After Gargoyles",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "ffea5c30df594ae39791def4711e3383",
+      "area": "parish_gargoyles",
+      "text": "After Gargoyles",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "9b0b50e8708c42a585252f9368f75d07",
+      "area": "burg_taurus",
+      "text": "To Taurus Demon",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "d7f6d40e16ce411c94d5baa46d700860",
+      "area": "burg_upper",
+      "text": "To Taurus Demon",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "948ec678ad664d03985b937b6896fb14",
+      "area": "burg_posttaurus",
+      "text": "After Taurus Demon",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "31449c045d884558bf2b70db25d02055",
+      "area": "burg_taurus",
+      "text": "After Taurus Demon",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "ffed657e35974c93a52941f2cd9201f8",
+      "area": "firelink",
+      "text": "Between Firelink Shrine and Upper Burg",
+      "tags": [
+        "pvp",
+        "major"
+      ]
+    },
+    {
+      "id": "52b16216dfa0424298436699e8d24c02",
+      "area": "burg_start",
+      "text": "Between Firelink Shrine and Upper Burg",
+      "tags": [
+        "pvp",
+        "major"
+      ]
+    },
+    {
+      "id": "f766518af03844048cf058e49d07ea17",
+      "area": "parish_andre",
+      "text": "Between Undead Parish and Andre",
+      "tags": [
+        "pvp",
+        "major"
+      ]
+    },
+    {
+      "id": "80a1718258394cc09872c29ecc902eb1",
+      "area": "parish_church",
+      "text": "Between Undead Parish and Andre",
+      "tags": [
+        "pvp",
+        "major"
+      ]
+    },
+    {
+      "id": "2a83f6e4562f4263838e8fd0295ba77f",
+      "area": "parish_hellkite",
+      "text": "Between area after Taurus Demon and Hellkite bridge",
+      "tags": [
+        "pvp"
+      ]
+    },
+    {
+      "id": "6bb65bff65524796bc6a67cc747924f8",
+      "area": "burg_posttaurus",
+      "text": "Between area after Taurus Demon and Hellkite bridge",
+      "tags": [
+        "pvp"
+      ]
+    },
+    {
+      "id": "c86f696de0294effa53549d5d87a5b12",
+      "area": "firelink_elevator",
+      "text": "In front of Firelink Shrine dual elevator",
+      "tags": [
+        "pvp",
+        "major"
+      ]
+    },
+    {
+      "id": "471c2316c8a14194a1204220bfda3a40",
+      "area": "parish_church",
+      "text": "In front of Firelink Shrine dual elevator",
+      "tags": [
+        "pvp",
+        "major"
+      ]
+    },
+    {
+      "id": "042ccbb7df1246b9a76c096b0bb55b39",
+      "area": "burg_upper",
+      "text": "To Darkroot Basin in Havel's tower",
+      "tags": [
+        "pvp",
+        "door"
+      ]
+    },
+    {
+      "id": "e0e2ba02301b4348af828441424b1614",
+      "area": "darkroot",
+      "text": "To Darkroot Basin in Havel's tower",
+      "tags": [
+        "pvp",
+        "door"
+      ]
+    },
+    {
+      "id": "6d1e901b7b67417892db25959e5e3417",
+      "area": "parish_hellkite",
+      "text": "Between Hellkite Bridge and Lower Burg",
+      "tags": [
+        "pvp",
+        "door"
+      ]
+    },
+    {
+      "id": "1e6fdee84fb84d72955d51bbe711d404",
+      "area": "burg_ladder",
+      "text": "Between Hellkite Bridge and Lower Burg",
+      "tags": [
+        "pvp",
+        "door"
+      ]
+    },
+    {
+      "id": "fe10f3de2b1546ab9097b2d16a790361",
+      "area": "burg_lower",
+      "text": "To Capra Demon",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "86e90bf452ad448bae1b144503f608cf",
+      "area": "burg_capra",
+      "text": "To Capra Demon",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "1e39eb52d6ec43e7bac7aff558bc6755",
+      "area": "burg_lower",
+      "text": "Between female Undead Merchant and Lower Burg",
+      "tags": [
+        "pvp",
+        "major"
+      ]
+    },
+    {
+      "id": "2864b69288834386bb83205438f74f19",
+      "area": "firelink_gate",
+      "text": "Between female Undead Merchant and Lower Burg",
+      "tags": [
+        "pvp",
+        "major"
+      ]
+    },
+    {
+      "id": "01b29c2933b84acc92f75e266399e1d2",
+      "area": "burg_lower",
+      "text": "Between very long ladder and Lower Burg",
+      "tags": [
+        "pvp",
+        "major"
+      ]
+    },
+    {
+      "id": "462047d4fd764597b4e478e2d9a3b241",
+      "area": "burg_ladder",
+      "text": "Between very long ladder and Lower Burg",
+      "tags": [
+        "pvp",
+        "major"
+      ]
+    },
+    {
+      "id": "5d8dbb1f23894b27914374031741c866",
+      "area": "parish_hellkite",
+      "text": "At the bridge crossing over the boar in Undead Parish",
+      "tags": [
+        "world"
+      ]
+    },
+    {
+      "id": "566b365538db4e18957c1de48c3a3dc5",
+      "area": "parish_church",
+      "text": "At the bridge crossing over the boar in Undead Parish",
+      "tags": [
+        "world"
+      ]
+    },
+    {
+      "id": "acc03e6c634647be9e733ec19c66c9a6",
+      "area": "burg_upper",
+      "text": "On shortcut door between Upper Burg and Lower Burg, in room with hollows",
+      "tags": [
+        "pvp",
+        "door"
+      ]
+    },
+    {
+      "id": "0c05ce13ea9b4226b1cc8c705dd06445",
+      "area": "burg_lower",
+      "text": "On shortcut door between Upper Burg and Lower Burg, in room with hollows",
+      "tags": [
+        "pvp",
+        "door"
+      ]
+    },
+    {
+      "id": "06ad08df834946ec9e1ff953e38576c5",
+      "area": "burg_bonfire",
+      "text": "Lower doorway of room with burg bonfire",
+      "tags": [
+        "pvp"
+      ]
+    },
+    {
+      "id": "c04a53f42fb14e8cbb12016aaec0b9c5",
+      "area": "burg_upper",
+      "text": "Lower doorway of room with burg bonfire",
+      "tags": [
+        "pvp"
+      ]
+    },
+    {
+      "id": "9740061254d14484bca9bdbca3451a2f",
+      "area": "burg_start",
+      "text": "Near the drake encounter in Upper Burg",
+      "tags": [
+        "world"
+      ]
+    },
+    {
+      "id": "af6992c69411491ba04662fa60c67500",
+      "area": "burg_upper",
+      "text": "Near the drake encounter in Upper Burg",
+      "tags": [
+        "world"
+      ]
+    },
+    {
+      "id": "4d198b163a534c7ab251497339a9c1b7",
+      "area": "parish_hellkite",
+      "text": "Upper doorway of room with burg bonfire",
+      "tags": [
+        "pvp",
+        "major"
+      ]
+    },
+    {
+      "id": "c69b5f1e50b940a586f71949fe2522c6",
+      "area": "burg_above_bonfire",
+      "text": "Upper doorway of room with burg bonfire",
+      "tags": [
+        "pvp",
+        "major"
+      ]
+    },
+    {
+      "id": "415ec5cc587e4edea3b52b65e1e351c9",
+      "area": "burg_lower",
+      "text": "",
+      "tags": [
+        "pvp",
+        "door"
+      ]
+    },
+    {
+      "id": "5aac1df38047418ca06a407edbb4a12e",
+      "area": "depths",
+      "text": "",
+      "tags": [
+        "pvp",
+        "door"
+      ]
+    },
+    {
+      "id": "182f1b932c4b476c933212778b6c66ce",
+      "area": "paintedworld",
+      "text": "To Priscilla",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "dfddd1b56df64adfb6dafb57b2e60854",
+      "area": "paintedworld_priscilla",
+      "text": "To Priscilla",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "48fba23812aa4bb8befde1913529ed0f",
+      "area": "",
+      "text": "After Priscilla, but player is free to escape",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "id": "0dea668fa8744420a9a2f4ea3d49b197",
+      "area": "",
+      "text": "After Priscilla, but player is free to escape",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "id": "8c888ee9fc45460c95f711724a467d92",
+      "area": "paintedworld",
+      "text": "Between tower with statue and courtyard with phalanx",
+      "tags": [
+        "world",
+        "unique"
+      ]
+    },
+    {
+      "id": "1b72d5259b4a4dafb13983c1fe6b5465",
+      "area": "paintedworld",
+      "text": "Between tower with statue and courtyard with phalanx",
+      "tags": [
+        "world",
+        "unique"
+      ]
+    },
+    {
+      "id": "b2d3d6591d8c4c4791884b72e6a0fbd5",
+      "area": "",
+      "text": "Between courtyard with phalanx and building with hollows and ladder to bonewheels, but based on event flag. Can this be ignored? XX",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "id": "dfe7b8f388554bc198a761eb779d49f2",
+      "area": "",
+      "text": "Between courtyard with phalanx and building with hollows and ladder to bonewheels, but based on event flag. Can this be ignored? XX",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "id": "e904d785a7114e989f4b20b1013881a2",
+      "area": "darkroot_sif",
+      "text": "To Sif",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "069db24f0aa84458b3bec81cad14624f",
+      "area": "darkroot_forest",
+      "text": "To Sif",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "844282d52e68466e82fe17f8030b4078",
+      "area": "parish_andre",
+      "text": "Between Darkroot and Andre",
+      "tags": [
+        "pvp",
+        "major"
+      ]
+    },
+    {
+      "id": "4ee6d052e0304869b98f96a3e96f61ef",
+      "area": "darkroot",
+      "text": "Between Darkroot and Andre",
+      "tags": [
+        "pvp",
+        "major"
+      ]
+    },
+    {
+      "id": "213cf61cb4a84b7882d4985110a1da9c",
+      "area": "darkroot",
+      "text": "Between Darkroot and Havel's Tower",
+      "tags": [
+        "pvp",
+        "door"
+      ]
+    },
+    {
+      "id": "89ac473719fc4429932195106dc2d872",
+      "area": "burg_upper",
+      "text": "Between Darkroot and Havel's Tower",
+      "tags": [
+        "pvp",
+        "door"
+      ]
+    },
+    {
+      "id": "2e00f05b789d49ac99e0856d770246b2",
+      "area": "darkroot",
+      "text": "Between Darkroot and tunnel leading to Valley of the Drakes",
+      "tags": [
+        "pvp",
+        "major"
+      ]
+    },
+    {
+      "id": "bf3e0db94ce840f2ac1e32796cebb1e6",
+      "area": "newlondo_drakes",
+      "text": "Between Darkroot and tunnel leading to Valley of the Drakes",
+      "tags": [
+        "pvp",
+        "major"
+      ]
+    },
+    {
+      "id": "dbbf470a44994305843c5333822aa725",
+      "area": "darkroot_stone",
+      "text": "To Moonlight Butterfly",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "269ffd45d44744729ee53db813586bec",
+      "area": "darkroot_butterfly",
+      "text": "To Moonlight Butterfly",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "0b9da8db0aab4631928da812e6da0f74",
+      "area": "darkroot_butterfly",
+      "text": "After Moonlight Butterfly",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "26f9fc17db8540e8a2ec0b73e8797807",
+      "area": "darkroot_postbutterfly",
+      "text": "After Moonlight Butterfly",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "37dcc09a3fcf45c18c739ef25286b0e2",
+      "area": "darkroot",
+      "text": "Between the Darkroot Garden bonfire and the area with the stone knights",
+      "tags": [
+        "world"
+      ]
+    },
+    {
+      "id": "a8eb6077c60b4a7c8af6261520093fed",
+      "area": "darkroot_stone",
+      "text": "Between the Darkroot Garden bonfire and the area with the stone knights",
+      "tags": [
+        "world"
+      ]
+    },
+    {
+      "id": "2f8f12f69b264449bb4e69b454b4d0f9",
+      "area": "darkroot",
+      "text": "At one end of the bridge at the top of the waterfall with the hydra below",
+      "tags": [
+        "pvp",
+        "unique"
+      ]
+    },
+    {
+      "id": "42eb33ac37f146f49805c4716a10d976",
+      "area": "darkroot_forest",
+      "text": "At one end of the bridge at the top of the waterfall with the hydra below",
+      "tags": [
+        "pvp",
+        "unique"
+      ]
+    },
+    {
+      "id": "bc1f799cdbff49f1b1ad628c1916a90f",
+      "area": "darkroot_forest",
+      "text": "In the spot of the Crest of Artorias door",
+      "tags": [
+        "pvp",
+        "door",
+        "unique"
+      ]
+    },
+    {
+      "id": "dd088ff117654de9886e9ec44d906e58",
+      "area": "darkroot",
+      "text": "In the spot of the Crest of Artorias door",
+      "tags": [
+        "pvp",
+        "door",
+        "unique"
+      ]
+    },
+    {
+      "id": "15fda11ef11f40c9b561f8c2bd12a34a",
+      "area": "dlc_start",
+      "text": "To Sanctuary Guardian",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "75331e4fb5b1479393343497faeb9ad0",
+      "area": "dlc_guardian",
+      "text": "To Sanctuary Guardian",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "530309a17a234c06940f14662e877643",
+      "area": "dlc_guardian",
+      "text": "After Sanctuary Guardian",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "4b8976cb881045c7aff653dce0cdf06f",
+      "area": "dlc_sanctuary",
+      "text": "After Sanctuary Guardian",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "d40b2b7b40254f1c9a3d40c4d103b473",
+      "area": "dlc_township",
+      "text": "To Manus",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "052efe9bb3e54eafa83381c01ba3b130",
+      "area": "dlc_manus",
+      "text": "To Manus",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "69bff11eb97943e5ab1d6ee56635f1d0",
+      "area": "dlc_township",
+      "text": "At the bottom of the elevator from before Artorias to before Manus",
+      "tags": [
+        "pvp"
+      ]
+    },
+    {
+      "id": "2430dfd245164c4dbec16b4be5ebe2c0",
+      "area": "dlc_bottom",
+      "text": "At the bottom of the elevator from before Artorias to before Manus",
+      "tags": [
+        "pvp"
+      ]
+    },
+    {
+      "id": "e888826e8c654a2c824117a8b0fa21ce",
+      "area": "dlc_forest",
+      "text": "Between Sanctuary Garden and Royal Forest",
+      "tags": [
+        "pvp"
+      ]
+    },
+    {
+      "id": "4f51f5af2a7c4cf5b7fcce606628aba2",
+      "area": "dlc_sanctuary",
+      "text": "Between Sanctuary Garden and Royal Forest",
+      "tags": [
+        "pvp"
+      ]
+    },
+    {
+      "id": "081b32aa98d2418ebe45e4f674c977ad",
+      "area": "dlc_forest",
+      "text": "At the top of the elevator from before Artorias to before Manus",
+      "tags": [
+        "pvp"
+      ]
+    },
+    {
+      "id": "1bb5c42d75f04657a0ea1fb755470b13",
+      "area": "dlc_top",
+      "text": "At the top of the elevator from before Artorias to before Manus",
+      "tags": [
+        "pvp"
+      ]
+    },
+    {
+      "id": "53bb78448e8a4883a3ec9cd7ccfd0af4",
+      "area": "dlc_forest",
+      "text": "To Artorias",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "2ce50a8c322a48c7b4b568b52f9449b7",
+      "area": "dlc_artorias",
+      "text": "To Artorias",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "bdeec20bbf46487e80bbb4fa603e0623",
+      "area": "dlc_artorias",
+      "text": "After Artorias",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "f3238116d19f42d5913b83f375d1b268",
+      "area": "dlc_postartorias",
+      "text": "After Artorias",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "d8ca918a3b154e6f827e4c9dc4cc6f02",
+      "area": "dlc_hallway",
+      "text": "Between Gough's stairway and Oolacile Township",
+      "tags": [
+        "pvp"
+      ]
+    },
+    {
+      "id": "0bb111a0a21e4e55b7c2768906591106",
+      "area": "dlc_township",
+      "text": "Between Gough's stairway and Oolacile Township",
+      "tags": [
+        "pvp"
+      ]
+    },
+    {
+      "id": "7931bb619de74d4cab176fda9c6e2343",
+      "area": "dlc_forest",
+      "text": "To Kalameet",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "367c2d18a1d040f39afbb6280ec9a5c0",
+      "area": "dlc_kalameet",
+      "text": "To Kalameet",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "7a1679bbac0544c5a1de20a1074fd9eb",
+      "area": "dlc_postartorias",
+      "text": "Between Gough's stairway and Artorias",
+      "tags": [
+        "pvp"
+      ]
+    },
+    {
+      "id": "80e38ae77c62442ea8db363373fe63c8",
+      "area": "dlc_hallway",
+      "text": "Between Gough's stairway and Artorias",
+      "tags": [
+        "pvp"
+      ]
+    },
+    {
+      "id": "5b67cff4f6734a52ae668944b957610d",
+      "area": "",
+      "text": "To Battle of Stoicism, removed in game",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "id": "1de26b204dc34792ab2865965f0623eb",
+      "area": "",
+      "text": "To Battle of Stoicism, removed in game",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "id": "38f67a272a3d42e1bb3bc864577a8cbe",
+      "area": "firelink",
+      "text": "Between Firelink Shrine and Catacombs",
+      "tags": [
+        "pvp",
+        "major"
+      ]
+    },
+    {
+      "id": "1c69e44c28f146d98cc49c1e1d3f264b",
+      "area": "catacombs_start",
+      "text": "Between Firelink Shrine and Catacombs",
+      "tags": [
+        "pvp",
+        "major"
+      ]
+    },
+    {
+      "id": "817bb7b2301e4a8c895b3c6891c15486",
+      "area": "catacombs",
+      "text": "Between the bridge Patches flips over and the room with two skeletons",
+      "tags": [
+        "world",
+        "unique"
+      ]
+    },
+    {
+      "id": "d207afa0bf074a36ac3812b5fcecc413",
+      "area": "catacombs",
+      "text": "Between the bridge Patches flips over and the room with two skeletons",
+      "tags": [
+        "world",
+        "unique"
+      ]
+    },
+    {
+      "id": "bd019df6d5d546ba981de82aad7f86f6",
+      "area": "catacombs",
+      "text": "To Pinwheel",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "456512de9bd44e7394cec1330bd09756",
+      "area": "catacombs_prepinwheel",
+      "text": "To Pinwheel",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "6918b2542ce8419db7595a8bcff8ed20",
+      "area": "totg",
+      "text": "Between TotG and Catacombs",
+      "tags": [
+        "pvp",
+        "major"
+      ]
+    },
+    {
+      "id": "5cc7b233021c41e08ccceb757385d8e8",
+      "area": "catacombs_pinwheel",
+      "text": "Between TotG and Catacombs",
+      "tags": [
+        "pvp",
+        "major"
+      ]
+    },
+    {
+      "id": "91f9f04453e84c9286a9fe6aef3b5f03",
+      "area": "totg",
+      "text": "Before the Halberd Black Knight in TotG",
+      "tags": [
+        "world"
+      ]
+    },
+    {
+      "id": "7376f892fcbc46dc87e46b937994db94",
+      "area": "totg_lower",
+      "text": "Before the Halberd Black Knight in TotG",
+      "tags": [
+        "world"
+      ]
+    },
+    {
+      "id": "601413dbfcc140cab226df1401a774d7",
+      "area": "totg_lower",
+      "text": "Golden fog gate in Tomb of the Giants",
+      "tags": [
+        "lordvessel"
+      ]
+    },
+    {
+      "id": "efb877fc5433446582ae345c5e3b919d",
+      "area": "totg_lordvessel",
+      "text": "Golden fog gate in Tomb of the Giants",
+      "tags": [
+        "lordvessel"
+      ]
+    },
+    {
+      "id": "f6d5477cb8b14871aafb1b33fe61e81a",
+      "area": "totg_lordvessel",
+      "text": "To Nito",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "d371f65f19a24a5a90a03d1e8a1186df",
+      "area": "totg_nito",
+      "text": "To Nito",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "e8872f6691f4453c92449724cdac3093",
+      "area": "greathollow",
+      "text": "Between Blighttown and the Great Hollow",
+      "tags": [
+        "pvp"
+      ]
+    },
+    {
+      "id": "1248505894934b1e8374fb817993dbc1",
+      "area": "greathollow_start",
+      "text": "Between Blighttown and the Great Hollow",
+      "tags": [
+        "pvp"
+      ]
+    },
+    {
+      "id": "1218125f0ab94183892cb677d7cb14bb",
+      "area": "greathollow",
+      "text": "Between Great Hollow and Ash Lake",
+      "tags": [
+        "world"
+      ]
+    },
+    {
+      "id": "76eb169f3501493c911cfa9d3901b4e2",
+      "area": "greathollow_ashlake",
+      "text": "Between Great Hollow and Ash Lake",
+      "tags": [
+        "world"
+      ]
+    },
+    {
+      "id": "bd99125994544e3a8ab4786ae21a9b3a",
+      "area": "blighttown_quelaag",
+      "text": "To Quelaag",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "91f2eec3449b449da8a5f14799344585",
+      "area": "blighttown",
+      "text": "To Quelaag",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "a5f7cb61b61e4ec9bf5357824d78783d",
+      "area": "blighttown_bell",
+      "text": "After Quelaag",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "a1379ea3cf584d30b58e56af7b9de9bb",
+      "area": "blighttown_quelaag",
+      "text": "After Quelaag",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "125443dda4c6497c908e01521d84e692",
+      "area": "blighttown_upper",
+      "text": "Between Blighttown and the Depths",
+      "tags": [
+        "pvp",
+        "door"
+      ]
+    },
+    {
+      "id": "b14ce7da91ba408fb0f22e51dd637995",
+      "area": "depths",
+      "text": "Between Blighttown and the Depths",
+      "tags": [
+        "pvp",
+        "door"
+      ]
+    },
+    {
+      "id": "fe82c428d754480a98b3072c9cd4dfa7",
+      "area": "newlondo_drakes",
+      "text": "Between Blighttown and Valley of the Drakes",
+      "tags": [
+        "pvp",
+        "major"
+      ]
+    },
+    {
+      "id": "9e55781572704c3a9dfd14009a1b1757",
+      "area": "blighttown",
+      "text": "Between Blighttown and Valley of the Drakes",
+      "tags": [
+        "pvp",
+        "major"
+      ]
+    },
+    {
+      "id": "b04d8fe71a794601bb9bf6572e15f7c9",
+      "area": "greathollow_start",
+      "text": "Between Blighttown and Great Hollow",
+      "tags": [
+        "pvp",
+        "major"
+      ]
+    },
+    {
+      "id": "677b2cc2b3644698ba509008bbb04315",
+      "area": "blighttown",
+      "text": "Between Blighttown and Great Hollow",
+      "tags": [
+        "pvp",
+        "major"
+      ]
+    },
+    {
+      "id": "d5175fc899d54a2cb806e43083c3f90d",
+      "area": "blighttown_upper",
+      "text": "In between the main pit and wood planks while climbing up/down Blighttown",
+      "tags": [
+        "world"
+      ]
+    },
+    {
+      "id": "33c394de249f434b94eae471bf5369ee",
+      "area": "blighttown",
+      "text": "In between the main pit and wood planks while climbing up/down Blighttown",
+      "tags": [
+        "world"
+      ]
+    },
+    {
+      "id": "f9beadad31214e0584831ed8fdd3b278",
+      "area": "demonruins_lower",
+      "text": "Golden fog gate in Demon Ruins",
+      "tags": [
+        "lordvessel"
+      ]
+    },
+    {
+      "id": "037c51fd526b49ad9dd1c04ad9cad3cb",
+      "area": "demonruins_lordvessel",
+      "text": "Golden fog gate in Demon Ruins",
+      "tags": [
+        "lordvessel"
+      ]
+    },
+    {
+      "id": "666d2f98510b4976b12b501729403ead",
+      "area": "demonruins",
+      "text": "To Ceaseless Discharge",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "33f6226a6c304e1f8a169b0554bcc7b7",
+      "area": "demonruins_ceaseless",
+      "text": "To Ceaseless Discharge",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "660d5e6a572546f499acb54358322426",
+      "area": "demonruins_lordvessel",
+      "text": "To Demon Firesage",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "4a4e893cffe248a89eaed85ddaa12d90",
+      "area": "demonruins_firesage",
+      "text": "To Demon Firesage",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "1ffdfebc94964d9e9794faa53f1367a3",
+      "area": "demonruins_firesage",
+      "text": "After Demon Firesage",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "47add8d8b6914a609748854abb86b3b1",
+      "area": "demonruins_stairs",
+      "text": "After Demon Firesage",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "7280400e9b2845cfb94f3b2306006eb6",
+      "area": "demonruins_stairs",
+      "text": "To Centipede Demon",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "cd75eb1b32a94bdc9161ac795475e9f1",
+      "area": "demonruins_centipede",
+      "text": "To Centipede Demon",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "4e722e3a70be44109b257c02b5757aa2",
+      "area": "demonruins_centipede",
+      "text": "After Centipede Demon",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "6f757590bb014efb9a5dd1579c8ffa13",
+      "area": "izalith_start",
+      "text": "After Centipede Demon",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "aa222eb87f4346858a85d6862676b702",
+      "area": "blighttown_bell",
+      "text": "Between Quelaag's Domain and the Demon Ruins bonfire",
+      "tags": [
+        "pvp",
+        "major"
+      ]
+    },
+    {
+      "id": "aeb6362e898b40b0a74c6ec8e53a9764",
+      "area": "demonruins",
+      "text": "Between Quelaag's Domain and the Demon Ruins bonfire",
+      "tags": [
+        "pvp",
+        "major"
+      ]
+    },
+    {
+      "id": "7c7ffd170bfe446db5cebc94da804333",
+      "area": "demonruins_elevator",
+      "text": "Between stairways behind Firesage and elevator to Quelaag's Domain",
+      "tags": [
+        "pvp"
+      ]
+    },
+    {
+      "id": "4942227fb7124712bb803049828a9c9f",
+      "area": "demonruins_stairs",
+      "text": "Between stairways behind Firesage and elevator to Quelaag's Domain",
+      "tags": [
+        "pvp"
+      ]
+    },
+    {
+      "id": "cb6bc2b8cbd44ca4aa543a377f9c8899",
+      "area": "demonruins_lower",
+      "text": "In Demon Ruins next to the first Capra Demon",
+      "tags": [
+        "pvp"
+      ]
+    },
+    {
+      "id": "1e66b0a0a31d44ef97e3109816dc8187",
+      "area": "demonruins",
+      "text": "In Demon Ruins next to the first Capra Demon",
+      "tags": [
+        "pvp"
+      ]
+    },
+    {
+      "id": "67a2af1f9dc043cca2551e6957fe8c6f",
+      "area": "",
+      "text": "Between Firesage and the stairways behind the arena",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "id": "f51db7683320427d87dcbc6a50142bdf",
+      "area": "",
+      "text": "Between Firesage and the stairways behind the arena",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "id": "702e7c15094740d0a9910bab965d9565",
+      "area": "",
+      "text": "After Centipede Demon region",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "id": "327724794e074a1fb2ca0ff959487352",
+      "area": "",
+      "text": "After Centipede Demon region",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "id": "c221d23063724da4a68d26c697f3f421",
+      "area": "demonruins_lordvessel",
+      "text": "The magic door which can be opened from Izalith or with covenent rank",
+      "tags": [
+        "pvp",
+        "door"
+      ]
+    },
+    {
+      "id": "ac56f6e2417845928bc04d54dbf41d9a",
+      "area": "izalith_main",
+      "text": "The magic door which can be opened from Izalith or with covenent rank",
+      "tags": [
+        "pvp",
+        "door"
+      ]
+    },
+    {
+      "id": "596c4425f9614052b80cf464ad6b9ba4",
+      "area": "izalith_bedofchaos",
+      "text": "To Bed of Chaos",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "870a1048839d4d96b3a837676bcd7ebb",
+      "area": "izalith_main",
+      "text": "To Bed of Chaos",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "b7fe1cd0109c4f29a1e1c34804bca832",
+      "area": "",
+      "text": "In gateway shortly after Demon Ruins bonfire",
+      "tags": [
+        "pvp",
+        "unused"
+      ]
+    },
+    {
+      "id": "5e9eacd1ea8f4ff0a43f1a7a4c593ce5",
+      "area": "",
+      "text": "In gateway shortly after Demon Ruins bonfire",
+      "tags": [
+        "pvp",
+        "unused"
+      ]
+    },
+    {
+      "id": "9731a9b5b255447d85aeb0320623c87c",
+      "area": "sens_upper",
+      "text": "To Iron Golem",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "9c5b3ada32eb4a0dac47f865a354adf9",
+      "area": "sens_irongolem",
+      "text": "To Iron Golem",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "eb32cb6eb4e146638f87fc66b532e897",
+      "area": "parish_andre",
+      "text": "Between Sen's Fortress gate and Andre",
+      "tags": [
+        "pvp"
+      ]
+    },
+    {
+      "id": "c6e0dcac197a4d469c88c3847a0bea8b",
+      "area": "sens",
+      "text": "Between Sen's Fortress gate and Andre",
+      "tags": [
+        "pvp"
+      ]
+    },
+    {
+      "id": "8d82ff8342f749a190c205821403e65e",
+      "area": "sens",
+      "text": "Near the outside boulder stairway and Siegmeyer in Sen's Fortress",
+      "tags": [
+        "world"
+      ]
+    },
+    {
+      "id": "975324493c2b45d593248aac3391d770",
+      "area": "sens_mid",
+      "text": "Near the outside boulder stairway and Siegmeyer in Sen's Fortress",
+      "tags": [
+        "world"
+      ]
+    },
+    {
+      "id": "7bafcdb680904dd190c497aced878091",
+      "area": "sens_upper",
+      "text": "Between final swinging axes aand Sen's Fortress roof",
+      "tags": [
+        "world"
+      ]
+    },
+    {
+      "id": "83981256293e40a7acec4a0c8b076ede",
+      "area": "sens_mid",
+      "text": "Between final swinging axes aand Sen's Fortress roof",
+      "tags": [
+        "world"
+      ]
+    },
+    {
+      "id": "0cc145db50e3451791b430c893a657c2",
+      "area": "anorlondo_os",
+      "text": "To O&S",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "f27b6893243a4e5da796941bea898aa7",
+      "area": "anorlondo_cathedral",
+      "text": "To O&S",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "71a7ece1d24f49b6be34f97b51d59e54",
+      "area": "anorlondo_elevator1",
+      "text": "After O&S on left side",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "8d21f3ec28df4ee28741b04581b9d947",
+      "area": "anorlondo_os",
+      "text": "After O&S on left side",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "7eaed3bc234f4cc094950fb5caf4b95c",
+      "area": "anorlondo_elevator2",
+      "text": "After O&S on right side",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "d2b3f45a1b39427785963351f6cb2d6e",
+      "area": "anorlondo_os",
+      "text": "After O&S on right side",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "1629d08c00d34d458dfa1ec3aba368df",
+      "area": "anorlondo_prerafters",
+      "text": "At the doorway connecting the first Anor Londo elevator and the first gargoyle",
+      "tags": [
+        "pvp"
+      ]
+    },
+    {
+      "id": "cbf9496137714463a53cab6c9318a515",
+      "area": "anorlondo_start",
+      "text": "At the doorway connecting the first Anor Londo elevator and the first gargoyle",
+      "tags": [
+        "pvp"
+      ]
+    },
+    {
+      "id": "4e8b98f006994e80b73d37cda5a96daf",
+      "area": "anorlondo_rafters",
+      "text": "Between the Painting Guardian rafters and the elevator contraption",
+      "tags": [
+        "world"
+      ]
+    },
+    {
+      "id": "15640b9ba25b46fc94254b26a6db3b49",
+      "area": "anorlondo_postrafters",
+      "text": "Between the Painting Guardian rafters and the elevator contraption",
+      "tags": [
+        "world"
+      ]
+    },
+    {
+      "id": "67197e66b08a4f29ab77333f0298b284",
+      "area": "anorlondo_main",
+      "text": "Between the first two Silver Knights and the main building",
+      "tags": [
+        "world"
+      ]
+    },
+    {
+      "id": "5c184418b6fe4ad582787725fefcab85",
+      "area": "anorlondo_building",
+      "text": "Between the first two Silver Knights and the main building",
+      "tags": [
+        "world"
+      ]
+    },
+    {
+      "id": "21f513a243474ec2bebab7679fa8457d",
+      "area": "anorlondo_gwyndolin",
+      "text": "To Gwyndolin",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "b31abac48d9f4e88b8684984f017b495",
+      "area": "anorlondo_darkmoon",
+      "text": "To Gwyndolin",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "973fd97c306a4e1c9e360881fb3c35aa",
+      "area": "anorlondo_gwyndolin",
+      "text": "At the start of Gwyndolin 'infinite' hallway",
+      "tags": [
+        "boss",
+        "unused"
+      ]
+    },
+    {
+      "id": "e7024f4993c64a90b086eb45d8a1fe24",
+      "area": "",
+      "text": "At the start of Gwyndolin 'infinite' hallway",
+      "tags": [
+        "boss",
+        "unused"
+      ]
+    },
+    {
+      "id": "95824c5e443e43dbb3dbcfc88edd6ec4",
+      "area": "anorlondo_cathedral",
+      "text": "From the Anor Londo main cathedral out of a broken window in front",
+      "tags": [
+        "pvp"
+      ]
+    },
+    {
+      "id": "2cf30ba5be724ff594545e827f46c51e",
+      "area": "anorlondo_front",
+      "text": "From the Anor Londo main cathedral out of a broken window in front",
+      "tags": [
+        "pvp"
+      ]
+    },
+    {
+      "id": "8d597e28a4df4ff298f4665bfac45d16",
+      "area": "anorlondo_cathedral",
+      "text": "Between the Anor Londo main cathedral and the area with bedrooms and paintings",
+      "tags": [
+        "pvp"
+      ]
+    },
+    {
+      "id": "8c56cb68e093436eb31f4f27fc724e08",
+      "area": "anorlondo_building",
+      "text": "Between the Anor Londo main cathedral and the area with bedrooms and paintings",
+      "tags": [
+        "pvp"
+      ]
+    },
+    {
+      "id": "917e4b5cbf08461f938146552ce3d207",
+      "area": "anorlondo_blacksmith",
+      "text": "Between the Anor Londo main cathedral and the Giant Blacksmith",
+      "tags": [
+        "pvp"
+      ]
+    },
+    {
+      "id": "f8b35b6b054f47c29d8555f79c212a4c",
+      "area": "anorlondo_cathedral",
+      "text": "Between the Anor Londo main cathedral and the Giant Blacksmith",
+      "tags": [
+        "pvp"
+      ]
+    },
+    {
+      "id": "f9da88399f3e4f2db4114b8b7ee4e4f8",
+      "area": "newlondo",
+      "text": "Between the Firelink Shrine elevator and New Londo Ruins",
+      "tags": [
+        "pvp",
+        "major"
+      ]
+    },
+    {
+      "id": "3fbc8cf4d9254a0bbacabc81a4af42ab",
+      "area": "firelink",
+      "text": "Between the Firelink Shrine elevator and New Londo Ruins",
+      "tags": [
+        "pvp",
+        "major"
+      ]
+    },
+    {
+      "id": "9e13a39c69c64ac4b4fecf275ddd04a4",
+      "area": "newlondo",
+      "text": "On door between start of New Londo Ruins and Valley of Drakes near Blighttown",
+      "tags": [
+        "pvp",
+        "door"
+      ]
+    },
+    {
+      "id": "8b6306f412eb414b9a4eaa62b7a2293c",
+      "area": "newlondo_drakes",
+      "text": "On door between start of New Londo Ruins and Valley of Drakes near Blighttown",
+      "tags": [
+        "pvp",
+        "door"
+      ]
+    },
+    {
+      "id": "c7cdefbd619f4ff9ba989d804d5104c3",
+      "area": "newlondo_drakes",
+      "text": "On door between lower New Londo Ruins and Valley of Drakes near RTSR",
+      "tags": [
+        "pvp",
+        "door"
+      ]
+    },
+    {
+      "id": "781c7415c22146a4accfeba3806d70d5",
+      "area": "newlondo_lower",
+      "text": "On door between lower New Londo Ruins and Valley of Drakes near RTSR",
+      "tags": [
+        "pvp",
+        "door"
+      ]
+    },
+    {
+      "id": "2a98d39cc96b481ab176f3ca909f19df",
+      "area": "newlondo",
+      "text": "Near the New Londo Ruins shortcut ladder",
+      "tags": [
+        "world"
+      ]
+    },
+    {
+      "id": "99895b92a1e64aeb9af214c39f2a47e5",
+      "area": "newlondo_building",
+      "text": "Near the New Londo Ruins shortcut ladder",
+      "tags": [
+        "world"
+      ]
+    },
+    {
+      "id": "c73ff12241ce41eaaa183ab53773dab2",
+      "area": "newlondo_lower",
+      "text": "On an entrance to the building with the Very Large Ember in lower ruins",
+      "tags": [
+        "world"
+      ]
+    },
+    {
+      "id": "6e6a2773eeb74e25afefd103fd2dc4e5",
+      "area": "newlondo_lower",
+      "text": "On an entrance to the building with the Very Large Ember in lower ruins",
+      "tags": [
+        "world"
+      ]
+    },
+    {
+      "id": "39d605a63a1248d68a0344617342775f",
+      "area": "newlondo_lower",
+      "text": "To Four Kings",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "b302fe5fc54746ab94859f85ea630225",
+      "area": "newlondo_stairs",
+      "text": "To Four Kings",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "023ea98cc1b5424ebc7cb3f2b2c005d1",
+      "area": "dukes_caves",
+      "text": "To Seath in Crystal Caves",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "88805ee013d14126a3cdd1c51297948d",
+      "area": "dukes_seath2",
+      "text": "To Seath in Crystal Caves",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "10df14a2582741a59a593d0ae55b195d",
+      "area": "dukes_hallway",
+      "text": "To Seath in Archives",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "6d47bdb07b144f479b4908ba3e05de39",
+      "area": "dukes_seath1",
+      "text": "To Seath in Archives",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "c4be59ac37af4670b9a58c27d7347efd",
+      "area": "dukes_library",
+      "text": "At the first elevator in Duke's Archives",
+      "tags": [
+        "pvp"
+      ]
+    },
+    {
+      "id": "dfe0a58f24bf4a72a44180dd88f034fc",
+      "area": "dukes_start",
+      "text": "At the first elevator in Duke's Archives",
+      "tags": [
+        "pvp"
+      ]
+    },
+    {
+      "id": "2025916c17604713823746be4d295b52",
+      "area": "dukes_machines",
+      "text": "Between Duke's Archives and the field before Crystal Caves",
+      "tags": [
+        "world"
+      ]
+    },
+    {
+      "id": "ced29dbd788742ac86445abb9a7e0992",
+      "area": "dukes_caves",
+      "text": "Between Duke's Archives and the field before Crystal Caves",
+      "tags": [
+        "world"
+      ]
+    },
+    {
+      "id": "8809f406b4504184886c5bfa89992a69",
+      "area": "anorlondo_start",
+      "text": "Golden fog gate leading to Duke's Archives",
+      "tags": [
+        "lordvessel"
+      ]
+    },
+    {
+      "id": "4e146ed1551e42f59975ddf93fb618ab",
+      "area": "dukes_start",
+      "text": "Golden fog gate leading to Duke's Archives",
+      "tags": [
+        "lordvessel"
+      ]
+    },
+    {
+      "id": "f5e74905ce1c4e189f6b720557ba5baa",
+      "area": "dukes_library",
+      "text": "At the hallway with the crystal warrior in Duke's Archives",
+      "tags": [
+        "pvp"
+      ]
+    },
+    {
+      "id": "583d6c0a2a904d87b85a960a33438cf7",
+      "area": "dukes_hallway",
+      "text": "At the hallway with the crystal warrior in Duke's Archives",
+      "tags": [
+        "pvp"
+      ]
+    },
+    {
+      "id": "31e5144e246f439a9b3526bde83f6e8d",
+      "area": "kiln",
+      "text": "To Gwyn",
+      "tags": [
+        "boss",
+        "kiln"
+      ]
+    },
+    {
+      "id": "99f4e12d1d1d4fdfa8f5ddeec49bedcf",
+      "area": "kiln_gwyn",
+      "text": "To Gwyn",
+      "tags": [
+        "boss",
+        "kiln"
+      ]
+    },
+    {
+      "id": "fa47026ad0504d5995f3e1857a6d3f31",
+      "area": "kiln_stairs",
+      "text": "Between the Kiln door and Black Knight area",
+      "tags": [
+        "pvp",
+        "kiln",
+        "major"
+      ]
+    },
+    {
+      "id": "ddc5f536c7e64f7b8cd53a6953e1d696",
+      "area": "kiln",
+      "text": "Between the Kiln door and Black Knight area",
+      "tags": [
+        "pvp",
+        "kiln",
+        "major"
+      ]
+    },
+    {
+      "id": "1fbfe1340ddd4e9b98537cf039a100a5",
+      "area": "asylum_balcony",
+      "text": "To Asylum Demon from balcony",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "c3705704f36f434e99e59619ef77a164",
+      "area": "asylum_prebalcony",
+      "text": "To Asylum Demon from balcony",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "dbc403d620c34d94a28df11083d1fd36",
+      "area": "asylum",
+      "text": "Between hallway with initial weapons and Oscar's cell",
+      "tags": [
+        "world"
+      ]
+    },
+    {
+      "id": "e3944523f1a64780b660594a33bd21bf",
+      "area": "asylum_oscar",
+      "text": "Between hallway with initial weapons and Oscar's cell",
+      "tags": [
+        "world"
+      ]
+    },
+    {
+      "id": "d6bb0475dea0474f83d5337ee3f38a27",
+      "area": "asylum_stray",
+      "text": "In Stray Demon arena",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "be59be3ab578451bb8414d255202a5e3",
+      "area": "asylum_loop",
+      "text": "In Stray Demon arena",
+      "tags": [
+        "boss"
+      ]
+    },
+    {
+      "id": "bb5762fb6ec342e497958c7eb94dd417",
+      "area": "depths",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "a4ecc2ece9bc4a7d831cc1173d6a8597",
+      "area": "depths_gaping",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "1486339187e841d3b83a6d2e9f6e29e2",
+      "area": "burg_start",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "f22ceee4b065418682b9b2263cd356b2",
+      "area": "burg_lower",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "93d2fd0cb6734401870395fcff5bb311",
+      "area": "burg_upper",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "21469b513c5c41e1b5033e7be42ce5e2",
+      "area": "burg_start",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "713a54031c254acd951e7ada61f30b88",
+      "area": "burg_upper",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "e8b67f1a2a5b4823b03eb4825be155db",
+      "area": "burg_upperresidence",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "58c1c829e94d459f88bb3d6e0485c60e",
+      "area": "burg_upper",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "1bfb9fff228c4eeda0d71170919bd27f",
+      "area": "burg_lower",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "d768f86bce334a30b89e919ad9c8dc0b",
+      "area": "burg_upper",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "a5608808ab5d4c809b5d1b544d986114",
+      "area": "depths",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "8ba83d4159ec47c2ae1772a9bd8a1c60",
+      "area": "burg_upperresidence",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "4f6ade4c76d742dbad68d123ca38b77c",
+      "area": "burg_upper",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "f685ffc6a89f4279a676d5ccb9fa3bd2",
+      "area": "burg_above_bonfire",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "56bfff9b0f434ec784186cc2237bf0aa",
+      "area": "burg_bonfire",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "465fe95a6ed7427993c0716cb0662ebc",
+      "area": "burg_lower",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "26f278704bb94376af1dab13dd9c3dd7",
+      "area": "burg_lowerresidence",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "bdeda365f595416b8d0705d867764a85",
+      "area": "parish_hellkite",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "94ab5ebd163f4b5dafb0829c4235c1eb",
+      "area": "parish_church",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "f44879ce11dd4ada91bd50e08e62fc1a",
+      "area": "parish_church",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "ecc14f2f5b2a468f918689722e69762f",
+      "area": "parish_hellkite",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "43467250f4ae46f2952fcf32bd674e93",
+      "area": "firelink_crow",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "83c07435a8c8416a98f158bb4df4c3e8",
+      "area": "firelink",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "536dcbc696f34b578830d484969c1b84",
+      "area": "firelink_elevator",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "a0a2abb3366a44c694e722aef2ed5e41",
+      "area": "firelink",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "aeeaa5de127f49919d9ec3b7c784c0a0",
+      "area": "firelink_elevator",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "328eb48a31254f1eb1fd11e2395a5ed2",
+      "area": "firelink_crow",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "1b1a317c1751427caae7f9a23682b0e7",
+      "area": "firelink_gate",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "5c26cfd371d040828663d9723ff9517a",
+      "area": "firelink",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "882a2b8d2500402f9dc86b76a6bb7a1e",
+      "area": "paintedworld",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "5fe7fe6694154c1f9e4b2ed6f2267ada",
+      "area": "paintedworld_annex",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "474e5c8487144b6583804d64af0734a4",
+      "area": "paintedworld",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "4dc5301523234d0b87030464bd1904c6",
+      "area": "paintedworld_annex",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "f2bf07c386a84ee399d4ac1746562798",
+      "area": "darkroot",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "107a72bf9fa9419180f0840da2643c1c",
+      "area": "dlc_hallway",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "5e8e6cc79e4a42f18117e15f09893bdf",
+      "area": "darkroot_stone",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "746fe7688dd0445aad21c1a34d98c2ba",
+      "area": "darkroot",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "12eddbc11002400499d7e8fa6db8f084",
+      "area": "darkroot_forest",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "41e6af595460406cbe7c6ffd844904a0",
+      "area": "darkroot",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "066359573867453787711f3ba741a796",
+      "area": "dlc_sanctuary",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "81d53c93bd5146dfaceb21fc845f651c",
+      "area": "kiln",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "9d7fda8705474d0f92381ff2ae1f7573",
+      "area": "dlc_forest",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "74c371a2860744e3866d8cfb79ac6c6b",
+      "area": "kiln",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "de88c67584494560b685f5f5d116f7df",
+      "area": "dlc_hallway",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "c37db37632eb4dd28c19b757e69c63ec",
+      "area": "dlc_gough",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "26752dd017b445e7b39c9b4392fd7de9",
+      "area": "dlc_hallway",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "0551f2010924466eb334a3c55dc99250",
+      "area": "kiln",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "07ef53b9cd6142038c16e5cfec3a3770",
+      "area": "dlc_kalameet",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "acaa9374300c42dcbae9ca6c480de17c",
+      "area": "dlc_kalameetdeath",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "8d6d06fa27114fcc8fadd12f79e396cd",
+      "area": "dlc_township",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "386d21f522d44859ab58ac42b8a266eb",
+      "area": "dlc_townshiphidden",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "69c22e78e654450f91a4a43a65e72133",
+      "area": "dlc_township",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "5c7fb8b61e334445bc9d86b8bc57d9e0",
+      "area": "kiln",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "8dc2ebd95ad3475f8bf28edb6278926e",
+      "area": "dlc_bottom",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "28cc4db8b5e34c289fc200554c444306",
+      "area": "dlc_top",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "3430385626f9407585c68112107f6dcb",
+      "area": "catacombs_start",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "2479ce3754954cb598427ab2d25e028b",
+      "area": "catacombs",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "56dca96f7d82418f860b3a3220301ebd",
+      "area": "catacombs_prepinwheel",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "617c4b40744a4b02913c357d9b94cfa8",
+      "area": "catacombs_pinwheel",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "f0f35ed9c1fd4c1494d2df0c971cf418",
+      "area": "catacombs_pinwheel",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "a181d12505d847eabb5555797e4a1d48",
+      "area": "catacombs",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "c53f7359239c4862aedcaf4dce1d42ce",
+      "area": "totg",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "549d82cdd2604ff383905bdb00f1da67",
+      "area": "totg_lower",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "5b3dcbee3eef4443a6d49aa7f21393cf",
+      "area": "blighttown_upper",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "b09b707d20e443b494172a3635686601",
+      "area": "blighttown",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "68777c780efa46428fc448a58c322fb5",
+      "area": "demonruins",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "d8dc01796a0e4737bfaf193036a4210a",
+      "area": "demonruins_lava",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "4150db645b424e32ac1498484324b3f8",
+      "area": "demonruins",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "83853c5189334731aa0985369fa417ef",
+      "area": "demonruins_ceaselesslava",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "84e4889475cd4170a5941e4741f0478b",
+      "area": "demonruins_elevator",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "e9501bb6e86f4b7d80e4ffeb261e3b6b",
+      "area": "demonruins_firesage",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "527de4a3ab2c487cbe9c557e96ec66c1",
+      "area": "demonruins_elevator",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "bcd382129aea476099ef51058544a8e1",
+      "area": "blighttown_bell",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "04e958197adc416da5bf6a3b3e937455",
+      "area": "izalith_start",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "acda71dad40546ab840235b0077af63c",
+      "area": "izalith_lava",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "877834f9f5674f70968b265198443ff6",
+      "area": "izalith_lava",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "8b5ec971ff314127a89c345a263e3501",
+      "area": "izalith_start",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "cc5ae75e5af7423e81eb7c27d6f91825",
+      "area": "izalith_lava",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "fc6cdd71354f451c959991003938ef7b",
+      "area": "izalith_main",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "660e3e0927b84bb5b59ecde19b1c2b89",
+      "area": "izalith_main",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "3914185ff01547a796ada3e41f62aa79",
+      "area": "izalith_lava",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "3b86e76f33964e86a6479fe49791fb1b",
+      "area": "sens_mid",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "8a251ca4e1d54b0ca4ec95d255430a7a",
+      "area": "sens",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "a48ef21f235b4c6083c1c7f0ec924072",
+      "area": "sens_mid",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "f45362c2de88440f8e785b6b10038e8c",
+      "area": "sens_cage",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "b4cf69b2c216453c8413ecd8f902f899",
+      "area": "sens_upper",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "008c49d3479c45748bcb7d17fc196620",
+      "area": "sens_mid",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "6c5093deca534310bd79051bf89c2758",
+      "area": "anorlondo_prerafters",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "e66ebbe5f846491e94dc658715172cdf",
+      "area": "anorlondo_rafters",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "f5cef31fe31d4c15a94ae9faf37ebf8d",
+      "area": "anorlondo_postrafters",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "efa80786647e461e9fe512ff74d63b55",
+      "area": "anorlondo_prerafters",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "dd5804e9dd874a64b00c072bea6e4ab6",
+      "area": "anorlondo_postrafters",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "5a7510e9f8ab4443a491481e6ab46a9d",
+      "area": "anorlondo_main",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "9711b07a3d1846efbfd9dbcf14426c61",
+      "area": "anorlondo_postrafters",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "1f399f8e569742929c1d4e7a64e13e51",
+      "area": "anorlondo_darkmoon",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "f6916f66fc064b08a289cbaf744e6654",
+      "area": "anorlondo_postrafters",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "e3a775be6aad4cc0a89d6d254a1c8993",
+      "area": "anorlondo_painting",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "319ae3a02f8f47888d0e0847e21312e7",
+      "area": "anorlondo_painting",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "29dfb477902f4498bd1983bf36e2c7db",
+      "area": "anorlondo_chandelier",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "7f8b735a81c7451682fafb51be6a3de7",
+      "area": "anorlondo_cathedral",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "30d21336de634659a56a9a4fe882cce8",
+      "area": "anorlondo_main",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "3884b4e777474ecb851411948f3b3000",
+      "area": "anorlondo_front",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "b271d9000cf44ca4aa03e19bb10e5046",
+      "area": "anorlondo_blacksmith",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "fd06a7c8623643fd8ae4837bc79c6f2b",
+      "area": "anorlondo_front",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "44a42bd116c84ac0bf7d6f840a2a876f",
+      "area": "anorlondo_main",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "66457b7ab1e3449786c18cf58502af27",
+      "area": "anorlondo_blacksmith",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "540ea8541a1b4b3a9fa8e848bb145235",
+      "area": "anorlondo_main",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "1429295b7978426c82ac69cec21e0a48",
+      "area": "anorlondo_elevator1",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "47a9d0101e7d4089b656446a44a3af4b",
+      "area": "anorlondo_gwynevere",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "c6c83bba50cf415b80a1d814a97c2a8e",
+      "area": "anorlondo_elevator2",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "1be9d20cf4064fce9101972820b34e8e",
+      "area": "anorlondo_gwynevere",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "2d6ebfa5d96543eeb7acd8c42dc38fcc",
+      "area": "anorlondo_gwynevere",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "40c5ba91597249eeb891ef56a0aaac0c",
+      "area": "anorlondo_elevator1",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "3e950fb0e28341afb844c3830497856c",
+      "area": "anorlondo_gwynevere",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "3f050c67ec2a42168cc303ea9014105f",
+      "area": "anorlondo_elevator2",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "587f2fbaff3e493a8eadcfa6f92985ae",
+      "area": "newlondo",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "7712e0131e3c47c68af04aa45fc40e5e",
+      "area": "newlondo_lower",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "61934c9a884f41a78f2cfd681deb90a2",
+      "area": "newlondo",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "084e572b0c2d43c1825fcb3c2082e25e",
+      "area": "newlondo_lowerskip",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "2c11daddf58545d4a67bafb86711ed0c",
+      "area": "newlondo",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "561ac427c3a241bfb86f22726d12b52d",
+      "area": "newlondo_fourkings",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "f1d996f1a30248daa282820ec7f9e596",
+      "area": "newlondo_building",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "f0bbe5423bca4e288879c06f291dd1b0",
+      "area": "newlondo_lower",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "e0f782ab5a1540df90acbbf3bcdfe1c2",
+      "area": "newlondo_building",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "c323f0ee30164990a3515ec3d20fae89",
+      "area": "newlondo",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "991071caf2a64d138ede0a93d1fad184",
+      "area": "newlondo_lower",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "cab4ec6f91f34ff0b1e8e1f57828bfda",
+      "area": "newlondo_lowerskip",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "53e1f763d2a24c9992de780532887784",
+      "area": "newlondo_stairs",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "205e9655a2244c49977dac83bf89d73d",
+      "area": "newlondo_fourkings",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "1b529216e8aa4d2a94eeaa478a31c3e9",
+      "area": "newlondo_drakes",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "3335ef43defc4b08b46018fdad57f422",
+      "area": "newlondo_drakesbeatrice",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "a43a7167bf164cc0ba5916ee0809425e",
+      "area": "dukes_library",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "3c0d50685ef74ed9b84bae978d9cdbfc",
+      "area": "dukes_library2",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "231db28c0caa4831863d567a9656b7c2",
+      "area": "dukes_library",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "6e9d6e54fefc467a9fae3a3d6ff7bfbb",
+      "area": "dukes_crystalgolem",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "f45f1fcd50294e9eb23b21e6dafa9aa3",
+      "area": "dukes_prison",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "14c1dd5cd3b64817ac5c348e3a29b483",
+      "area": "dukes_library2",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "f897ce8572e34605ad897942af139a65",
+      "area": "dukes_prison",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "758476597a6a4771ac11329e49048023",
+      "area": "dukes_extra",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "d0792d3c720f4a968d1491b0d818ac84",
+      "area": "dukes_prison",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "cd3253f9b84a49d395f817cee160d42c",
+      "area": "dukes_giantcell",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "8581acbe7e5a4dbc9a48b6e224dfec83",
+      "area": "dukes_library2",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "2a035ebdd8f74903b1d599204a39b018",
+      "area": "dukes_machines",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "38216ace266e4589b5eb4f240c611fe7",
+      "area": "dukes_library2",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "8375429ebb364e2abfc0cd98178f4397",
+      "area": "dukes_library",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "d9fb94567a8d41d68560dbc345cd2247",
+      "area": "dukes_library2",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "0d9a1294369541779498a2d14bacbf6f",
+      "area": "dukes_prison",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "68e86aa36f3e499b9486c4eb1c92a51c",
+      "area": "kiln_start",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "1da97047afd44fab9a3e1069706aa639",
+      "area": "kiln_stairs",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "1bb2af4ef2b0470484735472c9328639",
+      "area": "asylum",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "0a977672503a4cfe8f1cbc21d2c2cdf7",
+      "area": "asylum_outside",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "192bff5f6aa84efe8dda7524d36fe24a",
+      "area": "asylum",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "c02f22bb9c584a2f89a5e69d1feba2bf",
+      "area": "asylum_outside",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "8c599b89ac5c4c178de471d95e179e28",
+      "area": "asylum",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "4af4f8829a5c49c6ba1958ec78b2c024",
+      "area": "asylum_stray",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "1e95e1497fac4547b8ffcf10ff5a630a",
+      "area": "asylum",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "8394a38ceb7b4868b81253f6ec3d2b92",
+      "area": "asylum_doll",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "475a637ecca84fe9bdfa0f6b54cf45b6",
+      "area": "asylum_oscar",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "4a578ddb263a4afd84aed8fca1b500bb",
+      "area": "asylum",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "e04c99813cbd48e4b484a7289c4af6a2",
+      "area": "asylum_oscar",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "52a74c0887214c239bb898eedfe4f7bd",
+      "area": "asylum_prebalcony",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "aad6f7ebad024762a8d48366333ac263",
+      "area": "asylum_prebalcony",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "414c6a4bd7724098b1b35dac0037f58f",
+      "area": "asylum_f2west",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "62a947b209864665b0e0e76e5a6874c2",
+      "area": "asylum_f2west",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "0dd1bcc70241426398986af06ab7cf7a",
+      "area": "asylum_oscar",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "e7827e519d4e42ad82d27dbbee989939",
+      "area": "asylum_balcony",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "05160c93840948b6aa469be6989e39a2",
+      "area": "asylum",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    },
+    {
+      "id": "60c8a5aef25c4a8782b81f72cfadb333",
+      "area": "asylum_loop",
+      "text": "In map",
+      "tags": [
+        "map_from"
+      ]
+    },
+    {
+      "id": "ba2380d61d824b07937011674daeb554",
+      "area": "asylum",
+      "text": "In map",
+      "tags": [
+        "map_to"
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "port_from_id": "65198e0b751f4423ba371e953740cc5e",
+      "port_to_id": "44129f64ce5846f3b02cc5e88fc4d853",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "warp_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "11139fbf87d84f8a85ee98d4a1d380a9",
+      "port_to_id": "e1f1f2c09e454c4baebf3e15d0225d56",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "warp_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "dea217f8c1144b94bbd5bcf89fab0631",
+      "port_to_id": "89cb0b3be07e425e85f9910e5d879fa8",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "warp_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "5c31d128b7f541fe93c4d972bd70b066",
+      "port_to_id": "6d8d0cadf01c43ab8a0faeb0ceefc673",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "warp_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "73605c608262472bb69b4cdea2f30ea1",
+      "port_to_id": "4c2cc33fc74a4629800520a1081d0a42",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "warp_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "e62b67a1fddc4b50a97c6c12553c288f",
+      "port_to_id": "dd7e3c6aa95a4c28ba02fb22250aa3f1",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "warp_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "78149ca3499e49c4a9c4cd890f655012",
+      "port_to_id": "d57e73662caa496fb39491fd2965fbcc",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "warp_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "c9740fcb27424b529f96243f3b3fcb5d",
+      "port_to_id": "04f26f0bd17f4da799411cf3c37ccf3e",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "warp_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "c5525a4dee964b1c8ee6c2725e732dd0",
+      "port_to_id": "dddd155ee6554a738ea4885f424bef11",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "warp_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "ae456ffb731f480aab06408191c1f8a8",
+      "port_to_id": "77c1d708e24540f9a5548c7c37c1839d",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "warp_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "b7db2b51f1c14c11805facec6ac792bc",
+      "port_to_id": "9d3014f494b94d17af98ed4fd2c3f635",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "warp_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "86e3b4c3aa4c4140952bba108a1fafc2",
+      "port_to_id": "2daff2262d9741038c17238cefbb7e48",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "warp_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "9a3b6184d55a40b3b050e807ff7433f2",
+      "port_to_id": "dc4457b1dc764fc08f5e83d53e9abb9c",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "warp_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "4b0f2b464a53457daa53776e7c18bf6c",
+      "port_to_id": "cde3819077fc42a7a511a8c593271060",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "warp_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "50887b9e2243433ba25b52fd4493b2f8",
+      "port_to_id": "4e3f3c2c366f40ed88ff6060cbe47afb",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "warp_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "50dfa23cd7a843a18b9b25fb7a45e81a",
+      "port_to_id": "d9bba7d6f8484423a773bba95fbcaeb8",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "d9bba7d6f8484423a773bba95fbcaeb8",
+      "port_to_id": "50dfa23cd7a843a18b9b25fb7a45e81a",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "d8dfaf53b6a24321b3ba9010cfa65be7",
+      "port_to_id": "9333696861744d25aafa3515f80d865d",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "9333696861744d25aafa3515f80d865d",
+      "port_to_id": "d8dfaf53b6a24321b3ba9010cfa65be7",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "720179e765e14bc2880d43f051b01419",
+      "port_to_id": "b8a507f8bbea455388d0cd9ede609031",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "door_open_0"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "b8a507f8bbea455388d0cd9ede609031",
+      "port_to_id": "720179e765e14bc2880d43f051b01419",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "21046142f832482ab6d8fccf14ec353c",
+      "port_to_id": "d02e276e2c8a4656989f88b656e1a9e9",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "d02e276e2c8a4656989f88b656e1a9e9",
+      "port_to_id": "21046142f832482ab6d8fccf14ec353c",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "24f509b98e9e4dca927227e42a29d06b",
+      "port_to_id": "d467dc0cb5a043c09df3394abf66e8e4",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "d467dc0cb5a043c09df3394abf66e8e4",
+      "port_to_id": "24f509b98e9e4dca927227e42a29d06b",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "fdfff5517faf4528a2de52f40947feaa",
+      "port_to_id": "ffea5c30df594ae39791def4711e3383",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "ffea5c30df594ae39791def4711e3383",
+      "port_to_id": "fdfff5517faf4528a2de52f40947feaa",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "9b0b50e8708c42a585252f9368f75d07",
+      "port_to_id": "d7f6d40e16ce411c94d5baa46d700860",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "d7f6d40e16ce411c94d5baa46d700860",
+      "port_to_id": "9b0b50e8708c42a585252f9368f75d07",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "948ec678ad664d03985b937b6896fb14",
+      "port_to_id": "31449c045d884558bf2b70db25d02055",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "31449c045d884558bf2b70db25d02055",
+      "port_to_id": "948ec678ad664d03985b937b6896fb14",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "ffed657e35974c93a52941f2cd9201f8",
+      "port_to_id": "52b16216dfa0424298436699e8d24c02",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "major_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "52b16216dfa0424298436699e8d24c02",
+      "port_to_id": "ffed657e35974c93a52941f2cd9201f8",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "major_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "f766518af03844048cf058e49d07ea17",
+      "port_to_id": "80a1718258394cc09872c29ecc902eb1",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "major_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "80a1718258394cc09872c29ecc902eb1",
+      "port_to_id": "f766518af03844048cf058e49d07ea17",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "major_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "2a83f6e4562f4263838e8fd0295ba77f",
+      "port_to_id": "6bb65bff65524796bc6a67cc747924f8",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "6bb65bff65524796bc6a67cc747924f8",
+      "port_to_id": "2a83f6e4562f4263838e8fd0295ba77f",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "c86f696de0294effa53549d5d87a5b12",
+      "port_to_id": "471c2316c8a14194a1204220bfda3a40",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "major_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "471c2316c8a14194a1204220bfda3a40",
+      "port_to_id": "c86f696de0294effa53549d5d87a5b12",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "major_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "042ccbb7df1246b9a76c096b0bb55b39",
+      "port_to_id": "e0e2ba02301b4348af828441424b1614",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "e0e2ba02301b4348af828441424b1614",
+      "port_to_id": "042ccbb7df1246b9a76c096b0bb55b39",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "6d1e901b7b67417892db25959e5e3417",
+      "port_to_id": "1e6fdee84fb84d72955d51bbe711d404",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "1e6fdee84fb84d72955d51bbe711d404",
+      "port_to_id": "6d1e901b7b67417892db25959e5e3417",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "fe10f3de2b1546ab9097b2d16a790361",
+      "port_to_id": "86e90bf452ad448bae1b144503f608cf",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "86e90bf452ad448bae1b144503f608cf",
+      "port_to_id": "fe10f3de2b1546ab9097b2d16a790361",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "1e39eb52d6ec43e7bac7aff558bc6755",
+      "port_to_id": "2864b69288834386bb83205438f74f19",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "major_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "2864b69288834386bb83205438f74f19",
+      "port_to_id": "1e39eb52d6ec43e7bac7aff558bc6755",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "major_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "01b29c2933b84acc92f75e266399e1d2",
+      "port_to_id": "462047d4fd764597b4e478e2d9a3b241",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "major_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "462047d4fd764597b4e478e2d9a3b241",
+      "port_to_id": "01b29c2933b84acc92f75e266399e1d2",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "major_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "5d8dbb1f23894b27914374031741c866",
+      "port_to_id": "566b365538db4e18957c1de48c3a3dc5",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "566b365538db4e18957c1de48c3a3dc5",
+      "port_to_id": "5d8dbb1f23894b27914374031741c866",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "acc03e6c634647be9e733ec19c66c9a6",
+      "port_to_id": "0c05ce13ea9b4226b1cc8c705dd06445",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "door_open_1"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "0c05ce13ea9b4226b1cc8c705dd06445",
+      "port_to_id": "acc03e6c634647be9e733ec19c66c9a6",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "06ad08df834946ec9e1ff953e38576c5",
+      "port_to_id": "c04a53f42fb14e8cbb12016aaec0b9c5",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "c04a53f42fb14e8cbb12016aaec0b9c5",
+      "port_to_id": "06ad08df834946ec9e1ff953e38576c5",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "9740061254d14484bca9bdbca3451a2f",
+      "port_to_id": "af6992c69411491ba04662fa60c67500",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "af6992c69411491ba04662fa60c67500",
+      "port_to_id": "9740061254d14484bca9bdbca3451a2f",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "4d198b163a534c7ab251497339a9c1b7",
+      "port_to_id": "c69b5f1e50b940a586f71949fe2522c6",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "major_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "c69b5f1e50b940a586f71949fe2522c6",
+      "port_to_id": "4d198b163a534c7ab251497339a9c1b7",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "major_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "415ec5cc587e4edea3b52b65e1e351c9",
+      "port_to_id": "5aac1df38047418ca06a407edbb4a12e",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "5aac1df38047418ca06a407edbb4a12e",
+      "port_to_id": "415ec5cc587e4edea3b52b65e1e351c9",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "182f1b932c4b476c933212778b6c66ce",
+      "port_to_id": "dfddd1b56df64adfb6dafb57b2e60854",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "dfddd1b56df64adfb6dafb57b2e60854",
+      "port_to_id": "182f1b932c4b476c933212778b6c66ce",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "48fba23812aa4bb8befde1913529ed0f",
+      "port_to_id": "0dea668fa8744420a9a2f4ea3d49b197",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "0dea668fa8744420a9a2f4ea3d49b197",
+      "port_to_id": "48fba23812aa4bb8befde1913529ed0f",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "8c888ee9fc45460c95f711724a467d92",
+      "port_to_id": "1b72d5259b4a4dafb13983c1fe6b5465",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "1b72d5259b4a4dafb13983c1fe6b5465",
+      "port_to_id": "8c888ee9fc45460c95f711724a467d92",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "b2d3d6591d8c4c4791884b72e6a0fbd5",
+      "port_to_id": "dfe7b8f388554bc198a761eb779d49f2",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "dfe7b8f388554bc198a761eb779d49f2",
+      "port_to_id": "b2d3d6591d8c4c4791884b72e6a0fbd5",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "e904d785a7114e989f4b20b1013881a2",
+      "port_to_id": "069db24f0aa84458b3bec81cad14624f",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "069db24f0aa84458b3bec81cad14624f",
+      "port_to_id": "e904d785a7114e989f4b20b1013881a2",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "844282d52e68466e82fe17f8030b4078",
+      "port_to_id": "4ee6d052e0304869b98f96a3e96f61ef",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "major_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "4ee6d052e0304869b98f96a3e96f61ef",
+      "port_to_id": "844282d52e68466e82fe17f8030b4078",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "major_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "213cf61cb4a84b7882d4985110a1da9c",
+      "port_to_id": "89ac473719fc4429932195106dc2d872",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "89ac473719fc4429932195106dc2d872",
+      "port_to_id": "213cf61cb4a84b7882d4985110a1da9c",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "2e00f05b789d49ac99e0856d770246b2",
+      "port_to_id": "bf3e0db94ce840f2ac1e32796cebb1e6",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "major_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "bf3e0db94ce840f2ac1e32796cebb1e6",
+      "port_to_id": "2e00f05b789d49ac99e0856d770246b2",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "major_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "dbbf470a44994305843c5333822aa725",
+      "port_to_id": "269ffd45d44744729ee53db813586bec",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "269ffd45d44744729ee53db813586bec",
+      "port_to_id": "dbbf470a44994305843c5333822aa725",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "0b9da8db0aab4631928da812e6da0f74",
+      "port_to_id": "26f9fc17db8540e8a2ec0b73e8797807",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "26f9fc17db8540e8a2ec0b73e8797807",
+      "port_to_id": "0b9da8db0aab4631928da812e6da0f74",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "37dcc09a3fcf45c18c739ef25286b0e2",
+      "port_to_id": "a8eb6077c60b4a7c8af6261520093fed",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "a8eb6077c60b4a7c8af6261520093fed",
+      "port_to_id": "37dcc09a3fcf45c18c739ef25286b0e2",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "2f8f12f69b264449bb4e69b454b4d0f9",
+      "port_to_id": "42eb33ac37f146f49805c4716a10d976",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "42eb33ac37f146f49805c4716a10d976",
+      "port_to_id": "2f8f12f69b264449bb4e69b454b4d0f9",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "bc1f799cdbff49f1b1ad628c1916a90f",
+      "port_to_id": "dd088ff117654de9886e9ec44d906e58",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "door_open_2"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "dd088ff117654de9886e9ec44d906e58",
+      "port_to_id": "bc1f799cdbff49f1b1ad628c1916a90f",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "15fda11ef11f40c9b561f8c2bd12a34a",
+      "port_to_id": "75331e4fb5b1479393343497faeb9ad0",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "75331e4fb5b1479393343497faeb9ad0",
+      "port_to_id": "15fda11ef11f40c9b561f8c2bd12a34a",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "530309a17a234c06940f14662e877643",
+      "port_to_id": "4b8976cb881045c7aff653dce0cdf06f",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "4b8976cb881045c7aff653dce0cdf06f",
+      "port_to_id": "530309a17a234c06940f14662e877643",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "d40b2b7b40254f1c9a3d40c4d103b473",
+      "port_to_id": "052efe9bb3e54eafa83381c01ba3b130",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "052efe9bb3e54eafa83381c01ba3b130",
+      "port_to_id": "d40b2b7b40254f1c9a3d40c4d103b473",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "69bff11eb97943e5ab1d6ee56635f1d0",
+      "port_to_id": "2430dfd245164c4dbec16b4be5ebe2c0",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "2430dfd245164c4dbec16b4be5ebe2c0",
+      "port_to_id": "69bff11eb97943e5ab1d6ee56635f1d0",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "e888826e8c654a2c824117a8b0fa21ce",
+      "port_to_id": "4f51f5af2a7c4cf5b7fcce606628aba2",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "4f51f5af2a7c4cf5b7fcce606628aba2",
+      "port_to_id": "e888826e8c654a2c824117a8b0fa21ce",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "081b32aa98d2418ebe45e4f674c977ad",
+      "port_to_id": "1bb5c42d75f04657a0ea1fb755470b13",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "1bb5c42d75f04657a0ea1fb755470b13",
+      "port_to_id": "081b32aa98d2418ebe45e4f674c977ad",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "53bb78448e8a4883a3ec9cd7ccfd0af4",
+      "port_to_id": "2ce50a8c322a48c7b4b568b52f9449b7",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "2ce50a8c322a48c7b4b568b52f9449b7",
+      "port_to_id": "53bb78448e8a4883a3ec9cd7ccfd0af4",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "bdeec20bbf46487e80bbb4fa603e0623",
+      "port_to_id": "f3238116d19f42d5913b83f375d1b268",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "f3238116d19f42d5913b83f375d1b268",
+      "port_to_id": "bdeec20bbf46487e80bbb4fa603e0623",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "d8ca918a3b154e6f827e4c9dc4cc6f02",
+      "port_to_id": "0bb111a0a21e4e55b7c2768906591106",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "0bb111a0a21e4e55b7c2768906591106",
+      "port_to_id": "d8ca918a3b154e6f827e4c9dc4cc6f02",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "7931bb619de74d4cab176fda9c6e2343",
+      "port_to_id": "367c2d18a1d040f39afbb6280ec9a5c0",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "367c2d18a1d040f39afbb6280ec9a5c0",
+      "port_to_id": "7931bb619de74d4cab176fda9c6e2343",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "7a1679bbac0544c5a1de20a1074fd9eb",
+      "port_to_id": "80e38ae77c62442ea8db363373fe63c8",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "80e38ae77c62442ea8db363373fe63c8",
+      "port_to_id": "7a1679bbac0544c5a1de20a1074fd9eb",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "5b67cff4f6734a52ae668944b957610d",
+      "port_to_id": "1de26b204dc34792ab2865965f0623eb",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "1de26b204dc34792ab2865965f0623eb",
+      "port_to_id": "5b67cff4f6734a52ae668944b957610d",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "38f67a272a3d42e1bb3bc864577a8cbe",
+      "port_to_id": "1c69e44c28f146d98cc49c1e1d3f264b",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "major_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "1c69e44c28f146d98cc49c1e1d3f264b",
+      "port_to_id": "38f67a272a3d42e1bb3bc864577a8cbe",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "major_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "817bb7b2301e4a8c895b3c6891c15486",
+      "port_to_id": "d207afa0bf074a36ac3812b5fcecc413",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "d207afa0bf074a36ac3812b5fcecc413",
+      "port_to_id": "817bb7b2301e4a8c895b3c6891c15486",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "bd019df6d5d546ba981de82aad7f86f6",
+      "port_to_id": "456512de9bd44e7394cec1330bd09756",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "456512de9bd44e7394cec1330bd09756",
+      "port_to_id": "bd019df6d5d546ba981de82aad7f86f6",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "6918b2542ce8419db7595a8bcff8ed20",
+      "port_to_id": "5cc7b233021c41e08ccceb757385d8e8",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "major_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "5cc7b233021c41e08ccceb757385d8e8",
+      "port_to_id": "6918b2542ce8419db7595a8bcff8ed20",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "major_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "91f9f04453e84c9286a9fe6aef3b5f03",
+      "port_to_id": "7376f892fcbc46dc87e46b937994db94",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "7376f892fcbc46dc87e46b937994db94",
+      "port_to_id": "91f9f04453e84c9286a9fe6aef3b5f03",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "601413dbfcc140cab226df1401a774d7",
+      "port_to_id": "efb877fc5433446582ae345c5e3b919d",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "lordvessel_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "efb877fc5433446582ae345c5e3b919d",
+      "port_to_id": "601413dbfcc140cab226df1401a774d7",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "lordvessel_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "f6d5477cb8b14871aafb1b33fe61e81a",
+      "port_to_id": "d371f65f19a24a5a90a03d1e8a1186df",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "d371f65f19a24a5a90a03d1e8a1186df",
+      "port_to_id": "f6d5477cb8b14871aafb1b33fe61e81a",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "e8872f6691f4453c92449724cdac3093",
+      "port_to_id": "1248505894934b1e8374fb817993dbc1",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "1248505894934b1e8374fb817993dbc1",
+      "port_to_id": "e8872f6691f4453c92449724cdac3093",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "1218125f0ab94183892cb677d7cb14bb",
+      "port_to_id": "76eb169f3501493c911cfa9d3901b4e2",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "76eb169f3501493c911cfa9d3901b4e2",
+      "port_to_id": "1218125f0ab94183892cb677d7cb14bb",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "bd99125994544e3a8ab4786ae21a9b3a",
+      "port_to_id": "91f2eec3449b449da8a5f14799344585",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "91f2eec3449b449da8a5f14799344585",
+      "port_to_id": "bd99125994544e3a8ab4786ae21a9b3a",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "a5f7cb61b61e4ec9bf5357824d78783d",
+      "port_to_id": "a1379ea3cf584d30b58e56af7b9de9bb",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "a1379ea3cf584d30b58e56af7b9de9bb",
+      "port_to_id": "a5f7cb61b61e4ec9bf5357824d78783d",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "125443dda4c6497c908e01521d84e692",
+      "port_to_id": "b14ce7da91ba408fb0f22e51dd637995",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "door_open_3"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "b14ce7da91ba408fb0f22e51dd637995",
+      "port_to_id": "125443dda4c6497c908e01521d84e692",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "fe82c428d754480a98b3072c9cd4dfa7",
+      "port_to_id": "9e55781572704c3a9dfd14009a1b1757",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "major_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "9e55781572704c3a9dfd14009a1b1757",
+      "port_to_id": "fe82c428d754480a98b3072c9cd4dfa7",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "major_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "b04d8fe71a794601bb9bf6572e15f7c9",
+      "port_to_id": "677b2cc2b3644698ba509008bbb04315",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "major_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "677b2cc2b3644698ba509008bbb04315",
+      "port_to_id": "b04d8fe71a794601bb9bf6572e15f7c9",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "major_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "d5175fc899d54a2cb806e43083c3f90d",
+      "port_to_id": "33c394de249f434b94eae471bf5369ee",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "33c394de249f434b94eae471bf5369ee",
+      "port_to_id": "d5175fc899d54a2cb806e43083c3f90d",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "f9beadad31214e0584831ed8fdd3b278",
+      "port_to_id": "037c51fd526b49ad9dd1c04ad9cad3cb",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "lordvessel_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "037c51fd526b49ad9dd1c04ad9cad3cb",
+      "port_to_id": "f9beadad31214e0584831ed8fdd3b278",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "lordvessel_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "666d2f98510b4976b12b501729403ead",
+      "port_to_id": "33f6226a6c304e1f8a169b0554bcc7b7",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "33f6226a6c304e1f8a169b0554bcc7b7",
+      "port_to_id": "666d2f98510b4976b12b501729403ead",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "660d5e6a572546f499acb54358322426",
+      "port_to_id": "4a4e893cffe248a89eaed85ddaa12d90",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "4a4e893cffe248a89eaed85ddaa12d90",
+      "port_to_id": "660d5e6a572546f499acb54358322426",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "1ffdfebc94964d9e9794faa53f1367a3",
+      "port_to_id": "47add8d8b6914a609748854abb86b3b1",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "47add8d8b6914a609748854abb86b3b1",
+      "port_to_id": "1ffdfebc94964d9e9794faa53f1367a3",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "7280400e9b2845cfb94f3b2306006eb6",
+      "port_to_id": "cd75eb1b32a94bdc9161ac795475e9f1",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "cd75eb1b32a94bdc9161ac795475e9f1",
+      "port_to_id": "7280400e9b2845cfb94f3b2306006eb6",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "4e722e3a70be44109b257c02b5757aa2",
+      "port_to_id": "6f757590bb014efb9a5dd1579c8ffa13",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "6f757590bb014efb9a5dd1579c8ffa13",
+      "port_to_id": "4e722e3a70be44109b257c02b5757aa2",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "aa222eb87f4346858a85d6862676b702",
+      "port_to_id": "aeb6362e898b40b0a74c6ec8e53a9764",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "major_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "aeb6362e898b40b0a74c6ec8e53a9764",
+      "port_to_id": "aa222eb87f4346858a85d6862676b702",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "major_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "7c7ffd170bfe446db5cebc94da804333",
+      "port_to_id": "4942227fb7124712bb803049828a9c9f",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "4942227fb7124712bb803049828a9c9f",
+      "port_to_id": "7c7ffd170bfe446db5cebc94da804333",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "cb6bc2b8cbd44ca4aa543a377f9c8899",
+      "port_to_id": "1e66b0a0a31d44ef97e3109816dc8187",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "1e66b0a0a31d44ef97e3109816dc8187",
+      "port_to_id": "cb6bc2b8cbd44ca4aa543a377f9c8899",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "67a2af1f9dc043cca2551e6957fe8c6f",
+      "port_to_id": "f51db7683320427d87dcbc6a50142bdf",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "f51db7683320427d87dcbc6a50142bdf",
+      "port_to_id": "67a2af1f9dc043cca2551e6957fe8c6f",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "702e7c15094740d0a9910bab965d9565",
+      "port_to_id": "327724794e074a1fb2ca0ff959487352",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "327724794e074a1fb2ca0ff959487352",
+      "port_to_id": "702e7c15094740d0a9910bab965d9565",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "c221d23063724da4a68d26c697f3f421",
+      "port_to_id": "ac56f6e2417845928bc04d54dbf41d9a",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "door_open_4"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "ac56f6e2417845928bc04d54dbf41d9a",
+      "port_to_id": "c221d23063724da4a68d26c697f3f421",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "596c4425f9614052b80cf464ad6b9ba4",
+      "port_to_id": "870a1048839d4d96b3a837676bcd7ebb",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "870a1048839d4d96b3a837676bcd7ebb",
+      "port_to_id": "596c4425f9614052b80cf464ad6b9ba4",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "b7fe1cd0109c4f29a1e1c34804bca832",
+      "port_to_id": "5e9eacd1ea8f4ff0a43f1a7a4c593ce5",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "5e9eacd1ea8f4ff0a43f1a7a4c593ce5",
+      "port_to_id": "b7fe1cd0109c4f29a1e1c34804bca832",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "9731a9b5b255447d85aeb0320623c87c",
+      "port_to_id": "9c5b3ada32eb4a0dac47f865a354adf9",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "9c5b3ada32eb4a0dac47f865a354adf9",
+      "port_to_id": "9731a9b5b255447d85aeb0320623c87c",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "eb32cb6eb4e146638f87fc66b532e897",
+      "port_to_id": "c6e0dcac197a4d469c88c3847a0bea8b",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "c6e0dcac197a4d469c88c3847a0bea8b",
+      "port_to_id": "eb32cb6eb4e146638f87fc66b532e897",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "8d82ff8342f749a190c205821403e65e",
+      "port_to_id": "975324493c2b45d593248aac3391d770",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "975324493c2b45d593248aac3391d770",
+      "port_to_id": "8d82ff8342f749a190c205821403e65e",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "7bafcdb680904dd190c497aced878091",
+      "port_to_id": "83981256293e40a7acec4a0c8b076ede",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "83981256293e40a7acec4a0c8b076ede",
+      "port_to_id": "7bafcdb680904dd190c497aced878091",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "0cc145db50e3451791b430c893a657c2",
+      "port_to_id": "f27b6893243a4e5da796941bea898aa7",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "f27b6893243a4e5da796941bea898aa7",
+      "port_to_id": "0cc145db50e3451791b430c893a657c2",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "71a7ece1d24f49b6be34f97b51d59e54",
+      "port_to_id": "8d21f3ec28df4ee28741b04581b9d947",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "8d21f3ec28df4ee28741b04581b9d947",
+      "port_to_id": "71a7ece1d24f49b6be34f97b51d59e54",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "7eaed3bc234f4cc094950fb5caf4b95c",
+      "port_to_id": "d2b3f45a1b39427785963351f6cb2d6e",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "d2b3f45a1b39427785963351f6cb2d6e",
+      "port_to_id": "7eaed3bc234f4cc094950fb5caf4b95c",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "1629d08c00d34d458dfa1ec3aba368df",
+      "port_to_id": "cbf9496137714463a53cab6c9318a515",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "cbf9496137714463a53cab6c9318a515",
+      "port_to_id": "1629d08c00d34d458dfa1ec3aba368df",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "4e8b98f006994e80b73d37cda5a96daf",
+      "port_to_id": "15640b9ba25b46fc94254b26a6db3b49",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "15640b9ba25b46fc94254b26a6db3b49",
+      "port_to_id": "4e8b98f006994e80b73d37cda5a96daf",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "67197e66b08a4f29ab77333f0298b284",
+      "port_to_id": "5c184418b6fe4ad582787725fefcab85",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "5c184418b6fe4ad582787725fefcab85",
+      "port_to_id": "67197e66b08a4f29ab77333f0298b284",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "21f513a243474ec2bebab7679fa8457d",
+      "port_to_id": "b31abac48d9f4e88b8684984f017b495",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "b31abac48d9f4e88b8684984f017b495",
+      "port_to_id": "21f513a243474ec2bebab7679fa8457d",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "973fd97c306a4e1c9e360881fb3c35aa",
+      "port_to_id": "e7024f4993c64a90b086eb45d8a1fe24",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "e7024f4993c64a90b086eb45d8a1fe24",
+      "port_to_id": "973fd97c306a4e1c9e360881fb3c35aa",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "95824c5e443e43dbb3dbcfc88edd6ec4",
+      "port_to_id": "2cf30ba5be724ff594545e827f46c51e",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "2cf30ba5be724ff594545e827f46c51e",
+      "port_to_id": "95824c5e443e43dbb3dbcfc88edd6ec4",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "8d597e28a4df4ff298f4665bfac45d16",
+      "port_to_id": "8c56cb68e093436eb31f4f27fc724e08",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "8c56cb68e093436eb31f4f27fc724e08",
+      "port_to_id": "8d597e28a4df4ff298f4665bfac45d16",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "917e4b5cbf08461f938146552ce3d207",
+      "port_to_id": "f8b35b6b054f47c29d8555f79c212a4c",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "f8b35b6b054f47c29d8555f79c212a4c",
+      "port_to_id": "917e4b5cbf08461f938146552ce3d207",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "f9da88399f3e4f2db4114b8b7ee4e4f8",
+      "port_to_id": "3fbc8cf4d9254a0bbacabc81a4af42ab",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "major_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "3fbc8cf4d9254a0bbacabc81a4af42ab",
+      "port_to_id": "f9da88399f3e4f2db4114b8b7ee4e4f8",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "major_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "9e13a39c69c64ac4b4fecf275ddd04a4",
+      "port_to_id": "8b6306f412eb414b9a4eaa62b7a2293c",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "8b6306f412eb414b9a4eaa62b7a2293c",
+      "port_to_id": "9e13a39c69c64ac4b4fecf275ddd04a4",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "c7cdefbd619f4ff9ba989d804d5104c3",
+      "port_to_id": "781c7415c22146a4accfeba3806d70d5",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "781c7415c22146a4accfeba3806d70d5",
+      "port_to_id": "c7cdefbd619f4ff9ba989d804d5104c3",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "2a98d39cc96b481ab176f3ca909f19df",
+      "port_to_id": "99895b92a1e64aeb9af214c39f2a47e5",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "99895b92a1e64aeb9af214c39f2a47e5",
+      "port_to_id": "2a98d39cc96b481ab176f3ca909f19df",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "c73ff12241ce41eaaa183ab53773dab2",
+      "port_to_id": "6e6a2773eeb74e25afefd103fd2dc4e5",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "6e6a2773eeb74e25afefd103fd2dc4e5",
+      "port_to_id": "c73ff12241ce41eaaa183ab53773dab2",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "39d605a63a1248d68a0344617342775f",
+      "port_to_id": "b302fe5fc54746ab94859f85ea630225",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "b302fe5fc54746ab94859f85ea630225",
+      "port_to_id": "39d605a63a1248d68a0344617342775f",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "023ea98cc1b5424ebc7cb3f2b2c005d1",
+      "port_to_id": "88805ee013d14126a3cdd1c51297948d",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "88805ee013d14126a3cdd1c51297948d",
+      "port_to_id": "023ea98cc1b5424ebc7cb3f2b2c005d1",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "10df14a2582741a59a593d0ae55b195d",
+      "port_to_id": "6d47bdb07b144f479b4908ba3e05de39",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "6d47bdb07b144f479b4908ba3e05de39",
+      "port_to_id": "10df14a2582741a59a593d0ae55b195d",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "c4be59ac37af4670b9a58c27d7347efd",
+      "port_to_id": "dfe0a58f24bf4a72a44180dd88f034fc",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "dfe0a58f24bf4a72a44180dd88f034fc",
+      "port_to_id": "c4be59ac37af4670b9a58c27d7347efd",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "2025916c17604713823746be4d295b52",
+      "port_to_id": "ced29dbd788742ac86445abb9a7e0992",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "ced29dbd788742ac86445abb9a7e0992",
+      "port_to_id": "2025916c17604713823746be4d295b52",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "8809f406b4504184886c5bfa89992a69",
+      "port_to_id": "4e146ed1551e42f59975ddf93fb618ab",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "lordvessel_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "4e146ed1551e42f59975ddf93fb618ab",
+      "port_to_id": "8809f406b4504184886c5bfa89992a69",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "lordvessel_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "f5e74905ce1c4e189f6b720557ba5baa",
+      "port_to_id": "583d6c0a2a904d87b85a960a33438cf7",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "583d6c0a2a904d87b85a960a33438cf7",
+      "port_to_id": "f5e74905ce1c4e189f6b720557ba5baa",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "31e5144e246f439a9b3526bde83f6e8d",
+      "port_to_id": "99f4e12d1d1d4fdfa8f5ddeec49bedcf",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "99f4e12d1d1d4fdfa8f5ddeec49bedcf",
+      "port_to_id": "31e5144e246f439a9b3526bde83f6e8d",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "fa47026ad0504d5995f3e1857a6d3f31",
+      "port_to_id": "ddc5f536c7e64f7b8cd53a6953e1d696",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "major_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "ddc5f536c7e64f7b8cd53a6953e1d696",
+      "port_to_id": "fa47026ad0504d5995f3e1857a6d3f31",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "major_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "1fbfe1340ddd4e9b98537cf039a100a5",
+      "port_to_id": "c3705704f36f434e99e59619ef77a164",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "c3705704f36f434e99e59619ef77a164",
+      "port_to_id": "1fbfe1340ddd4e9b98537cf039a100a5",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "dbc403d620c34d94a28df11083d1fd36",
+      "port_to_id": "e3944523f1a64780b660594a33bd21bf",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "e3944523f1a64780b660594a33bd21bf",
+      "port_to_id": "dbc403d620c34d94a28df11083d1fd36",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "d6bb0475dea0474f83d5337ee3f38a27",
+      "port_to_id": "be59be3ab578451bb8414d255202a5e3",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "be59be3ab578451bb8414d255202a5e3",
+      "port_to_id": "d6bb0475dea0474f83d5337ee3f38a27",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "boss_norandom"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "bb5762fb6ec342e497958c7eb94dd417",
+      "port_to_id": "a4ecc2ece9bc4a7d831cc1173d6a8597",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "drop",
+        "hard"
+      ]
+    },
+    {
+      "port_from_id": "1486339187e841d3b83a6d2e9f6e29e2",
+      "port_to_id": "f22ceee4b065418682b9b2263cd356b2",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "drop",
+        "hard"
+      ]
+    },
+    {
+      "port_from_id": "93d2fd0cb6734401870395fcff5bb311",
+      "port_to_id": "21469b513c5c41e1b5033e7be42ce5e2",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "drop"
+      ]
+    },
+    {
+      "port_from_id": "713a54031c254acd951e7ada61f30b88",
+      "port_to_id": "e8b67f1a2a5b4823b03eb4825be155db",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "residence_key"
+        ]
+      },
+      "tags": [
+        "door"
+      ]
+    },
+    {
+      "port_from_id": "58c1c829e94d459f88bb3d6e0485c60e",
+      "port_to_id": "1bfb9fff228c4eeda0d71170919bd27f",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "drop",
+        "hard"
+      ]
+    },
+    {
+      "port_from_id": "d768f86bce334a30b89e919ad9c8dc0b",
+      "port_to_id": "a5608808ab5d4c809b5d1b544d986114",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "drop",
+        "hard"
+      ]
+    },
+    {
+      "port_from_id": "8ba83d4159ec47c2ae1772a9bd8a1c60",
+      "port_to_id": "4f6ade4c76d742dbad68d123ca38b77c",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "drop"
+      ]
+    },
+    {
+      "port_from_id": "f685ffc6a89f4279a676d5ccb9fa3bd2",
+      "port_to_id": "56bfff9b0f434ec784186cc2237bf0aa",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "shortcut"
+      ]
+    },
+    {
+      "port_from_id": "465fe95a6ed7427993c0716cb0662ebc",
+      "port_to_id": "26f278704bb94376af1dab13dd9c3dd7",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "residence_key"
+        ]
+      },
+      "tags": [
+        "door"
+      ]
+    },
+    {
+      "port_from_id": "bdeda365f595416b8d0705d867764a85",
+      "port_to_id": "94ab5ebd163f4b5dafb0829c4235c1eb",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "temp"
+      ]
+    },
+    {
+      "port_from_id": "f44879ce11dd4ada91bd50e08e62fc1a",
+      "port_to_id": "ecc14f2f5b2a468f918689722e69762f",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "drop"
+      ]
+    },
+    {
+      "port_from_id": "43467250f4ae46f2952fcf32bd674e93",
+      "port_to_id": "83c07435a8c8416a98f158bb4df4c3e8",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "drop"
+      ]
+    },
+    {
+      "port_from_id": "536dcbc696f34b578830d484969c1b84",
+      "port_to_id": "a0a2abb3366a44c694e722aef2ed5e41",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "shortcut"
+      ]
+    },
+    {
+      "port_from_id": "aeeaa5de127f49919d9ec3b7c784c0a0",
+      "port_to_id": "328eb48a31254f1eb1fd11e2395a5ed2",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "drop"
+      ]
+    },
+    {
+      "port_from_id": "1b1a317c1751427caae7f9a23682b0e7",
+      "port_to_id": "5c26cfd371d040828663d9723ff9517a",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "shortcut"
+      ]
+    },
+    {
+      "port_from_id": "882a2b8d2500402f9dc86b76a6bb7a1e",
+      "port_to_id": "5fe7fe6694154c1f9e4b2ed6f2267ada",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "annex_key"
+        ]
+      },
+      "tags": [
+        "door"
+      ]
+    },
+    {
+      "port_from_id": "474e5c8487144b6583804d64af0734a4",
+      "port_to_id": "4dc5301523234d0b87030464bd1904c6",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "hard"
+      ]
+    },
+    {
+      "port_from_id": "f2bf07c386a84ee399d4ac1746562798",
+      "port_to_id": "107a72bf9fa9419180f0840da2643c1c",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "purple_cowards_crystal"
+        ]
+      },
+      "tags": [
+        "hard"
+      ]
+    },
+    {
+      "port_from_id": "5e8e6cc79e4a42f18117e15f09893bdf",
+      "port_to_id": "746fe7688dd0445aad21c1a34d98c2ba",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "drop"
+      ]
+    },
+    {
+      "port_from_id": "12eddbc11002400499d7e8fa6db8f084",
+      "port_to_id": "41e6af595460406cbe7c6ffd844904a0",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "drop"
+      ]
+    },
+    {
+      "port_from_id": "066359573867453787711f3ba741a796",
+      "port_to_id": "81d53c93bd5146dfaceb21fc845f651c",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "kiln_start",
+          "lordvessel",
+          "purple_cowards_crystal"
+        ]
+      },
+      "tags": [
+        "hard"
+      ]
+    },
+    {
+      "port_from_id": "9d7fda8705474d0f92381ff2ae1f7573",
+      "port_to_id": "74c371a2860744e3866d8cfb79ac6c6b",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "kiln_start",
+          "lordvessel",
+          "purple_cowards_crystal"
+        ]
+      },
+      "tags": [
+        "hard"
+      ]
+    },
+    {
+      "port_from_id": "de88c67584494560b685f5f5d116f7df",
+      "port_to_id": "c37db37632eb4dd28c19b757e69c63ec",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "crest_key",
+          "dlc_artorias"
+        ]
+      },
+      "tags": [
+        "door"
+      ]
+    },
+    {
+      "port_from_id": "26752dd017b445e7b39c9b4392fd7de9",
+      "port_to_id": "0551f2010924466eb334a3c55dc99250",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "kiln_start",
+          "lordvessel",
+          "purple_cowards_crystal"
+        ]
+      },
+      "tags": [
+        "hard"
+      ]
+    },
+    {
+      "port_from_id": "07ef53b9cd6142038c16e5cfec3a3770",
+      "port_to_id": "acaa9374300c42dcbae9ca6c480de17c",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "dlc_gough"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "8d6d06fa27114fcc8fadd12f79e396cd",
+      "port_to_id": "386d21f522d44859ab58ac42b8a266eb",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "cast_light"
+        ]
+      },
+      "tags": [
+        "door"
+      ]
+    },
+    {
+      "port_from_id": "69c22e78e654450f91a4a43a65e72133",
+      "port_to_id": "5c7fb8b61e334445bc9d86b8bc57d9e0",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "kiln_start",
+          "lordvessel",
+          "purple_cowards_crystal"
+        ]
+      },
+      "tags": [
+        "hard"
+      ]
+    },
+    {
+      "port_from_id": "8dc2ebd95ad3475f8bf28edb6278926e",
+      "port_to_id": "28cc4db8b5e34c289fc200554c444306",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "shortcut"
+      ]
+    },
+    {
+      "port_from_id": "3430385626f9407585c68112107f6dcb",
+      "port_to_id": "2479ce3754954cb598427ab2d25e028b",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "shortcut"
+      ]
+    },
+    {
+      "port_from_id": "56dca96f7d82418f860b3a3220301ebd",
+      "port_to_id": "617c4b40744a4b02913c357d9b94cfa8",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "drop"
+      ]
+    },
+    {
+      "port_from_id": "f0f35ed9c1fd4c1494d2df0c971cf418",
+      "port_to_id": "a181d12505d847eabb5555797e4a1d48",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "drop"
+      ]
+    },
+    {
+      "port_from_id": "c53f7359239c4862aedcaf4dce1d42ce",
+      "port_to_id": "549d82cdd2604ff383905bdb00f1da67",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "drop",
+        "hard"
+      ]
+    },
+    {
+      "port_from_id": "5b3dcbee3eef4443a6d49aa7f21393cf",
+      "port_to_id": "b09b707d20e443b494172a3635686601",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "drop"
+      ]
+    },
+    {
+      "port_from_id": "68777c780efa46428fc448a58c322fb5",
+      "port_to_id": "d8dc01796a0e4737bfaf193036a4210a",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "orange_charred_ring"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "4150db645b424e32ac1498484324b3f8",
+      "port_to_id": "83853c5189334731aa0985369fa417ef",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "demonruins_ceaseless"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "84e4889475cd4170a5941e4741f0478b",
+      "port_to_id": "e9501bb6e86f4b7d80e4ffeb261e3b6b",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "drop"
+      ]
+    },
+    {
+      "port_from_id": "527de4a3ab2c487cbe9c557e96ec66c1",
+      "port_to_id": "bcd382129aea476099ef51058544a8e1",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "demonruins_firesage"
+        ]
+      },
+      "tags": [
+        "shortcut"
+      ]
+    },
+    {
+      "port_from_id": "04e958197adc416da5bf6a3b3e937455",
+      "port_to_id": "acda71dad40546ab840235b0077af63c",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "orange_charred_ring"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "877834f9f5674f70968b265198443ff6",
+      "port_to_id": "8b5ec971ff314127a89c345a263e3501",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "cc5ae75e5af7423e81eb7c27d6f91825",
+      "port_to_id": "fc6cdd71354f451c959991003938ef7b",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "660e3e0927b84bb5b59ecde19b1c2b89",
+      "port_to_id": "3914185ff01547a796ada3e41f62aa79",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "orange_charred_ring"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "3b86e76f33964e86a6479fe49791fb1b",
+      "port_to_id": "8a251ca4e1d54b0ca4ec95d255430a7a",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "drop"
+      ]
+    },
+    {
+      "port_from_id": "a48ef21f235b4c6083c1c7f0ec924072",
+      "port_to_id": "f45362c2de88440f8e785b6b10038e8c",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "cage_key"
+        ]
+      },
+      "tags": [
+        "door"
+      ]
+    },
+    {
+      "port_from_id": "b4cf69b2c216453c8413ecd8f902f899",
+      "port_to_id": "008c49d3479c45748bcb7d17fc196620",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "drop"
+      ]
+    },
+    {
+      "port_from_id": "6c5093deca534310bd79051bf89c2758",
+      "port_to_id": "e66ebbe5f846491e94dc658715172cdf",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "drop"
+      ]
+    },
+    {
+      "port_from_id": "f5cef31fe31d4c15a94ae9faf37ebf8d",
+      "port_to_id": "efa80786647e461e9fe512ff74d63b55",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "shortcut"
+      ]
+    },
+    {
+      "port_from_id": "dd5804e9dd874a64b00c072bea6e4ab6",
+      "port_to_id": "5a7510e9f8ab4443a491481e6ab46a9d",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "shortcut"
+      ]
+    },
+    {
+      "port_from_id": "9711b07a3d1846efbfd9dbcf14426c61",
+      "port_to_id": "1f399f8e569742929c1d4e7a64e13e51",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "shortcut"
+      ]
+    },
+    {
+      "port_from_id": "f6916f66fc064b08a289cbaf744e6654",
+      "port_to_id": "e3a775be6aad4cc0a89d6d254a1c8993",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "shortcut"
+      ]
+    },
+    {
+      "port_from_id": "319ae3a02f8f47888d0e0847e21312e7",
+      "port_to_id": "29dfb477902f4498bd1983bf36e2c7db",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "anorlondo_rafters"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "7f8b735a81c7451682fafb51be6a3de7",
+      "port_to_id": "30d21336de634659a56a9a4fe882cce8",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "shortcut"
+      ]
+    },
+    {
+      "port_from_id": "3884b4e777474ecb851411948f3b3000",
+      "port_to_id": "b271d9000cf44ca4aa03e19bb10e5046",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "drop"
+      ]
+    },
+    {
+      "port_from_id": "fd06a7c8623643fd8ae4837bc79c6f2b",
+      "port_to_id": "44a42bd116c84ac0bf7d6f840a2a876f",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "drop"
+      ]
+    },
+    {
+      "port_from_id": "66457b7ab1e3449786c18cf58502af27",
+      "port_to_id": "540ea8541a1b4b3a9fa8e848bb145235",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "shortcut"
+      ]
+    },
+    {
+      "port_from_id": "1429295b7978426c82ac69cec21e0a48",
+      "port_to_id": "47a9d0101e7d4089b656446a44a3af4b",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "anorlondo_os"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "c6c83bba50cf415b80a1d814a97c2a8e",
+      "port_to_id": "1be9d20cf4064fce9101972820b34e8e",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "anorlondo_os"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "2d6ebfa5d96543eeb7acd8c42dc38fcc",
+      "port_to_id": "40c5ba91597249eeb891ef56a0aaac0c",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "anorlondo_os"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "3e950fb0e28341afb844c3830497856c",
+      "port_to_id": "3f050c67ec2a42168cc303ea9014105f",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "anorlondo_os"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "587f2fbaff3e493a8eadcfa6f92985ae",
+      "port_to_id": "7712e0131e3c47c68af04aa45fc40e5e",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "newlondo_building",
+          "key_to_the_seal"
+        ]
+      },
+      "tags": [
+        "shortcut",
+        "drop"
+      ]
+    },
+    {
+      "port_from_id": "61934c9a884f41a78f2cfd681deb90a2",
+      "port_to_id": "084e572b0c2d43c1825fcb3c2082e25e",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "drop",
+        "hard"
+      ]
+    },
+    {
+      "port_from_id": "2c11daddf58545d4a67bafb86711ed0c",
+      "port_to_id": "561ac427c3a241bfb86f22726d12b52d",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "covenant_of_artorias"
+        ]
+      },
+      "tags": [
+        "drop",
+        "hard"
+      ]
+    },
+    {
+      "port_from_id": "f1d996f1a30248daa282820ec7f9e596",
+      "port_to_id": "f0bbe5423bca4e288879c06f291dd1b0",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "key_to_the_seal"
+        ]
+      },
+      "tags": [
+        "shortcut",
+        "drop"
+      ]
+    },
+    {
+      "port_from_id": "e0f782ab5a1540df90acbbf3bcdfe1c2",
+      "port_to_id": "c323f0ee30164990a3515ec3d20fae89",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "shortcut",
+        "drop"
+      ]
+    },
+    {
+      "port_from_id": "991071caf2a64d138ede0a93d1fad184",
+      "port_to_id": "cab4ec6f91f34ff0b1e8e1f57828bfda",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "53e1f763d2a24c9992de780532887784",
+      "port_to_id": "205e9655a2244c49977dac83bf89d73d",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "covenant_of_artorias"
+        ]
+      },
+      "tags": [
+        "drop"
+      ]
+    },
+    {
+      "port_from_id": "1b529216e8aa4d2a94eeaa478a31c3e9",
+      "port_to_id": "3335ef43defc4b08b46018fdad57f422",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "newlondo_fourkings"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "a43a7167bf164cc0ba5916ee0809425e",
+      "port_to_id": "3c0d50685ef74ed9b84bae978d9cdbfc",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "drop",
+        "hard"
+      ]
+    },
+    {
+      "port_from_id": "231db28c0caa4831863d567a9656b7c2",
+      "port_to_id": "6e9d6e54fefc467a9fae3a3d6ff7bfbb",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "darkroot"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "f45f1fcd50294e9eb23b21e6dafa9aa3",
+      "port_to_id": "14c1dd5cd3b64817ac5c348e3a29b483",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "archive_tower_giant_door_key"
+        ]
+      },
+      "tags": [
+        "door"
+      ]
+    },
+    {
+      "port_from_id": "f897ce8572e34605ad897942af139a65",
+      "port_to_id": "758476597a6a4771ac11329e49048023",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "archive_prison_extra_key"
+        ]
+      },
+      "tags": [
+        "door"
+      ]
+    },
+    {
+      "port_from_id": "d0792d3c720f4a968d1491b0d818ac84",
+      "port_to_id": "cd3253f9b84a49d395f817cee160d42c",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "archive_tower_giant_cell_key"
+        ]
+      },
+      "tags": [
+        "door"
+      ]
+    },
+    {
+      "port_from_id": "8581acbe7e5a4dbc9a48b6e224dfec83",
+      "port_to_id": "2a035ebdd8f74903b1d599204a39b018",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "shortcut"
+      ]
+    },
+    {
+      "port_from_id": "38216ace266e4589b5eb4f240c611fe7",
+      "port_to_id": "8375429ebb364e2abfc0cd98178f4397",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "drop",
+        "shortcut"
+      ]
+    },
+    {
+      "port_from_id": "d9fb94567a8d41d68560dbc345cd2247",
+      "port_to_id": "0d9a1294369541779498a2d14bacbf6f",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "dukes_seath2"
+        ]
+      },
+      "tags": [
+        "door"
+      ]
+    },
+    {
+      "port_from_id": "68e86aa36f3e499b9486c4eb1c92a51c",
+      "port_to_id": "1da97047afd44fab9a3e1069706aa639",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "lordvessel",
+          "lord_soul_shard_seath",
+          "lord_soul_shard_four_kings",
+          "lord_soul_bed_of_chaos",
+          "lord_soul_nito"
+        ]
+      },
+      "tags": [
+        "shortcut"
+      ]
+    },
+    {
+      "port_from_id": "1bb2af4ef2b0470484735472c9328639",
+      "port_to_id": "0a977672503a4cfe8f1cbc21d2c2cdf7",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "asylum_balcony",
+          "asylum_oscar"
+        ]
+      },
+      "tags": [
+        "shortcut"
+      ]
+    },
+    {
+      "port_from_id": "192bff5f6aa84efe8dda7524d36fe24a",
+      "port_to_id": "c02f22bb9c584a2f89a5e69d1feba2bf",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "asylum_oscar"
+        ]
+      },
+      "tags": [
+        "temp"
+      ]
+    },
+    {
+      "port_from_id": "8c599b89ac5c4c178de471d95e179e28",
+      "port_to_id": "4af4f8829a5c49c6ba1958ec78b2c024",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "asylum_balcony",
+          "asylum_oscar"
+        ]
+      },
+      "tags": [
+        "drop"
+      ]
+    },
+    {
+      "port_from_id": "1e95e1497fac4547b8ffcf10ff5a630a",
+      "port_to_id": "8394a38ceb7b4868b81253f6ec3d2b92",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "asylum_balcony",
+          "asylum_oscar"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "475a637ecca84fe9bdfa0f6b54cf45b6",
+      "port_to_id": "4a578ddb263a4afd84aed8fca1b500bb",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "shortcut"
+      ]
+    },
+    {
+      "port_from_id": "e04c99813cbd48e4b484a7289c4af6a2",
+      "port_to_id": "52a74c0887214c239bb898eedfe4f7bd",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "shortcut"
+      ]
+    },
+    {
+      "port_from_id": "aad6f7ebad024762a8d48366333ac263",
+      "port_to_id": "414c6a4bd7724098b1b35dac0037f58f",
+      "condition": {
+        "mode": "AND",
+        "criteria": [
+          "undead_asylum_f2_west_key"
+        ]
+      },
+      "tags": []
+    },
+    {
+      "port_from_id": "62a947b209864665b0e0e76e5a6874c2",
+      "port_to_id": "0dd1bcc70241426398986af06ab7cf7a",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "drop"
+      ]
+    },
+    {
+      "port_from_id": "e7827e519d4e42ad82d27dbbee989939",
+      "port_to_id": "05160c93840948b6aa469be6989e39a2",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "drop"
+      ]
+    },
+    {
+      "port_from_id": "60c8a5aef25c4a8782b81f72cfadb333",
+      "port_to_id": "ba2380d61d824b07937011674daeb554",
+      "condition": {
+        "mode": "AND",
+        "criteria": []
+      },
+      "tags": [
+        "drop"
+      ]
+    }
+  ]
+}
