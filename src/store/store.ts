@@ -1,11 +1,30 @@
-import {configureStore, createReducer, createSlice} from "@reduxjs/toolkit";
+import { configureStore } from "@reduxjs/toolkit";
 import flagsSlice from "store/flagsSlice";
+import regionsSlice, { refreshRegions } from "store/regionsSlice";
+import { Tracker } from "tracker/Tracker";
 
-export const store = configureStore({
-  reducer: {
-    flags: flagsSlice
-  }
-});
+export function createStore(tracker: Tracker) {
+  let store = configureStore({
+    middleware: (getDefaultMiddleware) =>
+      getDefaultMiddleware({
+        thunk: { extraArgument: { tracker } },
+      }),
+    reducer: {
+      flags: flagsSlice,
+      regions: regionsSlice,
+    },
+  });
 
-export type RootState = ReturnType<typeof store.getState>;
-export type AppDispatch = typeof store.dispatch;
+  tracker.events$.subscribe((evt) => {
+    switch (evt.type) {
+      case "layoutIndexRebuilt":
+        store.dispatch(refreshRegions());
+    }
+  });
+
+  return store;
+}
+
+export type TrackerThunkArgument = { extra: { tracker: Tracker } };
+export type RootState = ReturnType<ReturnType<typeof createStore>["getState"]>;
+export type AppDispatch = ReturnType<typeof createStore>["dispatch"];
