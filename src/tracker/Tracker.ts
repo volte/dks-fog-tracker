@@ -2,6 +2,7 @@ import {
   checkCondition,
   Condition,
   GameLayout,
+  Area,
   Region,
 } from "tracker/GameLayout";
 import * as Rx from "rxjs";
@@ -13,8 +14,13 @@ export type TrackerEvent = { type: "layoutIndexRebuilt" };
 export interface RegionInfo {
   id: string;
   name: string;
-  parent: string | null;
-  children: string[];
+  areas: string[];
+}
+
+export interface AreaInfo {
+  id: string;
+  name: string;
+  region: string;
   egresses: EgressInfo[];
   ports: PortInfo[];
 }
@@ -37,6 +43,7 @@ class LayoutIndex {
   readonly layout: GameLayout;
 
   regions: { [id: string]: RegionInfo } = {};
+  areas: { [id: string]: AreaInfo } = {};
   ports: { [id: string]: PortInfo } = {};
 
   flags: string[] = [];
@@ -51,46 +58,54 @@ class LayoutIndex {
     this.ports = {};
 
     for (let region of this.layout.regions) {
-      this.processRegion(region, null);
+      this.processRegion(region);
     }
   }
 
-  private processRegion(region: Region, parent: string | null) {
+  private processRegion(region: Region) {
     if (!_.has(this.regions, region.id)) {
       this.regions[region.id] = {
         id: region.id,
         name: region.name,
-        parent: parent,
-        children: [],
+        areas: [],
+      };
+    }
+
+    for (let area of region.areas) {
+      this.regions[region.id].areas.push(area.id);
+      this.processArea(area, area.id);
+    }
+  }
+
+  private processArea(area: Area, parent: string) {
+    if (!_.has(this.areas, area.id)) {
+      this.areas[area.id] = {
+        id: area.id,
+        name: area.name,
+        region: parent,
         egresses: [],
         ports: [],
       };
     }
 
-    let subRegions = region.subRegions || [];
-    for (let subRegion of subRegions) {
-      this.regions[region.id].children.push(subRegion.id);
-      this.processRegion(subRegion, region.id);
-    }
-
-    let egresses = region.egresses || [];
+    let egresses = area.egresses || [];
     for (let egress of egresses) {
-      if (checkCondition(egress.condition, this.flags)) {
-        this.regions[region.id].egresses.push({
+      if (egress.condition.check(this.flags)) {
+        this.areas[area.id].egresses.push({
           destination: egress.destination,
           text: egress.text,
         });
       }
     }
 
-    let ports = region.ports || [];
+    let ports = area.ports || [];
     for (let port of ports) {
-      if (checkCondition(port.condition, this.flags)) {
+      if (port.condition.check(this.flags)) {
         this.ports[port.id] = {
           id: port.id,
           text: port.text,
         };
-        this.regions[region.id].ports.push(this.ports[port.id]);
+        this.areas[area.id].ports.push(this.ports[port.id]);
       }
     }
   }

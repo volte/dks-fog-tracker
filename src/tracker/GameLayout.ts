@@ -1,140 +1,97 @@
 import _ from "lodash";
 
-export interface FlagGroup {
+export class FlagGroup {
   name: string;
   flags: Flag[];
+
+  constructor(name: string, flags: Flag[]) {
+    this.name = name;
+    this.flags = flags;
+  }
 }
 
-export interface Flag {
+export class Flag {
   id: string;
   name: string;
+
+  constructor(id: string, name: string) {
+    this.id = id;
+    this.name = name;
+  }
 }
 
-export interface Region {
+export class Region {
   id: string;
   name: string;
-  tags?: string[];
-  ports?: Port[];
-  egresses?: Egress[];
-  subRegions?: Region[];
+  areas: Area[] = [];
+
+  constructor(id: string, name: string) {
+    this.id = id;
+    this.name = name;
+  }
 }
 
-export interface Condition {
+export class Area {
+  id: string;
+  name: string;
+  tags: string[] = [];
+  ports: Port[] = [];
+  egresses: Egress[] = [];
+
+  constructor(id: string, name: string) {
+    this.id = id;
+    this.name = name;
+  }
+}
+
+export class Condition {
   exclude?: string[];
   require?: string[];
+
+  constructor(exclude?: string[], require?: string[]) {
+    this.exclude = exclude;
+    this.require = require;
+  }
+
+  check(flags: string[]) {
+    let require = this.require || [];
+    let exclude = this.exclude || [];
+    if (_.intersection(exclude, flags).length > 0) {
+      return false;
+    }
+    if (_.difference(require, flags).length > 0) {
+      return false;
+    }
+    return true;
+  }
 }
 
-export interface Port {
+export class Port {
   id: string;
   text: string;
-  exitOnly: boolean | undefined;
-  condition: Condition;
+  condition: Condition = new Condition();
+  tags: string[] = [];
+
+  constructor(id: string, text: string) {
+    this.id = id;
+    this.text = text;
+  }
 }
 
-export interface Egress {
-  text?: string;
+export class Egress {
   destination: string;
-  condition: Condition;
-  preserveEdge: boolean;
-}
+  text?: string;
+  condition: Condition = new Condition();
 
-export interface GameLayout {
-  flagGroups: FlagGroup[];
-  regions: Region[];
-}
-
-export interface RegionBuilder {
-  tag(text: string): void;
-
-  port(
-    id: string,
-    text: string,
-    condition?: Condition,
-    exitOnly?: boolean
-  ): void;
-
-  egress(
-    destination: string,
-    text?: string,
-    condition?: Condition,
-    preserveEdge?: boolean
-  ): void;
-
-  subregion(
-    id: string,
-    text: string,
-    builderFn: (b: RegionBuilder) => void
-  ): void;
-}
-
-export function makeRegion(
-  id: string,
-  name: string,
-  builderFn: (b: RegionBuilder) => void
-): Region {
-  let region: Region = {
-    id: id,
-    name: name,
-    ports: [],
-    egresses: [],
-    tags: [],
-    subRegions: [],
-  };
-  let builder: RegionBuilder = {
-    egress(
-      destination: string,
-      text: string,
-      condition?: Condition,
-      preserveEdge?: boolean
-    ): void {
-      region.egresses ||= [];
-      region.egresses.push({
-        text: text,
-        destination: destination,
-        condition: condition || {},
-        preserveEdge: preserveEdge || false,
-      });
-    },
-    port(
-      id: string,
-      text: string,
-      condition?: Condition,
-      exitOnly?: boolean
-    ): void {
-      region.ports ||= [];
-      region.ports.push({
-        id: id,
-        text: text,
-        exitOnly: exitOnly || false,
-        condition: condition || {},
-      });
-    },
-    subregion(
-      id: string,
-      name: string,
-      builderFn: (b: RegionBuilder) => void
-    ): void {
-      region.subRegions ||= [];
-      let newRegion = makeRegion(id, name, builderFn);
-      region.subRegions.push(newRegion);
-    },
-    tag(text: string): void {
-      region.tags ||= [];
-      region.tags.push(text);
-    },
-  };
-  builderFn(builder);
-  return region;
-}
-
-export function checkCondition(condition: Condition, flags: string[]) {
-  let require = condition.require || [];
-  let exclude = condition.exclude || [];
-  if (_.intersection(exclude, flags).length > 0) {
-    return false;
+  constructor(destination: string, text?: string) {
+    this.destination = destination;
+    this.text = text;
   }
-  if (_.difference(require, flags).length > 0) {
-    return false;
-  }
-  return true;
 }
+
+export class GameLayout {
+  flagGroups: FlagGroup[] = [];
+  regions: Region[] = [];
+}
+
+export function checkCondition(condition: Condition, flags: string[]) {}

@@ -1,0 +1,66 @@
+flagGroups:
+  shortcut:
+    title: Shortcuts
+    flags:
+      firelinkElevator:
+        name: Firelink Shrine elevator
+      firelinkTunnel:
+        name: Firelink Tunnel gate
+  rand:
+    title: Randomizer Settings
+    flags:
+      pvpMajor:
+        name: Major PvP fog gates
+      pvpMinor:
+        name: Minor PvP fog gates
+      world:
+        name: World progression fog gates
+      boss:
+        name: Boss fog gates
+      lordvessel:
+        name: Golden fog gates
+
+regions:
+  firelink:
+    name: Firelink Shrine
+    areas:
+      main:
+        name: Main
+        warpable: true
+        egress:
+          firelink.crowsNest:
+            if: flags.shortcut.firelinkElevator
+          firelink.tunnel:
+            if: flags.shortcut.firelinkTunnel
+        ports:
+          newLondo:
+            name: Gate to New Londo Ruins
+            if: flags.rand.pvpMajor
+            egress: newLondo.entrance
+          catacombs:
+            name: Entrance to Catacombs
+            if: flags.rand.pvpMajor
+            egress: catacombs.entrance
+          upperBurg:
+            name: Door to Undead Burg
+            if: flags.rand.pvpMajor
+            egress: upperBurg.entrance
+      crowsNest:
+        name: Crow's Nest
+        egress:
+          firelink.main:
+            ifNot: flags.rand.warps
+        ports:
+          nestWarp:
+            name: Warp to Undead Asylum
+            if: flags.rand.warps
+            egress: asylum.outside
+      tunnel:
+        name: Merchant Tunnel
+        egress:
+          firelink.main: { }
+        ports:
+          lowerBurg:
+            name: Door to Lower Undead Burg
+            if: flags.rand.pvpMajor
+            egress: lowerBurg.nearDepths

@@ -8,7 +8,7 @@ import {
 import { RootState, TrackerThunkArgument } from "store/store";
 import _ from "lodash";
 import { PortInfo, Tracker } from "tracker/Tracker";
-import { Port, Region } from "tracker/GameLayout";
+import { Port, Area } from "tracker/GameLayout";
 
 export interface RegionState {
   id: string;
