@@ -6,6 +6,29 @@ flagGroups:
         name: Firelink Shrine elevator
       firelinkTunnel:
         name: Firelink Tunnel gate
+      quelaagElevator:
+        name: Daughter of Chaos elevator
+      crestOfArtorias:
+        name: Crest of Artorias door
+      izalithShortcut:
+        name: Demon Ruins to Izalith shortcut
+      burgBonfireLadder:
+        name: Undead Burg bonfire room ladder
+  keyItems:
+    title: Key Items
+    flags:
+      lordvessel:
+        name: Lordvessel
+      crestOfArtorias:
+        name: Crest of Artorias
+      orangeCharredRing:
+        name: Orange Charred Ring
+      brokenPendant:
+        name: Broken Pendant
+      basementKey:
+        name: Basement Key
+      watchtowerBasementKey:
+        name: Watchtower Basement Key
   rand:
     title: Randomizer Settings
     flags:
@@ -23,37 +46,38 @@ flagGroups:
 regions:
   firelink:
     name: Firelink Shrine
+    color: "#eeffee"
     areas:
       main:
         name: Main
         warpable: true
         egress:
           firelink.crowsNest:
-            if: flags.shortcut.firelinkElevator
+            if: shortcut.firelinkElevator
           firelink.tunnel:
-            if: flags.shortcut.firelinkTunnel
+            if: shortcut.firelinkTunnel
         ports:
           newLondo:
             name: Gate to New Londo Ruins
-            if: flags.rand.pvpMajor
+            if: rand.pvpMajor
             egress: newLondo.entrance
           catacombs:
             name: Entrance to Catacombs
-            if: flags.rand.pvpMajor
+            if: rand.pvpMajor
             egress: catacombs.entrance
           upperBurg:
             name: Door to Undead Burg
-            if: flags.rand.pvpMajor
-            egress: upperBurg.entrance
+            if: rand.pvpMajor
+            egress: undeadBurg.entrance
       crowsNest:
         name: Crow's Nest
         egress:
           firelink.main:
-            ifNot: flags.rand.warps
+            ifNot: rand.warps
         ports:
           nestWarp:
             name: Warp to Undead Asylum
-            if: flags.rand.warps
+            if: rand.warps
             egress: asylum.outside
       tunnel:
         name: Merchant Tunnel
@@ -62,5 +86,383 @@ regions:
         ports:
           lowerBurg:
             name: Door to Lower Undead Burg
-            if: flags.rand.pvpMajor
-            egress: lowerBurg.nearDepths
+            if: rand.pvpMajor
+            egress: undeadBurg.lower
+
+  undeadBurg:
+    name: Undead Burg
+    areas:
+      entrance:
+        name: Upper Entrance
+        ports:
+          firelink:
+            name: Door to Firelink Shrine
+            if: rand.pvpMajor
+            egress: firelink.main
+          upper:
+            name: Door to Upper Undead Burg
+            if: rand.world
+            egress: undeadBurg.upper
+      upper:
+        name: Upper Undead Burg
+        ports:
+          entrance:
+            name: Door to Entrance
+            if: rand.world
+            egress: undeadBurg.entrance
+          bonfire:
+            name: Door to Bonfire Room
+            if: rand.pvpMinor
+            egress: undeadBurg.bonfireLower
+        egress:
+          darkroot.basin:
+            if: keyItems.watchtowerBasementKey
+      bonfireLower:
+        name: Burg Bonfire Room (Lower)
+        ports:
+          upper:
+            name: Door to Upper Undead Burg
+            if: rand.pvpMinor
+            egress: undeadBurg.upper
+        egress:
+          undeadBurg.bonfireUpper:
+            if: shortcut.burgBonfireLadder
+      bonfireUpper:
+        name: Burg Bonfire Room (Upper)
+        ports:
+          parish:
+            name: Door to Undead Parish
+            if: rand.pvpMajor
+            egress: parish.hellkite
+      lower:
+        name: Lower Undead Burg
+        ports:
+          firelinkTunnel:
+            name: Door to Firelink Tunnel
+            if: rand.pvpMajor
+            egress: firelink.main
+          capra:
+            name: Door to Capra Demon
+            if: rand.boss
+            egress: undeadBurg.capra
+      taurus:
+        name: Taurus Demon Boss Room
+        ports:
+          upper:
+            name: Door to Upper Undead Burg
+            if: rand.boss
+            egress: undeadBurg.upper
+          postTaurus:
+            name: Door to Post-Taurus Room
+            if: rand.boss
+            egress: undeadBurg.postTaurus
+      capra:
+        name: Capra Demon Boss Room
+        ports:
+          lower:
+            name: Door to Lower Undead Burg
+            if: rand.boss
+            egress: undeadBurg.lower
+
+  undeadParish:
+    name: Undead Parish
+    areas:
+      andre:
+        name: Andre
+        ports:
+          sens:
+            name: Door to Sen's Fortress
+            if: rand.pvpMinor
+            egress: sens.entrance
+          darkroot:
+            name: Door to Darkroot Garden
+            if: rand.pvpMajor
+            egress: darkroot.parish
+          church:
+            name: Door to Parish
+            if: rand.pvpMajor
+            egress: parish.main
+      main:
+        name: Main
+        ports:
+          andre:
+            name: Door to Andre
+            if: rand.pvpMajor
+            egress: parish.andre
+          firelinkElevator:
+            name: Door to Firelink Elevator
+            if: rand.pvpMajor
+            egress: firelink.elevator
+          gargoyles:
+            name: Door to Gargoyles
+            if: rand.boss
+            egress: parish.gargoyles
+      gargoyles:
+        name: Gargoyles Boss Room
+        ports:
+          church:
+            name: Door to Church
+            if: rand.boss
+            egress: parish.main
+          belltower:
+            name: Door to Bell Tower
+            if: rand.boss
+            egress: parish.belltower
+      belltower:
+        name: Bell Tower
+        ports:
+          gargoyles:
+            name: Door to Gargoyles
+            if: rand.boss
+            egress: parish.gargoyles
+      hellkite:
+        name: Hellkite Bridge
+        ports:
+          postTaurus:
+            name: To Post-Taurus Room
+            if: rand.pvpMinor
+            egress: undeadBurg.postTaurus
+          upperBurg:
+            name: To Undead Burg Bonfire Room
+            if: rand.pvpMajor
+            egress: undeadBurg.bonfireUpper
+        egress:
+          basementLadder:
+            if: keyItems.basementKey
+          parish: {}
+      basementLadder:
+        name: Basement Ladder
+        ports:
+          lowerBurg:
+            name: To Lower Undead Burg
+            if: rand.pvpMajor
+            egress: undeadBurg.lower
+        egress:
+          hellkite:
+            if: keyItems.basementKey
+
+  dlc:
+    name: Oolacile
+    areas:
+      garden:
+        name: Sanctuary Garden
+        ports:
+          garden:
+            name: Sanctuary Garden Bonfire
+            exitOnly: true
+      dungeonElevator:
+        name: Dungeon Shortcut Elevator
+        ports:
+          lower:
+            name: Bottom (To Dungeon)
+            if: rand.pvpMinor
+            egress: dlc.dungeon
+          upper:
+            name: Top (To Royal Wood)
+            if: rand.pvpMinor
+            egress: dlc.royalWood
+
+  darkroot:
+    name: Darkroot
+    areas:
+      garden:
+        name: Darkroot Garden
+        ports:
+          parish:
+            name: To Undead Parish
+            if: rand.pvpMajor
+            egress: parish.andre
+        egress:
+          darkroot.basin: {}
+          darkroot.forest:
+            if: keyItems.crestOfArtorias
+      stoneGiants:
+        name: Stone Giant Grove
+        ports:
+          garden:
+            name: To Darkroot Garden
+            if: rand.world
+            egress: darkroot.garden
+          moonlight:
+            name: To Moonlight Butterfly
+            if: rand.boss
+            egress: darkroot.moonlight
+        egress:
+          darkroot.garden: {}
+      moonlight:
+        name: Moonlight Butterfly Boss Room
+        ports:
+          stoneGiants:
+            name: To Stone Giant Grove
+            if: rand.boss
+            egress: darkroot.stoneGiants
+      stoneBlacksmith:
+        name: Stone Blacksmith Tower
+        ports:
+          moonlight:
+            name: To Moonlight Butterfly
+            if: rand.boss
+            egress: darkroot.moonlight
+      basin:
+        name: Darkroot Basin
+        ports:
+          drakes:
+            name: To Valley of the Drakes
+            if: rand.pvpMajor
+            egress: drakes.tunnel
+          dlc:
+            name: DLC Entrance Portal
+            if: keyItems.brokenPendant
+        egress:
+          darkroot.forest: {}
+          darkroot.garden: {}
+      forest:
+        name: Darkroot Forest
+        ports:
+          sif:
+            name: To Sif's Boss Room
+            if: rand.boss
+            egress: darkroot.sif
+        egress:
+          darkroot.basin: {}
+          darkroot.garden:
+            if: shortcuts.crestOfArtorias
+      sif:
+        name: Sif's Boss Room
+        ports:
+          forest:
+            name: To Darkroot Forest
+            if: rand.boss
+            egress: darkroot.forest
+
+  demonruins:
+    name: Demon Ruins
+    areas:
+      upper:
+        name: Upper
+        ports:
+          lower:
+            name: To Lower Demon Ruins
+            if: rand.pvpMinor
+            egress: demonruins.lower
+          ceaseless:
+            name: To Ceaseless Boss Room
+            if: rand.boss
+            egress: demonruins.ceaseless
+      lower:
+        name: Lower
+        ports:
+          upper:
+            name: To Upper Demon Ruins
+            if: rand.pvpMinor
+            egress: demonruins.upper
+          izalithShortcut:
+            name: To Izalith Shortcut
+            if: rand.lordvessel
+            egress:
+              demonruins.izalithShortcut:
+                if: keyItems.lordvessel
+      ceaseless:
+        name: Ceaseless Discharge Boss Room
+        ports:
+          upper:
+            name: To Upper Demon Ruins
+            if: rand.boss
+            egress: demonruins.upper
+      firesage:
+        name: Demon Firesage Boss Room
+        ports:
+          izalithShortcut:
+            name: To Izalith Shortcut
+            if: rand.boss
+            egress: demonruins.izalithShortcut
+      izalithShortcut:
+        name: Izalith Shortcut
+        ports:
+          firesage:
+            name: To Demon Firesage
+            if: rand.boss
+            egress: demonruins.firesage
+          lower:
+            name: To Lower Demon Ruins
+            if: rand.lordvessel
+            egress: demonruins.lower
+        egress:
+          izalith.upper:
+            if: shortcut.izalithShortcut
+      stairNexus:
+        name: Stair Nexus
+        ports:
+          firesage:
+            name: To Demon Firesage
+            if: rand.boss
+            egress: demonruins.firesage
+          centipede:
+            name: To Centipede Demon
+            if: rand.boss
+            egress: demonruins.centipede
+      quelaagElevator:
+        name: Daughter of Chaos Elevator
+        ports:
+          stairNexus:
+            name: To Stair Nexus
+            if: rand.pvpMinor
+            egress: demonruins.stairNexus
+        egress:
+          demonruins.firesage: {}
+          blighttown.quelaag:
+            if: shortcut.quelaag
+      centipede:
+        name: Centipede Demon Boss Room
+        ports:
+          stairNexus:
+            name: To Stair Nexus
+            if: rand.boss
+            egress: demonruins.stairNexus
+          izalith:
+            name: To Lost Izalith
+            if: rand.boss
+            egress: izalith.entrance
+
+  izalith:
+    name: Lost Izalith
+    areas:
+      entrance:
+        name: Entrance
+        ports:
+          centipede:
+            name: To Centipede Demon
+            if: rand.boss
+            egress: demonruins.centipede
+        egress:
+          izalith.lava:
+            if: keyItems.orangeCharredRing
+      lava:
+        name: Lava Field
+        egress:
+          izalith.entrance:
+            if: keyItems.orangeCharredRing
+          izalith.upper:
+            if: keyItems.orangeCharredRing
+      upper:
+        name: Upper Izalith
+        ports:
+          bedOfChaos:
+            name: To Bed of Chaos
+            if: rand.boss
+            egress: izalith.bedOfChaos
+        egress:
+          izalith.lava:
+            if: keyItems.orangeCharredRing
+          demonruins.izalithShortcut: {}
+      bedOfChaos:
+        name: Bed of Chaos
+        ports:
+          izalith:
+            name: To Upper Izalith
+            if: rand.boss
+            egress: izalith.upper
+
+
+
+

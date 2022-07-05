@@ -24,6 +24,7 @@ export class Region {
   id: string;
   name: string;
   areas: Area[] = [];
+  color?: string;
 
   constructor(id: string, name: string) {
     this.id = id;

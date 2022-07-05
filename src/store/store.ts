@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import flagsSlice from "store/flagsSlice";
+import flagsSlice, { refreshFlags } from "store/flagsSlice";
 import regionsSlice, { refreshRegions } from "store/regionsSlice";
 import { Tracker } from "tracker/Tracker";
 
@@ -19,6 +19,10 @@ export function createStore(tracker: Tracker) {
     switch (evt.type) {
       case "layoutIndexRebuilt":
         store.dispatch(refreshRegions());
+        break;
+      case "flagsChanged":
+        store.dispatch(refreshFlags());
+        break;
     }
   });
 

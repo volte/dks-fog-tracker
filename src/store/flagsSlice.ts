@@ -1,6 +1,7 @@
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { RootState, TrackerThunkArgument } from "store/store";
 import _ from "lodash";
+import { PortState, refreshRegions } from "store/regionsSlice";
 
 type FlagSet = { [flag: string]: boolean };
 
@@ -26,8 +27,24 @@ export const setFlag = createAsyncThunk<
 >("flags/setFlag", async ({ flag, value }, context) => {
   const tracker = context.extra.tracker;
   tracker.setFlag(flag, value);
-  context.dispatch(flagsSlice.actions.updateFlags(toFlagSet(tracker.flags)));
 });
+
+export const refreshFlags = createAsyncThunk<void, void, TrackerThunkArgument>(
+  "flags/refreshFlags",
+  async (x, context) => {
+    const tracker = context.extra.tracker;
+    let flags = tracker.flags;
+
+    context.dispatch(
+      flagsSlice.actions.updateFlags(
+        _.chain(flags)
+          .keyBy()
+          .mapValues((x) => true)
+          .value()
+      )
+    );
+  }
+);
 
 const flagsSlice = createSlice({
   name: "flags",

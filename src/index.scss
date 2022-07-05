@@ -1,6 +1,9 @@
+$portItemHeight: 24px;
+$breakpointMobile: 768px;
+
 body {
   font-family: sans-serif;
-  font-size: .7rem;
+  font-size: .8rem;
   overflow: hidden;
 
   * {
@@ -11,11 +14,12 @@ body {
 .appRoot {
   display: flex;
   flex-direction: row;
-
+  width: 100vw;
   height: 100vh;
 }
 
 .sidebar {
+  min-width: 42px;
   width: 250px;
   background-color: #dddddd;
   padding: 8px;
@@ -25,6 +29,10 @@ body {
     font-size: 2em;
     font-weight: bold;
     margin-bottom: 1em;
+  }
+
+  &.sidebar--collapsed {
+    width: 42px;
   }
 }
 
@@ -41,24 +49,222 @@ body {
   margin-bottom: 16px;
 }
 
-.regionList {
-  .regionInfo {
-    .port {
-      .connected {
-        color: #008000;
-      }
+.mainPane {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
 
-      .disconnected {
-        color: #800000;
-      }
+.filterBar {
+  padding: 4px;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  padding: 4px;
+
+  .filter__clear {
+    padding: 4px;
+  }
+
+  .filter__input {
+    flex-grow: 1;
+    border: 0;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.areaList {
+  flex-grow: 1;
+  align-content: start;
+}
+
+.areaListContainer {
+  padding: 2px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.areaContainer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.area {
+  padding: 4px 4px 8px;
+}
+
+.regionHeader {
+  font-weight: bold;
+  font-size: 150%;
+  padding: 2px;
+  margin-top: 16px;
+}
+
+.areaHeader {
+  font-weight: bold;
+  font-size: 110%;
+  padding: 4px 2px 2px 2px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.port {
+  display: flex;
+  flex-direction: column;
+  padding: 4px 4px 4px 8px;
+  margin-left: 4px;
+
+  .port__label {
+    flex-grow: 1;
+    font-weight: bold;
+  }
+
+  .port__from {
+    color: #00000055;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+
+.portPlaceholder {
+  background: #ffeeee;
+  color: red;
+  font-weight: bold;
+  height: $portItemHeight;
+  display: flex;
+  align-items: center;
+  padding-left: 4px;
+}
+
+.portOption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: $portItemHeight;
+  font-size: 90%;
+
+  &.portOption--connected {
+    color: #cccccc;
+    .portOption__id {
+      color: #cccccc;
     }
   }
 
-  margin: 8px;
+  &.portOption--selected {
+    background: unset;
+    color: unset;
+    font-weight: bold;
+    .portOption__id {
+      color: unset;
+      font-weight: normal;
+    }
+  }
+
+  .portOption__info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .portOption__id {
+    display: flex;
+    white-space: nowrap;
+    color: #888888;
+  }
+
+  .portOption__text {
+    white-space: nowrap;
+    width: 100%;
+  }
 }
 
-.portInfo {
-  display: flex;
-  flex-direction: row;
+.port {
+  border-left: 2px solid rgba(0, 0, 0, 0.25);
+  padding-left: 6px;
+  margin-left: 8px;
 
+  .port__exitOnly {
+    height: $portItemHeight;
+    display: flex;
+    align-items: center;
+    background: #f6f6f6;
+    color: #aaaaaa;
+    margin: 4px 0;
+    padding-left: 4px;
+  }
+
+  .port__value {
+    margin-left: 4px;
+  }
+
+  .port-select__control {
+    border-width: 0;
+    background: transparent;
+    cursor: pointer;
+    min-height: $portItemHeight;
+    border-radius: 0;
+    box-shadow: none;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+
+  .port-select__dropdown-indicator {
+    display: none;
+  }
+
+  .port-select__indicator-separator {
+    display: none;
+  }
+
+  .port-select__clear-indicator {
+    padding: 0;
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  .port-select__input-container {
+    padding: 0;
+  }
+
+  .port-select__single-value {
+    margin: 0;
+  }
+
+  .port-select__value-container {
+    padding: 0;
+  }
+
+  .port-select__placeholder {
+    margin: 0;
+  }
+
+  .port-select__input-container {
+    margin: 0;
+  }
+
+  .port-select__input {
+    height: $portItemHeight;
+  }
+
+  .port-select__option {
+    padding: 4px;
+    height: calc($portItemHeight + 4px);
+    overflow: hidden;
+  }
+
+  .port-select__option--is-selected {
+    background: #ffffdd;
+    color: unset;
+  }
 }

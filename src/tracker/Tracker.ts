@@ -9,24 +9,32 @@ import * as Rx from "rxjs";
 import Graph from "graphology";
 import _ from "lodash";
 
-export type TrackerEvent = { type: "layoutIndexRebuilt" };
+export type TrackerEvent =
+  | { type: "layoutIndexRebuilt" }
+  | { type: "flagsChanged" };
 
 export interface RegionInfo {
   id: string;
   name: string;
   areas: string[];
+  color?: string;
 }
 
 export interface AreaInfo {
   id: string;
   name: string;
   region: string;
-  egresses: EgressInfo[];
-  ports: PortInfo[];
+  egress: EgressInfo[];
+  ports: string[];
 }
 
 export interface PortInfo {
   id: string;
+  area: string;
+  region: string;
+  from?: string;
+  to?: string;
+  exitOnly?: boolean;
   text?: string;
 }
 
@@ -48,6 +56,7 @@ class LayoutIndex {
 
   flags: string[] = [];
   connections: ConnectionMap = {};
+  connectionsBack: ConnectionMap = {};
 
   constructor(layout: GameLayout) {
     this.layout = layout;
@@ -56,6 +65,9 @@ class LayoutIndex {
   rebuild() {
     this.regions = {};
     this.ports = {};
+    this.areas = {};
+
+    this.connectionsBack = _.invert(this.connections);
 
     for (let region of this.layout.regions) {
       this.processRegion(region);
@@ -67,23 +79,24 @@ class LayoutIndex {
       this.regions[region.id] = {
         id: region.id,
         name: region.name,
+        color: region.color,
         areas: [],
       };
     }
 
     for (let area of region.areas) {
       this.regions[region.id].areas.push(area.id);
-      this.processArea(area, area.id);
+      this.processArea(area, region.id);
     }
   }
 
-  private processArea(area: Area, parent: string) {
+  private processArea(area: Area, region: string) {
     if (!_.has(this.areas, area.id)) {
       this.areas[area.id] = {
         id: area.id,
         name: area.name,
-        region: parent,
-        egresses: [],
+        region: region,
+        egress: [],
         ports: [],
       };
     }
@@ -91,7 +104,7 @@ class LayoutIndex {
     let egresses = area.egresses || [];
     for (let egress of egresses) {
       if (egress.condition.check(this.flags)) {
-        this.areas[area.id].egresses.push({
+        this.areas[area.id].egress.push({
           destination: egress.destination,
           text: egress.text,
         });
@@ -101,11 +114,18 @@ class LayoutIndex {
     let ports = area.ports || [];
     for (let port of ports) {
       if (port.condition.check(this.flags)) {
+        let toPort = this.connections[port.id];
+        let fromPort = this.connectionsBack[port.id];
         this.ports[port.id] = {
           id: port.id,
           text: port.text,
+          area: area.id,
+          region: region,
+          exitOnly: port.tags.includes("exitOnly"),
+          to: toPort,
+          from: fromPort,
         };
-        this.areas[area.id].ports.push(this.ports[port.id]);
+        this.areas[area.id].ports.push(this.ports[port.id].id);
       }
     }
   }
@@ -120,6 +140,7 @@ export class Tracker {
   private enabledFlags: Set<string> = new Set();
   private connectionMap: ConnectionMap = {};
   private graph: Graph = new Graph();
+  alwaysTwoWay: boolean = true;
 
   get events$(): Rx.Observable<TrackerEvent> {
     return this.eventSubject$.asObservable();
@@ -137,21 +158,42 @@ export class Tracker {
     } else {
       this.enabledFlags.delete(flag);
     }
-    this.layoutIndex.flags = [...this.enabledFlags.values()];
+    this.save();
     this.rebuildLayout();
+    this.sendEvent({ type: "flagsChanged" });
   }
 
   get flags() {
     return [...this.enabledFlags.values()];
   }
 
-  makeConnection(fromPort: string, toPort: string | null) {
-    if (toPort !== null) {
-      this.connectionMap[fromPort] = toPort;
-    } else {
-      delete this.connectionMap[fromPort];
+  deleteConnection(fromPort: string) {
+    if (this.alwaysTwoWay) {
+      let toPort = this.connectionMap[fromPort];
+      if (toPort) {
+        delete this.connectionMap[toPort];
+      }
     }
-    this.layoutIndex.connections = this.connectionMap;
+    delete this.connectionMap[fromPort];
+  }
+
+  createConnection(fromPort: string, toPort: string) {
+    if (this.alwaysTwoWay) {
+      this.connectionMap[toPort] = fromPort;
+    }
+    this.connectionMap[fromPort] = toPort;
+  }
+
+  makeConnection(fromPort: string, toPort: string | null) {
+    this.deleteConnection(fromPort);
+    if (toPort !== null) {
+      if (this.alwaysTwoWay) {
+        this.deleteConnection(toPort);
+      }
+      this.createConnection(fromPort, toPort);
+    }
+
+    this.save();
     this.rebuildLayout();
   }
 
@@ -163,10 +205,30 @@ export class Tracker {
   }
 
   rebuildLayout() {
+    this.layoutIndex.flags = [...this.enabledFlags.values()];
+    this.layoutIndex.connections = { ...this.connectionMap };
     this.layoutIndex.rebuild();
     this.sendEvent({ type: "layoutIndexRebuilt" });
-
     this.graph.clear();
+  }
+
+  save() {
+    let state = {
+      flags: this.flags,
+      connectionMap: this.connectionMap,
+      alwaysTwoWay: this.alwaysTwoWay,
+    };
+    window.localStorage.setItem("state", JSON.stringify(state));
+  }
+
+  load() {
+    let data = window.localStorage.getItem("state") || "{}";
+    let state: any = JSON.parse(data);
+    this.enabledFlags = new Set(state.flags || []);
+    this.connectionMap = state.connectionMap || {};
+    this.alwaysTwoWay = state.alwaysTwoWay || true;
+    this.rebuildLayout();
+    this.sendEvent({ type: "flagsChanged" });
   }
 
   private sendEvent(event: TrackerEvent) {

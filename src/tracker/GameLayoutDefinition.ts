@@ -21,7 +21,6 @@ export interface GameLayoutDefinition {
 
 export interface FlagGroupDefinition {
   title: string;
-
   flags: DefinitionMap<FlagDefinition>;
 }
 
@@ -32,6 +31,7 @@ export interface FlagDefinition {
 export interface RegionDefinition {
   name: string;
   areas: DefinitionMap<AreaDefinition>;
+  color: string;
 }
 
 export interface AreaDefinition {
@@ -48,7 +48,8 @@ export interface ConditionalDefinition {
 
 export interface PortDefinition extends ConditionalDefinition {
   name: string;
-  egress?: string;
+  egress?: string | DefinitionMap<EgressDefinition>;
+  exitOnly?: boolean;
 }
 
 export interface EgressDefinition extends ConditionalDefinition {
@@ -59,40 +60,46 @@ export function loadGameLayout(definition: GameLayoutDefinition): GameLayout {
   let result = new GameLayout();
   console.log(definition);
 
-  const mkFlagGroup = (id: string, flagGroupDef: FlagGroupDefinition) => {
+  const mkFlagGroup = (groupID: string, flagGroupDef: FlagGroupDefinition) => {
     return new FlagGroup(
       flagGroupDef.title,
-      _.toPairs(flagGroupDef.flags).map(([id, def]) => mkFlag(id, def))
+      _.toPairs(flagGroupDef.flags).map(([id, def]) => mkFlag(id, groupID, def))
     );
   };
 
-  const mkFlag = (id: string, flagDef: FlagDefinition) => {
-    return new Flag(id, flagDef.name);
+  const mkFlag = (id: string, group: string, flagDef: FlagDefinition) => {
+    return new Flag(`${group}.${id}`, flagDef.name);
   };
 
   const mkRegion = (id: string, regionDef: RegionDefinition) => {
     let region = new Region(id, regionDef.name);
     region.areas = _.toPairs(regionDef.areas).map(([id, def]) =>
-      mkArea(id, def)
+      mkArea(id, region.id, def)
     );
+    region.color = regionDef.color;
     return region;
   };
 
-  const mkArea = (id: string, areaDef: AreaDefinition) => {
-    let area = new Area(id, areaDef.name);
+  const mkArea = (id: string, region: string, areaDef: AreaDefinition) => {
+    let area = new Area(`${region}.${id}`, areaDef.name);
     if (areaDef.warpable) {
       area.tags.push("warpable");
     }
-    area.ports = _.toPairs(areaDef.ports).map(([id, def]) => mkPort(id, def));
+    area.ports = _.toPairs(areaDef.ports).map(([id, def]) =>
+      mkPort(id, area.id, def)
+    );
     area.egresses = _.toPairs(areaDef.egress).map(([id, def]) =>
       mkEgress(id, def)
     );
     return area;
   };
 
-  const mkPort = (id: string, portDef: PortDefinition) => {
-    let port = new Port(id, portDef.name);
+  const mkPort = (id: string, area: string, portDef: PortDefinition) => {
+    let port = new Port(`${area}.${id}`, portDef.name);
     port.condition = mkCondition(portDef);
+    if (portDef.exitOnly) {
+      port.tags.push("exitOnly");
+    }
     return port;
   };
 
