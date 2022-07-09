@@ -5,7 +5,8 @@ import useBreakpoint, { lg, md } from "util/useBreakpoint";
 import classNames from "classnames";
 
 interface AreaProps {
-  region: string;
+  regionName: string;
+  regionID: string;
   showRegionHeader?: boolean;
   regionColor?: string;
   area: AreaState;
@@ -13,7 +14,8 @@ interface AreaProps {
 }
 
 export function Area({
-  region,
+  regionName,
+  regionID,
   showRegionHeader,
   area,
   regionColor,
@@ -28,19 +30,19 @@ export function Area({
   let filteredPorts: PortState[] = [];
   let filterString = filter.toLowerCase();
   for (let port of area.ports) {
-    let label = `${port.id}${port.region}${port.area}${port.text}`;
+    let label = `${port.id}--${port.region}--${port.area}--${port.text}`;
     if (label.toLowerCase().includes(filterString)) {
       filteredPorts.push(port);
     }
   }
 
-  if (filteredPorts.length === 0) {
-    return <></>;
-  }
-
   return (
     <div className={cls}>
-      {showRegionHeader && <div className="regionHeader">{region}</div>}
+      {showRegionHeader && (
+        <div className="regionHeader">
+          <a id={regionID}>{regionName}</a>
+        </div>
+      )}
       <div
         className="area"
         style={{

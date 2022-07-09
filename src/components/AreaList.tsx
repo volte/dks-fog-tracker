@@ -45,21 +45,21 @@ export function AreaList({ layout, filter }: AreaListProps) {
 
     return (
       <Fragment key={region.id}>
-        {
-          <Area
-            key={region.areas[0].id}
-            area={region.areas[0]}
-            region={region.name}
-            showRegionHeader={true}
-            regionColor={region.color}
-            filter={filter}
-          />
-        }
+        <Area
+          key={filteredAreas[0].id}
+          area={filteredAreas[0]}
+          regionID={region.id}
+          regionName={region.name}
+          showRegionHeader={true}
+          regionColor={region.color}
+          filter={filter}
+        />
         {filteredAreas.slice(1).map((area) => (
           <Area
             key={area.id}
             area={area}
-            region={region.name}
+            regionID={region.id}
+            regionName={region.name}
             showRegionHeader={false}
             regionColor={region.color}
             filter={filter}

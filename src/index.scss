@@ -1,10 +1,12 @@
-$portItemHeight: 24px;
+$portItemHeight: 28px;
 $breakpointMobile: 768px;
 
 body {
   font-family: sans-serif;
   font-size: .8rem;
   overflow: hidden;
+
+  background: #222222;
 
   * {
     box-sizing: border-box;
@@ -19,9 +21,9 @@ body {
 }
 
 .sidebar {
-  min-width: 42px;
-  width: 250px;
-  background-color: #dddddd;
+  min-width: 250px;
+  background: #222222;
+  color: #aaaaaa;
   padding: 8px;
   overflow-y: auto;
 
@@ -32,7 +34,19 @@ body {
   }
 
   &.sidebar--collapsed {
-    width: 42px;
+    min-width: 42px;
+    max-width: 42px;
+  }
+
+  .regionLink {
+    margin-left: 12px;
+    list-style: square;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 4px 0;
+    &:hover {
+      color: blue;
+    }
   }
 }
 
@@ -56,23 +70,28 @@ body {
 }
 
 .filterBar {
-  padding: 4px;
+  padding: 16px;
+  color: white;
 }
 
 .filter {
   display: flex;
   align-items: center;
   border: 1px solid #cccccc;
+  background-color: black;
   border-radius: 3px;
   padding: 4px;
 
   .filter__clear {
     padding: 4px;
+    color: white;
   }
 
   .filter__input {
     flex-grow: 1;
     border: 0;
+    background-color: black;
+    color: white;
 
     &:focus {
       outline: none;
@@ -86,7 +105,7 @@ body {
 }
 
 .areaListContainer {
-  padding: 2px;
+  padding: 16px;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -108,13 +127,15 @@ body {
   font-size: 150%;
   padding: 2px;
   margin-top: 16px;
+  color: #aaaaaa;
 }
 
 .areaHeader {
   font-weight: bold;
   font-size: 110%;
   padding: 4px 2px 2px 2px;
-  color: rgba(0, 0, 0, 0.5);
+  color: white;
+  mix-blend-mode: difference;
 }
 
 .port {
@@ -136,8 +157,9 @@ body {
 }
 
 .portPlaceholder {
-  background: #ffeeee;
-  color: red;
+  background: #ffffff44;
+  color: #ffffff;
+  mix-blend-mode: difference;
   font-weight: bold;
   height: $portItemHeight;
   display: flex;
@@ -153,9 +175,12 @@ body {
   font-size: 90%;
 
   &.portOption--connected {
-    color: #cccccc;
+    color: #aaaaaa55;
     .portOption__id {
-      color: #cccccc;
+      color: #aaaaaa55;
+    }
+    .portOption__text {
+      color: #aaaaaa55;
     }
   }
 
@@ -173,17 +198,27 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .portOption__id {
-    display: flex;
     white-space: nowrap;
-    color: #888888;
+    color: #ffffff66;
+    mix-blend-mode: difference;
+    padding-bottom: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .portOption__text {
     white-space: nowrap;
+    color: #ffffff;
+    mix-blend-mode: difference;
+    overflow: hidden;
     width: 100%;
+    text-overflow: ellipsis;
+    position: relative;
   }
 }
 
@@ -191,6 +226,11 @@ body {
   border-left: 2px solid rgba(0, 0, 0, 0.25);
   padding-left: 6px;
   margin-left: 8px;
+
+  .port__label {
+    color: white;
+    mix-blend-mode: difference;
+  }
 
   .port__exitOnly {
     height: $portItemHeight;
@@ -227,10 +267,8 @@ body {
 
   .port-select__clear-indicator {
     padding: 0;
-    svg {
-      width: 16px;
-      height: 16px;
-    }
+    color: #ffffff;
+    mix-blend-mode: difference;
   }
 
   .port-select__input-container {
@@ -259,7 +297,8 @@ body {
 
   .port-select__option {
     padding: 4px;
-    height: calc($portItemHeight + 4px);
+    height: calc($portItemHeight + 8px);
+    border-top: 1px solid #bbbbbb;
     overflow: hidden;
   }
 

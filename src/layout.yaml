@@ -853,7 +853,7 @@ Entrances:
   Text: Between Quelaag's Domain and the Demon Ruins bonfire
   Tags: pvp major
   ASide:
-    Area: blighttown_bell
+    Area: blighttown_btell
   BSide:
     Area: demonruins
 - Name: o4967_0000

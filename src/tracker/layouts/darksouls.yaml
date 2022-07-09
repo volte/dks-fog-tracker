@@ -2,11 +2,13 @@ flagGroups:
   shortcut:
     title: Shortcuts
     flags:
+      asylumCellGate:
+        name: Asylum shortcut
       firelinkElevator:
         name: Firelink Shrine elevator
       firelinkTunnel:
         name: Firelink Tunnel gate
-      quelaagElevator:
+      daughterOfChaosElevator:
         name: Daughter of Chaos elevator
       crestOfArtorias:
         name: Crest of Artorias door
@@ -14,21 +16,62 @@ flagGroups:
         name: Demon Ruins to Izalith shortcut
       burgBonfireLadder:
         name: Undead Burg bonfire room ladder
+      anorLondoSpiral:
+        name: Anor Londo spiral elevator
+      cathedralInner:
+        name: Anor Londo cathedral door
+      darkmoonTomb:
+        name: Darkmoon Tomb statue
+      newLondoLadder:
+        name: New Londo ladder
+  progress:
+    title: Progress
+    flags:
+      asylumBigPilgrimDoor:
+        name: Asylum Big Pilgrum door opened
+      blighttownDoorOpened:
+        name: Blighttown door opened
+      bothBells:
+        name: Both bells rung
+      catacombEntranceDoor:
+        name: Catacombs entrance door
+      newLondoDrained:
+        name: New Londo drained
+      dukesExitOpened:
+        name: Duke's Archives exit opened
+      osDead:
+        name: Ornstein & Smough dead
   keyItems:
     title: Key Items
     flags:
+      asylumF2EastKey:
+        name: Asylum F2 East Key
+      asylumF2WestKey:
+        name: Asylum F2 West Key
+      bigPilgrimsKey:
+        name: Big Pilgrim's Key
       lordvessel:
         name: Lordvessel
       crestOfArtorias:
         name: Crest of Artorias
       orangeCharredRing:
         name: Orange Charred Ring
+      covenantOfArtorias:
+        name: Covenant of Artorias
       brokenPendant:
         name: Broken Pendant
       basementKey:
         name: Basement Key
       watchtowerBasementKey:
         name: Watchtower Basement Key
+      darkmoonSeanceRing:
+        name: Darkmoon Seance Ring
+      peculiarDoll:
+        name: Peculiar Doll
+      crestKey:
+        name: Crest Key
+      keyToNewLondoRuins:
+        name: Key to New Londo Ruins
   rand:
     title: Randomizer Settings
     flags:
@@ -42,17 +85,19 @@ flagGroups:
         name: Boss fog gates
       lordvessel:
         name: Golden fog gates
+      warp:
+        name: Warps
 
 regions:
   firelink:
     name: Firelink Shrine
-    color: "#eeffee"
+    color: "#FFF7A0"
     areas:
       main:
         name: Main
         warpable: true
         egress:
-          firelink.crowsNest:
+          firelink.elevator:
             if: shortcut.firelinkElevator
           firelink.tunnel:
             if: shortcut.firelinkTunnel
@@ -73,12 +118,19 @@ regions:
         name: Crow's Nest
         egress:
           firelink.main:
-            ifNot: rand.warps
+            ifNot: rand.warp
         ports:
           nestWarp:
             name: Warp to Undead Asylum
-            if: rand.warps
+            if: rand.warp
             egress: asylum.outside
+      elevator:
+        name: Elevator
+        ports:
+          main:
+            name: Gate to Undead Parish
+            if: rand.pvpMajor
+            egress: undeadParish.church
       tunnel:
         name: Merchant Tunnel
         egress:
@@ -91,6 +143,7 @@ regions:
 
   undeadBurg:
     name: Undead Burg
+    color: "#F1F4F7"
     areas:
       entrance:
         name: Upper Entrance
@@ -114,6 +167,10 @@ regions:
             name: Door to Bonfire Room
             if: rand.pvpMinor
             egress: undeadBurg.bonfireLower
+          taurus:
+            name: Door to Taurus Demon
+            if: rand.boss
+            egress: undeadBurg.taurus
         egress:
           darkroot.basin:
             if: keyItems.watchtowerBasementKey
@@ -130,10 +187,10 @@ regions:
       bonfireUpper:
         name: Burg Bonfire Room (Upper)
         ports:
-          parish:
+          undeadParish:
             name: Door to Undead Parish
             if: rand.pvpMajor
-            egress: parish.hellkite
+            egress: undeadParish.hellkite
       lower:
         name: Lower Undead Burg
         ports:
@@ -145,6 +202,10 @@ regions:
             name: Door to Capra Demon
             if: rand.boss
             egress: undeadBurg.capra
+          ladder:
+            name: Door to Ladder
+            if: rand.pvpMajor
+            egress: undeadParish.ladder
       taurus:
         name: Taurus Demon Boss Room
         ports:
@@ -156,6 +217,17 @@ regions:
             name: Door to Post-Taurus Room
             if: rand.boss
             egress: undeadBurg.postTaurus
+      postTaurus:
+        name: Post-Taurus Room
+        ports:
+          taurus:
+            name: Door to Taurus Demon
+            if: rand.boss
+            egress: undeadBurg.taurus
+          hellkite:
+            name: Door to Hellkite Bridge
+            if: rand.pvpMinor
+            egress: undeadParish.hellkite
       capra:
         name: Capra Demon Boss Room
         ports:
@@ -166,6 +238,7 @@ regions:
 
   undeadParish:
     name: Undead Parish
+    color: "#F7E7D8"
     areas:
       andre:
         name: Andre
@@ -177,18 +250,18 @@ regions:
           darkroot:
             name: Door to Darkroot Garden
             if: rand.pvpMajor
-            egress: darkroot.parish
+            egress: darkroot.undeadParish
           church:
             name: Door to Parish
             if: rand.pvpMajor
-            egress: parish.main
+            egress: undeadParish.main
       main:
         name: Main
         ports:
           andre:
             name: Door to Andre
             if: rand.pvpMajor
-            egress: parish.andre
+            egress: undeadParish.andre
           firelinkElevator:
             name: Door to Firelink Elevator
             if: rand.pvpMajor
@@ -196,82 +269,72 @@ regions:
           gargoyles:
             name: Door to Gargoyles
             if: rand.boss
-            egress: parish.gargoyles
+            egress: undeadParish.gargoyles
+          toBuilding:
+            name: Door on Bridge
+            if: rand.world
+          toBridge:
+            name: Door to Bridge
+            if: rand.world
       gargoyles:
         name: Gargoyles Boss Room
         ports:
           church:
             name: Door to Church
             if: rand.boss
-            egress: parish.main
+            egress: undeadParish.main
           belltower:
             name: Door to Bell Tower
             if: rand.boss
-            egress: parish.belltower
+            egress: undeadParish.belltower
       belltower:
         name: Bell Tower
         ports:
           gargoyles:
             name: Door to Gargoyles
             if: rand.boss
-            egress: parish.gargoyles
+            egress: undeadParish.gargoyles
       hellkite:
         name: Hellkite Bridge
         ports:
           postTaurus:
-            name: To Post-Taurus Room
+            name: Door to Post-Taurus Room
             if: rand.pvpMinor
             egress: undeadBurg.postTaurus
           upperBurg:
-            name: To Undead Burg Bonfire Room
+            name: Door to Undead Burg Bonfire Room
             if: rand.pvpMajor
             egress: undeadBurg.bonfireUpper
         egress:
           basementLadder:
             if: keyItems.basementKey
-          parish: {}
+          undeadParish: {}
       basementLadder:
         name: Basement Ladder
         ports:
           lowerBurg:
-            name: To Lower Undead Burg
+            name: Door to Lower Undead Burg
             if: rand.pvpMajor
             egress: undeadBurg.lower
         egress:
           hellkite:
             if: keyItems.basementKey
 
-  dlc:
-    name: Oolacile
-    areas:
-      garden:
-        name: Sanctuary Garden
-        ports:
-          garden:
-            name: Sanctuary Garden Bonfire
-            exitOnly: true
-      dungeonElevator:
-        name: Dungeon Shortcut Elevator
-        ports:
-          lower:
-            name: Bottom (To Dungeon)
-            if: rand.pvpMinor
-            egress: dlc.dungeon
-          upper:
-            name: Top (To Royal Wood)
-            if: rand.pvpMinor
-            egress: dlc.royalWood
-
   darkroot:
     name: Darkroot
+    color: "#004C08"
     areas:
       garden:
         name: Darkroot Garden
         ports:
-          parish:
-            name: To Undead Parish
+          undeadParish:
+            name: Door to Undead Parish
             if: rand.pvpMajor
-            egress: parish.andre
+            egress: undeadParish.andre
+          stoneGiants:
+            name: Door to Stone Giant Grove
+            if: rand.world
+            egress: darkroot.stoneGiants
         egress:
           darkroot.basin: {}
           darkroot.forest:
@@ -280,11 +343,11 @@ regions:
         name: Stone Giant Grove
         ports:
           garden:
-            name: To Darkroot Garden
+            name: Door to Darkroot Garden
             if: rand.world
             egress: darkroot.garden
           moonlight:
-            name: To Moonlight Butterfly
+            name: Door to Moonlight Butterfly
             if: rand.boss
             egress: darkroot.moonlight
         egress:
@@ -293,23 +356,31 @@ regions:
         name: Moonlight Butterfly Boss Room
         ports:
           stoneGiants:
-            name: To Stone Giant Grove
+            name: Door to Stone Giant Grove
             if: rand.boss
             egress: darkroot.stoneGiants
+          darkroot:
+            name: Door to Darkroot Garden
+            if: rand.boss
+            egress: darkroot.darkroot
       stoneBlacksmith:
         name: Stone Blacksmith Tower
         ports:
           moonlight:
-            name: To Moonlight Butterfly
+            name: Door to Moonlight Butterfly
             if: rand.boss
             egress: darkroot.moonlight
       basin:
         name: Darkroot Basin
         ports:
+          forest:
+            name: Door to Darkroot Forest
+            if: rand.pvpMinor
+            egress: darkroot.forest
           drakes:
-            name: To Valley of the Drakes
+            name: Door to Valley of the Drakes
             if: rand.pvpMajor
-            egress: drakes.tunnel
+            egress: drakes.valley
           dlc:
             name: DLC Entrance Portal
             if: keyItems.brokenPendant
@@ -320,9 +391,13 @@ regions:
         name: Darkroot Forest
         ports:
           sif:
-            name: To Sif's Boss Room
+            name: Door to Sif's Boss Room
             if: rand.boss
             egress: darkroot.sif
+          basin:
+            name: Door to Darkroot Basin
+            if: rand.pvpMinor
+            egress: darkroot.basin
         egress:
           darkroot.basin: {}
           darkroot.garden:
@@ -331,33 +406,524 @@ regions:
         name: Sif's Boss Room
         ports:
           forest:
-            name: To Darkroot Forest
+            name: Door to Darkroot Forest
             if: rand.boss
             egress: darkroot.forest
 
-  demonruins:
-    name: Demon Ruins
+  depths:
+    name: Depths
+    color: "#C8B177"
+    areas:
+      main:
+        name: Main
+        ports:
+          toChannelerBalcony:
+            name: Door to Channeler Balcony
+            if: rand.world
+          fromChannelerBalcony:
+            name: Door from Channeler Balcony
+            if: rand.world
+          gaping:
+            name: Door to Gaping Dragon
+            if: rand.boss
+            egress: depths.gaping
+      gaping:
+        name: Gaping Dragon Boss Room
+        ports:
+          depths:
+            name: Door to Depths
+            if: rand.boss
+            egress: depths.main
+
+  blighttown:
+    name: Blighttown
+    color: "#364232"
     areas:
       upper:
         name: Upper
         ports:
           lower:
-            name: To Lower Demon Ruins
+            name: Exit to Lower Blighttown
+            if: rand.world
+        egress:
+          blighttown.swamp: {}
+      swamp:
+        name: Swamp
+        ports:
+          upper:
+            name: Exit to Upper Blighttown
+            if: rand.world
+          quelaag:
+            name: Door to Quelaag
+            if: rand.boss
+            egress: blighttown.quelaag
+          greatHollow:
+            name: Door to the Great Hollow
+            if: rand.pvpMinor
+            egress: greatHollow.tree
+          valleyOfDrakes:
+            name: Door to Valley of the Drakes
+            if: rand.pvpMajor
+            egress: drakes.valley
+      quelaag:
+        name: Quelaag's Boss Room
+        ports:
+          blighttown:
+            name: Door to Blighttown
+            if: rand.boss
+            egress: blighttown.swamp
+          daughterOfChaos:
+            name: Door to Daughter of Chaos
+            if: rand.boss
+            egress: blighttown.daughterOfChaos
+      daughterOfChaos:
+        name: Daughter of Chaos
+        ports:
+          quelaag:
+            name: Door to Quelaag
+            if: rand.boss
+            egress: blighttown.quelaag
+          demonruins:
+            name: Door to Demon Ruins
+            if: rand.pvpMajor
+            egress: demonruins.upper
+        egress:
+          demonruins.quelaagElevator:
+            if: shortcut.daughterOfChaosElevator
+
+  drakes:
+    name: Valley of the Drakes
+    color: "#685CD6"
+    areas:
+      valley:
+        name: Valley
+        ports:
+          blighttown:
+            name: Entrance to Blighttown
+            if: rand.pvpMajor
+            egress: blighttown.swamp
+          darkroot:
+            name: Tunnel to Darkroot
+            if: rand.pvpMajor
+            egress: darkroot.basin
+        egress:
+          newLondo.entrance: keyItems.keyToNewLondoRuins
+
+  sens:
+    name: Sen's Fortress
+    color: "#CFBBBA"
+    areas:
+      roof:
+        name: Roof
+        ports:
+          ironGolem:
+            name: Door to Iron Golem
+            if: rand.boss
+            egress: sens.ironGolem
+          upper:
+            name: Door to Upper Sen's
+            if: rand.world
+            egress: sens.upper
+        egress:
+          sens.upper: {}
+      ironGolem:
+        name: Iron Golem Boss Room
+        ports:
+          roof:
+            name: Door to Roof
+            if: rand.boss
+            egress: sens.roof
+          anorLondo:
+            name: Warp to Anor Londo
+            if: rand.warp
+            egress: anorLondo.entrance
+      upper:
+        name: Upper
+        ports:
+          roof:
+            name: Door to Roof
+            if: rand.world
+            egress: sens.roof
+          lower:
+            name: Door to Lower Sen's
+            if: rand.world
+            egress: sens.lower
+        egress:
+          sens.lower: {}
+      lower:
+        name: Lower
+        ports:
+          upper:
+            name: Door to Upper Sen's
+            if: rand.world
+            egress: sens.upper
+        egress:
+          sens.entrance:
+            if: progress.bothBells
+      entrance:
+        name: Entrance
+        ports:
+          andre:
+            name: Door to Andre
+            if: rand.pvpMinor
+            egress: undeadParish.andre
+        egress:
+          sens.lower:
+            if: progress.bothBells
+
+
+  anorLondo:
+    name: Anor Londo
+    color: "#FAF5A5"
+    areas:
+      entrance:
+        name: Entrance
+        ports:
+          sens:
+            name: Warp from Sen's Fortress
+            if: rand.warp
+            egress: sens.ironGolem
+          dukes:
+            name: Gate to Duke's Archives
+            if: rand.lordvessel
+            egress: dukes.entrance
+          rafters:
+            name: Gate to Rafters Area
+            if: rand.pvpMinor
+            egress: anorLondo.rafters
+        egress:
+          anorLondo.grandStaircase:
+            if: shortcut.anorLondoSpiral
+      rafters:
+        name: Rafters Area
+        ports:
+          entrance:
+            name: Door to Entrance
+            if: rand.pvpMinor
+            egress: anorLondo.entrance
+          postRafters:
+            name: Door After Rafters
+            if: rand.world
+            egress: anorLondo.cathedralOuter
+      cathedralOuter:
+        name: Cathedral Outside
+        ports:
+          rafters:
+            name: Door to Rafters
+            if: rand.world
+            egress: sens.rafters
+          painting:
+            name: Painting to Painted World
+            if: rand.warp
+            egress: paintedworld.entrance
+          interior:
+            name: Door to Interior
+            if: rand.pvpMinor
+            egress: anorLondo.cathedralInterior
+          cathedral:
+            name: Door to Cathedral (Giant Blacksmith)
+            if: rand.pvpMinor
+            egress: anorLondo.cathedralInterior
+        egress:
+          darkmoonSeance:
+            if: keyItems.darkmoonSeanceRing
+          cathedralInner:
+            if: shortcut.cathedralDoor
+      cathedralInner:
+        name: Cathedral Inside
+        ports:
+          os:
+            name: Door to Ornstein & Smough
+            if: rand.boss
+            egress: anorLondo.os
+          interior:
+            name: Door to Interior
+            if: rand.pvpMinor
+            egress: anorLondo.interior
+          blacksmith:
+            name: Door to Giant Blacksmith
+            if: rand.pvpMinor
+            egress: anorLondo.cathedralOuter
+          brokenWindow:
+            name: Broken Window
+            if: rand.pvpMinor
+            egress: anorLondo.cathedralLedge
+      os:
+        name: Ornstein & Smough Boss Room
+        ports:
+          smallElevator:
+            name: Door to Small Elevator
+            if: rand.boss
+            egress: anorLondo.smallElevator
+          largeElevator:
+            name: Door to Large Elevator
+            if: rand.boss
+            egress: anorLondo.largeElevator
+          cathedralInterior:
+            name: Door to Cathedral Interior
+            if: rand.boss
+            egress: anorLondo.cathedralInner
+      interior:
+        name: Interior
+        ports:
+          balcony:
+            name: Door to Balcony
+            if: rand.world
+            egress: anorLondo.interior
+          cathedral:
+            name: Door to Cathedral
+            if: rand.pvpMinor
+            egress: anorLondo.cathedral
+      smallElevator:
+        name: Ornstein's Elevator
+        ports:
+          os:
+            name: Door to Ornstein & Smough
+            if: rand.boss
+            egress: anorLondo.os
+        egress:
+          gwynevere:
+            if: progress.osDead
+      largeElevator:
+        name: Smough's Elevator
+        ports:
+          os:
+            name: Door to Ornstein & Smough
+            if: rand.boss
+            egress: anorLondo.os
+        egress:
+          gwynevere:
+            if: progress.osDead
+      cathedralLedge:
+        name: Ledge After Broken Window
+        ports:
+          cathedralInner:
+            name: Broken Window
+            if: rand.pvpMinor
+            egress: anorLondo.cathedralInner
+        egress:
+          anorLondo.cathedralOuter: {}
+      darkmoonSeance:
+        name: Darkmoon Seance Area
+        ports:
+          gwyndolin:
+            name: Door to Gwyndolin
+            if: rand.boss
+            egress: anorLondo.gwyndolin
+        egress:
+          cathedral:
+            if: keyItems.darkmoonSeanceRing
+      gwyndolin:
+        name: Gwyndolin's Boss Room
+        ports:
+          darkmoon:
+            name: Door to Darkmoon Tomb
+            if: rand.boss
+            egress: anorLondo.darkmoonSeance
+
+
+  catacombs:
+    name: Catacombs
+    color: "#B8C4CF"
+    areas:
+      entrance:
+        name: Entrance
+        ports:
+          firelink:
+            name: Exit to Firelink
+            if: rand.pvpMajor
+            egress: firelink.main
+        egress:
+          catacombs.upper: {}
+      upper:
+        name: Upper
+        ports:
+          toBridge:
+            name: Door from Bridge to Lower
+            if: rand.world
+        egress:
+          catacombs.entrance:
+            if: progress.catacombEntranceDoor
+      lower:
+        name: Lower
+        ports:
+          fromBridge:
+            name: Door to Bridge from Lower
+            if: rand.world
+          totg:
+            name: Coffin to Nito's Covenant
+            if: rand.warp
+            egress: totg.nitoCovenant
+          pinwheel:
+            name: Door to Pinwheel
+            if: rand.boss
+            egress: dlc.pinwheel
+      prePinwheel:
+        name: Before Pinwheel
+        ports:
+          lower:
+            name: Door to Lower Catacombs
+            if: rand.boss
+            egress: dlc.lower
+        egress:
+          catacombs.pinwheel: {}
+      pinwheel:
+        name: Pinwheel
+        ports:
+          totg:
+            name: Entrance to Tomb of the Giants
+            if: rand.pvpMajor
+            egress: totg.upper
+        egress:
+          catacombs.prePinwheel: {}
+  totg:
+    name: Tomb of the Giants
+    color: "#8C0009"
+    areas:
+      upper:
+        name: Upper
+        ports:
+          catacombs:
+            name: Exit to Catacombs
+            if: rand.pvpMajor
+            egress: catacombs.pinwheel
+          lower:
+            name: Gate to Lower Tomb
+            if: rand.world
+            egress: totg.lower
+      lower:
+        name: Lower
+        ports:
+          upper:
+            name: Gate to Upper Tomb
+            if: rand.world
+            egress: totg.upper
+          nitoApproach:
+            name: Entrance to Nito Approach
+            if: rand.lordvessel
+            egress: totg.nitoApproach
+      nitoApproach:
+        name: Nito's Approach
+        ports:
+          lower:
+            name: Exit to Lower Tomb
+            if: rand.lordvessel
+            egress: totg.lower
+          preNito:
+            name: Door to Nito
+            if: rand.boss
+            egress: totg.preNito
+      preNito:
+        name: Nito's Boss Room Ledge
+        ports:
+          preNito:
+            name: Exit to Nito's Approach
+            if: rand.boss
+            egress: totg.nitoApproach
+        egress:
+          totg.nito: {}
+      nito:
+        name: Nito's Boss Room
+        ports: {}
+        egress: {}
+      nitoCovenant:
+        name: Nito's Covenant Room
+        ports:
+          coffin:
+            name: Coffin Back to Catacombs
+            if: rand.warp
+            egress: catacombs.lower
+
+
+  newLondo:
+    name: New Londo Ruins
+    color: "#001C4C"
+    areas:
+      entrance:
+        name: Entrance
+        ports:
+          sealer:
+            name: Door to Sealer Area
+            if: rand.world
+            egress: newLondo.sealer
+          firelink:
+            name: Gate to Firelink Shrine
+            if: rand.pvpMajor
+            egress: firelink.main
+        egress:
+          lower:
+            if: progress.newLondoDrained
+          sealer:
+            if: shortcut.newLondoLadder
+      sealer:
+        name: Sealer's Area
+        ports:
+          entrance:
+            name: Door to Entrance
+            if: rand.world
+            egress: newLondo.entrance
+        egress:
+          lower:
+            if: progress.newLondoDrained
+      lower:
+        name: Lower
+        ports:
+          fromDrakes:
+            name: Door from Valley of the Drakes
+            if: rand.pvpMinor
+            egress:
+              drakes.valley: {}
+          toDrakes:
+            name: Door to Valley of the Drakes
+            if: rand.pvpMinor
+            egress:
+              drakes.valley: {}
+          fourKings:
+            name: Door to Four Kings
+            if: rand.boss
+            egress: newLondo.fourKingsLedge
+        fourKingsLedge:
+          name: Four Kings Boss Room Ledge
+          ports:
+            lower:
+              name: Door to Lower New Londo
+              if: rand.boss
+              egress: newLondo.lower
+          egress:
+            newLondo.fourKings:
+              if: keyItems.covenantOfArtorias
+        fourKings:
+          name: Four Kings Boss Room
+          ports: {}
+
+  demonruins:
+    name: Demon Ruins
+    color: "#FF9565"
+    areas:
+      upper:
+        name: Upper
+        ports:
+          daughterOfChaos:
+            name: Door to Daughter of Chaos
+            if: rand.pvpMajor
+            egress: blighttown.daughterOfChaos
+          lower:
+            name: Door to Lower Demon Ruins
             if: rand.pvpMinor
             egress: demonruins.lower
           ceaseless:
-            name: To Ceaseless Boss Room
+            name: Door to Ceaseless Boss Room
             if: rand.boss
             egress: demonruins.ceaseless
       lower:
         name: Lower
         ports:
           upper:
-            name: To Upper Demon Ruins
+            name: Door to Upper Demon Ruins
             if: rand.pvpMinor
             egress: demonruins.upper
           izalithShortcut:
-            name: To Izalith Shortcut
+            name: Door to Izalith Shortcut
             if: rand.lordvessel
             egress:
               demonruins.izalithShortcut:
@@ -366,25 +932,29 @@ regions:
         name: Ceaseless Discharge Boss Room
         ports:
           upper:
-            name: To Upper Demon Ruins
+            name: Door to Upper Demon Ruins
             if: rand.boss
             egress: demonruins.upper
       firesage:
         name: Demon Firesage Boss Room
         ports:
           izalithShortcut:
-            name: To Izalith Shortcut
+            name: Door to Izalith Shortcut
             if: rand.boss
             egress: demonruins.izalithShortcut
+          stairNexus:
+            name: Door to Stair Nexus
+            if: rand.boss
+            egress: demonruins.stairNexus
       izalithShortcut:
         name: Izalith Shortcut
         ports:
           firesage:
-            name: To Demon Firesage
+            name: Door to Demon Firesage
             if: rand.boss
             egress: demonruins.firesage
           lower:
-            name: To Lower Demon Ruins
+            name: Door to Lower Demon Ruins
             if: rand.lordvessel
             egress: demonruins.lower
         egress:
@@ -393,45 +963,51 @@ regions:
       stairNexus:
         name: Stair Nexus
         ports:
+          elevator:
+            name: Door to Daughter of Chaos Elevator
+            if: rand.pvpMinor
+            egress: demonruins.quelaagElevator
           firesage:
-            name: To Demon Firesage
+            name: Door to Demon Firesage
             if: rand.boss
             egress: demonruins.firesage
           centipede:
-            name: To Centipede Demon
+            name: Door to Centipede Demon
             if: rand.boss
             egress: demonruins.centipede
       quelaagElevator:
         name: Daughter of Chaos Elevator
         ports:
           stairNexus:
-            name: To Stair Nexus
+            name: Door to Stair Nexus
             if: rand.pvpMinor
             egress: demonruins.stairNexus
         egress:
           demonruins.firesage: {}
-          blighttown.quelaag:
-            if: shortcut.quelaag
+          blighttown.daughterOfChaos:
+            if: shortcut.daughterOfChaosElevator
       centipede:
         name: Centipede Demon Boss Room
         ports:
           stairNexus:
-            name: To Stair Nexus
+            name: Door to Stair Nexus
             if: rand.boss
             egress: demonruins.stairNexus
           izalith:
-            name: To Lost Izalith
+            name: Door to Lost Izalith
             if: rand.boss
             egress: izalith.entrance
 
+
   izalith:
     name: Lost Izalith
+    color: "#FFB23D"
     areas:
       entrance:
         name: Entrance
         ports:
           centipede:
-            name: To Centipede Demon
+            name: Door to Centipede Demon
             if: rand.boss
             egress: demonruins.centipede
         egress:
@@ -448,7 +1024,7 @@ regions:
         name: Upper Izalith
         ports:
           bedOfChaos:
-            name: To Bed of Chaos
+            name: Door to Bed of Chaos
             if: rand.boss
             egress: izalith.bedOfChaos
         egress:
@@ -459,10 +1035,343 @@ regions:
         name: Bed of Chaos
         ports:
           izalith:
-            name: To Upper Izalith
+            name: Door to Upper Izalith
             if: rand.boss
             egress: izalith.upper
 
+  dukes:
+    name: The Duke's Archives
+    color: "#166B69"
+    areas:
+      entrance:
+        name: Entrance
+        ports:
+          anorLondo:
+            name: Door to Anor Londo
+            if: rand.lordvessel
+            egress: anorLondo.entrance
+          library:
+            name: Door to Library
+            if: rand.pvpMinor
+            egress: dukes.library
+      library:
+        name: Library
+        ports:
+          entrance:
+            name: Door to Entrance
+            if: rand.pvpMinor
+            egress: dukes.entrance
+          hallway:
+            name: Door to Hallway
+            if: rand.pvpMinor
+            egress: dukes.hallway
+          prison:
+            name: Prison Warp
+            exitOnly: true
+        egress:
+          dukes.exit: progress.dukesExitOpened
+      hallway:
+        name: Crystal Hallway
+        ports:
+          library:
+            name: Door to Library
+            if: rand.pvpMinor
+            egress: dukes.library
+          seathRoom:
+            name: Door to First Seath Room
+            if: rand.boss
+            egress: dukes.seathRoom
+      seathRoom:
+        name: First Seath Room
+        ports:
+          prisonWarp:
+            name: Warp to Prison
+          hallway:
+            name: Door to Hallway
+            if: rand.boss
+            egress: dukes.hallway
+      exit:
+        name: Exit Room
+        ports:
+          caves:
+            name: Door to Exterior
+            if: rand.world
+            egress: dukes.caves
+        egress:
+          dukes.library:
+            if: progress.dukesExitOpened
+      caves:
+        name: Crystal Caves
+        ports:
+          interior:
+            name: Door to Interior
+            if: rand.world
+            egress: dukes.exit
+          seath:
+            name: Door to Seath's Room
+            if: rand.boss
+            egress: dukes.seath
+      seath:
+        name: Seath's Boss Room
+        ports:
+          caves:
+            name: Door to Crystal Caves
+            if: rand.boss
+            egress: dukes.caves
 
+  paintedWorld:
+    name: Painted World of Ariamis
+    color: "#6B6331"
+    areas:
+      main:
+        name: Main
+        ports:
+          entrance:
+            name: Warp from Anor Londo
+            if: rand.warp
+          toSpiral:
+            name: Door to Spiral Tower
+            if: rand.world
+          fromSpiral:
+            name: Door from Spiral Tower
+            if: rand.world
+          priscilla:
+            name: Door to Priscilla
+            if: rand.boss
+            egress: dlc.priscilla
+      priscilla:
+        name: Priscilla's Boss Room
+        ports:
+          main:
+            name: Door to Main Structure
+            if: rand.boss
+            egress: dlc.main
+          exit:
+            name: Exit Warp
+            if: rand.warp
+            egress: anorLondo.cathedral
 
+  asylum:
+    name: Undead Asylum
+    color: "#47483B"
+    areas:
+      cells:
+        name: Cells
+        egress:
+          central:
+            if: shortcut.asylumCellGate
+      central:
+        name: Central
+        ports:
+          oscar:
+            name: Door to Oscar's Area
+            if: rand.world
+            egress: asylum.oscar
+        egress:
+          cells: {}
+          outside:
+            if: keyItems.bigPilgrimsKey
+          stray:
+            if: progress.asylumBigPilgrimDoor
+      balcony:
+        name: Outside Balcony
+        ports:
+          dropDown:
+            name: Door to Boss Drop
+            if: rand.boss
+            egress: asylum.dropDown
+      oscar:
+        name: Oscar's Cell
+        ports:
+          central:
+            name: Door to Central Area
+            if: rand.world
+            egress: asylum.central
+        egress:
+          balcony:
+            if: keyItems.asylumF2EastKey
+          oscar:
+            if: keyItems.asylumF2WestKey
+      dropDown:
+        name: Boss Drop
+        ports:
+          balcony:
+            name: Door to Balcony
+            if: rand.boss
+            egress: asylum.balcony
+        egress:
+          asylum.central: {}
+      outside:
+        name: Outside
+        ports:
+          crowsNest:
+            name: Crow's Nest to Firelink
+            if: rand.warp
+            egress: firelink.crowsNest
+        egress:
+          central:
+            if: keyItems.bigPilgrimsKey
+      strayDemon:
+        name: Stray Demon's Boss Room
+        ports:
+          cells:
+            name: Ladder Back to Asylum Cells
+            if: rand.boss
+            egress: asylum.cells
 
+  greatHollow:
+    name: Great Hollow
+    color: "#6B4908"
+    areas:
+      tree:
+        name: Tree
+        ports:
+          blighttown:
+            name: Exit to Blighttown
+            if: rand.pvpMinor
+            egress: blighttown.swamp
+          ashLake:
+            name: Exit to Ash Lake
+            if: rand.world
+            egress: greatHollow.ashLake
+      ashLake:
+        name: Ash Lake
+        ports:
+          greatHollow:
+            name: Entrance to Great Hollow
+            if: rand.pvpMinor
+            egress: greatHollow.tree
+
+  dlc:
+    name: Oolacile
+    color: "#C09ED0"
+    areas:
+      garden:
+        name: Sanctuary Garden
+        ports:
+          garden:
+            name: Sanctuary Garden Bonfire
+            exitOnly: true
+          guardian:
+            name: Door to Sanctuary Garden
+            if: rand.boss
+            egress: dlc.guardian
+      guardian:
+        name: Sanctuary Guardian Boss Room
+        ports:
+          garden:
+            name: Door to Sanctuary Garden
+            if: rand.boss
+            egress: dlc.garden
+          sanctuary:
+            name: Door to Sanctuary
+            if: rand.boss
+            egress: dlc.sanctuary
+      sanctuary:
+        name: Sanctuary
+        ports:
+          guardian:
+            name: Door to Sanctuary Guardian
+            if: rand.boss
+            egress: dlc.guardian
+          royalWood:
+            name: Door to Royal Wood
+            if: rand.pvpMinor
+            egress: dlc.royalWood
+      royalWood:
+        name: Royal Wood
+        ports:
+          sanctuary:
+            name: Door to Sanctuary
+            if: rand.pvpMinor
+            egress: dlc.sanctuary
+          dungeonElevator:
+            name: Door to Dungeon Elevator
+            if: rand.pvpMinor
+            egress: dlc.dungeonElevator
+          artorias:
+            name: Door to Artorias
+            if: rand.boss
+            egress: dlc.artorias
+          kalameet:
+            name: Door to Kalameet
+            if: rand.boss
+            egress: dlc.kalameet
+      artorias:
+        name: Artorias' Boss Room
+        ports:
+          royalWood:
+            name: Door to Royal Wood
+            if: rand.boss
+            egress: dlc.royalWood
+          postArtorias:
+            name: Door to Post-Artorias Hallway
+            if: rand.boss
+            egress: dlc.postArtorias
+      postArtorias:
+        name: Post-Artorias Hallway
+        ports:
+          artorias:
+            name: Door to Artorias
+            if: rand.boss
+            egress: dlc.artorias
+          township:
+            name: Door to Township
+            if: rand.pvpMinor
+            egress: dlc.township
+        egress:
+          dlc.gough:
+            if: keyItems.crestKey
+      kalameet:
+        name: Kalameet's Boss Room
+        ports:
+          royalWood:
+            name: Door to Royal Wood
+            if: rand.boss
+            egress: dlc.royalWood
+      township:
+        name: Township
+        ports:
+          postArtorias:
+            name: Door to Post-Artorias Hallway
+            if: rand.pvpMinor
+            egress: dlc.postArtorias
+        egress:
+          dlc.dungeon: {}
+      manus:
+        name: Manus' Boss Room
+        ports:
+          dungeon:
+            name: Door to Dungeon
+            if: rand.boss
+            egress: dlc.dungeon
+      dungeon:
+        name: Dungeon
+        ports:
+          dungeonElevator:
+            name: Door to Shortcut Elevator
+            if: rand.pvpMinor
+            egress: dlc.dungeonElevator
+          manus:
+            name: Door to Manus
+            if: rand.boss
+            egress:
+              dlc.manus: {}
+      dungeonElevator:
+        name: Dungeon Shortcut Elevator
+        ports:
+          lower:
+            name: Bottom (Door to Dungeon)
+            if: rand.pvpMinor
+            egress: dlc.dungeon
+          upper:
+            name: Top (Door to Royal Wood)
+            if: rand.pvpMinor
+            egress: dlc.royalWood
+        manus:
+          name: Manus' Boss Room
+          ports:
+            entrance:
+              name: Entrance
+              if: rand.boss
+              exitOnly: true

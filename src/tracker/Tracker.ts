@@ -212,21 +212,33 @@ export class Tracker {
     this.graph.clear();
   }
 
+  getData() {
+    return JSON.stringify(
+      {
+        flags: this.flags,
+        connectionMap: this.connectionMap,
+        alwaysTwoWay: this.alwaysTwoWay,
+      },
+      null,
+      2
+    );
+  }
+
+  setData(json: string) {
+    let state: any = JSON.parse(json);
+    this.enabledFlags = new Set(state.flags || []);
+    this.connectionMap = state.connectionMap || {};
+    this.alwaysTwoWay = state.alwaysTwoWay || true;
+  }
+
   save() {
-    let state = {
-      flags: this.flags,
-      connectionMap: this.connectionMap,
-      alwaysTwoWay: this.alwaysTwoWay,
-    };
-    window.localStorage.setItem("state", JSON.stringify(state));
+    let json = this.getData();
+    window.localStorage.setItem("state", json);
   }
 
   load() {
     let data = window.localStorage.getItem("state") || "{}";
-    let state: any = JSON.parse(data);
-    this.enabledFlags = new Set(state.flags || []);
-    this.connectionMap = state.connectionMap || {};
-    this.alwaysTwoWay = state.alwaysTwoWay || true;
+    this.setData(data);
     this.rebuildLayout();
     this.sendEvent({ type: "flagsChanged" });
   }

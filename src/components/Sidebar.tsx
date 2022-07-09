@@ -4,6 +4,8 @@ import { useAppDispatch, useAppSelector } from "store/hooks";
 import useBreakpoint, { lg, md } from "util/useBreakpoint";
 import { useState } from "react";
 import classNames from "classnames";
+import { RegionState, selectRegions } from "store/regionsSlice";
+import { exportData } from "store/importExport";
 
 interface SidebarProps {
   layout: GameLayout;
@@ -18,6 +20,7 @@ export function Sidebar({ layout }: SidebarProps) {
 
   const dispatch = useAppDispatch();
   const flags = useAppSelector(selectFlags);
+  const regions = useAppSelector(selectRegions);
   const breakpoint = useBreakpoint();
 
   const renderFlag = (flag: Flag) => (
@@ -45,6 +48,23 @@ export function Sidebar({ layout }: SidebarProps) {
     </div>
   );
 
+  const scrollToRegion = (region: string) => {
+    const regionElement = document.getElementById(region);
+    if (regionElement) {
+      regionElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const renderRegionLink = (region: RegionState) => (
+    <li
+      key={region.id}
+      className="regionLink"
+      onClick={(e) => scrollToRegion(region.id)}
+    >
+      {region.name}
+    </li>
+  );
+
   const toggleCollapse = () => {
     setState({ collapse: !state.collapse });
   };
@@ -55,6 +75,10 @@ export function Sidebar({ layout }: SidebarProps) {
     "sidebar--collapsed": allowCollapse && state.collapse,
   });
 
+  let handleExport = () => {
+    dispatch(exportData());
+  };
+
   return (
     <div className={cls}>
       {allowCollapse && (
@@ -64,6 +88,10 @@ export function Sidebar({ layout }: SidebarProps) {
       )}
       {(!allowCollapse || !state.collapse) && (
         <>
+          <button onClick={(e) => handleExport()}>Export</button>
+          <hr />
+          <ul className="regions">{regions.map(renderRegionLink)}</ul>
+          <hr />
           <div className="flagGroups">
             {layout.flagGroups.map(renderFlagGroup)}
           </div>
