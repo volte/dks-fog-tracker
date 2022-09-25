@@ -173,23 +173,22 @@ body {
   justify-content: center;
   height: $portItemHeight;
   font-size: 90%;
+  color: black;
 
   &.portOption--connected {
-    color: #aaaaaa55;
+    color: #aaaaaacc;
     .portOption__id {
-      color: #aaaaaa55;
+      color: #aaaaaacc;
     }
     .portOption__text {
-      color: #aaaaaa55;
+      color: #aaaaaacc;
     }
   }
 
   &.portOption--selected {
     background: unset;
-    color: unset;
     font-weight: bold;
     .portOption__id {
-      color: unset;
       font-weight: normal;
     }
   }
@@ -204,17 +203,15 @@ body {
 
   .portOption__id {
     white-space: nowrap;
-    color: #ffffff66;
-    mix-blend-mode: difference;
+    color: #808080;
     padding-bottom: 4px;
     overflow: hidden;
     text-overflow: ellipsis;
   }
 
   .portOption__text {
+    color: black;
     white-space: nowrap;
-    color: #ffffff;
-    mix-blend-mode: difference;
     overflow: hidden;
     width: 100%;
     text-overflow: ellipsis;
