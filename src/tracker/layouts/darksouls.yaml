@@ -28,7 +28,7 @@ flagGroups:
     title: Progress
     flags:
       asylumBigPilgrimDoor:
-        name: Asylum Big Pilgrum door opened
+        name: Asylum Big Pilgrim door opened
       blighttownDoorOpened:
         name: Blighttown door opened
       bothBells:
